@@ -7,8 +7,19 @@
     <link rel="stylesheet" href="./style/style.css">
     <link rel="icon" type="image/x-icon" href="./assets/icons/clippy.png">
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://js-dos.com/v7/build/releases/latest/js-dos/js-dos.css">
+    <script src="https://js-dos.com/v7/build/releases/latest/js-dos/js-dos.js"></script>
 </head>
-<body>
+<body id="body">
+
+    <!-- <div id="dos" style="z-index: 99999; position: fixed;  top: 0; left: 0; height: 100dvh; width: 100dvw;">
+
+    </div>
+    <script>
+        Dos(document.getElementById("dos"))
+            .run("https://cdn.dos.zone/original/2X/2/24b00b14f118580763440ecaddcc948f8cb94f14.jsdos")
+    </script> -->
+    
 
     <div class="window" id="win1">
         <nav id="win1header" class="winnav">
@@ -139,6 +150,26 @@
         </div>
     </div>
 
+    <!-- <div class="window" id="win8">
+        <nav id="win8header" class="winnav">
+            <wintitle>App Store</wintitle>
+            <button id="win8del">🗙</button>
+            <button id="win8max">🗖</button>
+            <button id="win8min">🗕</button>
+        </nav>
+        <meta id="win8ismaximized" name="win8ismaximized" content="false"/>
+        <meta id="win8isminimized" name="win8isminimized" content="false"/>
+        <div class="contentHolder" id="win8contentHolder">
+            <div class="item" id="doom">
+                <div class="left">
+                    <h1>Doom</h1><br>
+                    <button id="doom-installbutton">Install Now</button>
+                    <meta id="doom-isinstalled" name="doom-isinstalled" content="false">
+                </div>
+            </div>
+        </div>
+    </div> -->
+
     <div class="window" id="winerror">
         <nav id="winerrorheader" class="winnav">
             <wintitle>An error occured...</wintitle>
@@ -201,90 +232,100 @@
         </div>
     </div>
 
-    <div id="startmenu">
+</body>
 
-        <meta id="startmenuishidden" name="startmenuishidden" content="true"/>
+<div id="startmenu">
 
-        <div class="sidebar">
-            <h1>Bean Site<sup>95</sup></h1>
-        </div>
+    <meta id="startmenuishidden" name="startmenuishidden" content="true"/>
 
-        <div class="main" id="sm-contents">
+    <div class="sidebar">
+        <h1>Bean Site 95</h1>
+    </div>
 
-        <div class="application" id="win1-startmenushortcut">
-            <img src="./assets/icons/smily.webp">
-            <h1>Welcome, User!!!</h1>
-        </div>
+    <div class="main" id="sm-contents">
 
-        <div class="application" id="win2-startmenushortcut">
-            <img src="./assets/icons/game.png">
-            <h1>Top Games</h1>
-        </div>
+    <div class="application" id="win1-startmenushortcut">
+        <img src="./assets/icons/smily.webp">
+        <h1>Welcome, User!!!</h1>
+    </div>
 
-        <div class="application" id="win4-startmenushortcut">
-            <img src="./assets/icons/fb-logo.png">
-            <h1>FireBean</h1>
-        </div>
+    <div class="application" id="win2-startmenushortcut">
+        <img src="./assets/icons/game.png">
+        <h1>Top Games</h1>
+    </div>
 
-        <div class="application" id="win5-startmenushortcut">
-            <img src="./assets/icons/dos.png">
-            <h1>MicroBean DOS</h1>
-        </div>
+    <div class="application" id="win4-startmenushortcut">
+        <img src="./assets/icons/fb-logo.png">
+        <h1>FireBean</h1>
+    </div>
 
-        <div class="application" id="win6-startmenushortcut">
-            <img src="./assets/icons/settings.webp">
-            <h1>Settings</h1>
-        </div>
+    <div class="application" id="win5-startmenushortcut">
+        <img src="./assets/icons/dos.png">
+        <h1>MicroBean DOS</h1>
+    </div>
 
-        <div class="application" id="win7-startmenushortcut">
-            <img src="./assets/icons/notepad.png">
-            <h1>Notepad</h1>
-        </div>
+    <div class="application" id="win6-startmenushortcut">
+        <img src="./assets/icons/settings.png">
+        <h1>Settings</h1>
+    </div>
 
-        </div>
+    <div class="application" id="win7-startmenushortcut">
+        <img src="./assets/icons/notepad.png">
+        <h1>Notepad</h1>
+    </div>
+
+    <!-- <div class="application" id="win8-startmenushortcut">
+        <img src="./assets/icons/appstore.png">
+        <h1>App Store</h1>
+    </div> -->
 
     </div>
 
-    <taskbar>
-        <button id="start"><img id="startBtnBean" src="./assets/bean-icon.png"> Start</button>
-        <div class="icon" id="win1icon">
-            <img src="./assets/icons/smily.webp">
-            <h1>Welcome, User!!!</h1>
-        </div>
-        <div class="icon" id="win2icon">
-            <img src="./assets/icons/game.png">
-            <h1>Top Games</h1>
-        </div>
-        <div class="icon" id="win3icon">
-            <img src="./assets/icons/game.png">
-            <h1>c:/bean_os/bean32/ga..</h1>
-        </div>
-        <div class="icon" id="win4icon">
-            <img src="./assets/icons/fb-logo.png">
-            <h1>Mozilla FireBean</h1>
-        </div>
-        <div class="icon" id="win5icon">
-            <img src="./assets/icons/dos.png">
-            <h1>MicroBean Dos</h1>
-        </div>
-        <div class="icon" id="win6icon">
-            <img src="./assets/icons/settings.webp">
-            <h1>Settings</h1>
-        </div>
-        <div class="icon" id="win7icon">
-            <img src="./assets/icons/notepad.png">
-            <h1>Notepad</h1>
-        </div>
-    </taskbar>
+</div>
 
-    <img src="./assets/error.jpg" id="bsod">
-    <img src="./assets/icons/clippy.png" id="clippy">
-    <div id="blackScreen"></div>
+<taskbar id="taskbar">
+    <button id="start"><img id="startBtnBean" src="./assets/bean-icon.png"> Start</button>
+    <div class="icon" id="win1icon">
+        <img src="./assets/icons/smily.webp">
+        <h1>Welcome, User!!!</h1>
+    </div>
+    <div class="icon" id="win2icon">
+        <img src="./assets/icons/game.png">
+        <h1>Top Games</h1>
+    </div>
+    <div class="icon" id="win3icon">
+        <img src="./assets/icons/game.png">
+        <h1>c:/bean_os/bean32/ga..</h1>
+    </div>
+    <div class="icon" id="win4icon">
+        <img src="./assets/icons/fb-logo.png">
+        <h1>Mozilla FireBean</h1>
+    </div>
+    <div class="icon" id="win5icon">
+        <img src="./assets/icons/dos.png">
+        <h1>MicroBean Dos</h1>
+    </div>
+    <div class="icon" id="win6icon">
+        <img src="./assets/icons/settings.png">
+        <h1>Settings</h1>
+    </div>
+    <div class="icon" id="win7icon">
+        <img src="./assets/icons/notepad.png">
+        <h1>Notepad</h1>
+    </div>
+    <!-- <div class="icon" id="win8icon">
+        <img src="./assets/icons/appstore.png">
+        <h1>App Store</h1>
+    </div> -->
+</taskbar>
 
-</body>
+<img src="./assets/error.jpg" id="bsod">
+<img src="./assets/icons/clippy.png" id="clippy">
+<div id="blackScreen"></div>
 
-<script src="./scripts/script.js"></script>
+<script src="./scripts/script.js" type="module"></script>
 <script src="./scripts/cmd.js"></script>
+<!-- <script src="./scripts/appstore.js" type="module"></script> -->
 
 <script>
     let gameloader = document.getElementById("gameloader")

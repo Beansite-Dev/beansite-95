@@ -35,6 +35,7 @@ function dragElement(elmnt) {
         box-shadow: 4px 4px 3px #000000, 0 0 4px #00000050;
       `);
       ismaxmixed.content="false";
+      document.getElementById(`${elmnt.id}max`).innerHTML = "🗖";
     }
     // calculate the new cursor position:
     pos1 = pos3 - e.clientX;
@@ -129,8 +130,8 @@ function addFunctionalityToNavbarButtons(num) {
       resize: both;
       box-shadow: 4px 4px 3px #000000, 0 0 4px #00000050;
     `);
-    document.getElementById(`win${num}max`).innerHTML = "🗖";
-    document.getElementById(`win${num}icon`).style.display="none";
+    if (navbtn["max"]) navbtn["max"].innerHTML = "🗖";
+    if (document.getElementById(`win${num}icon`)) document.getElementById(`win${num}icon`).style.display="none";
     document.getElementById(`win${num}ismaximized`).content="false";  
   });
   if (navbtn["min"]) {
@@ -147,7 +148,7 @@ function addFunctionalityToNavbarButtons(num) {
           height: 30.5px;
         `);
         ismaxmixed.content="false"
-        document.getElementById(`win${num}max`).innerHTML = "🗖";
+        if (navbtn["max"]) navbtn["max"].innerHTML = "🗖";
         isminimized.content = "true";
       } else if (isminimized.content=="true") {
         content.style.display = "block";
@@ -162,7 +163,7 @@ function addFunctionalityToNavbarButtons(num) {
   }
 }
 
-document.getElementById('startmenu').setAttribute('style', `left: -22dvw;`);
+document.getElementById('startmenu').setAttribute('style', `left: -350px;`);
 
 document.getElementById("start").addEventListener('click', (e) => {
   e.preventDefault();
@@ -173,7 +174,7 @@ document.getElementById("start").addEventListener('click', (e) => {
     startmenu.setAttribute('style', `left: 0;`);
     isHidden.content="false";
   } else if (isHidden.content=="false") {
-    startmenu.setAttribute('style', `left:-22dvw;`);
+    startmenu.setAttribute('style', `left:-350px;`);
     isHidden.content="true";
   }
 });
@@ -183,7 +184,7 @@ document.getElementById('startmenu').addEventListener('blur', (e) => {
   let isHidden = document.getElementById('startmenuishidden');
   if (isHidden.content=="false") {
     alert('left start menu')
-    startmenu.setAttribute('style', `left:-22dvw;`);
+    startmenu.setAttribute('style', `left:-350px;`);
     isHidden.content="true";
   }
 })
@@ -220,10 +221,10 @@ document.getElementById('win6del').click();
 document.getElementById('win7del').click();
 document.getElementById('winerrordel').click();
 
-// OLD:
-// dragElement(document.getElementById(winID));
-// addFunctionalityToNavbarButtons(num);
-// addStartMenuFunctionality(num);
+// ! OLD:
+// ! dragElement(document.getElementById(winID));
+// ! addFunctionalityToNavbarButtons(num);
+// ! addStartMenuFunctionality(num);
 
 }
 catch (e) {

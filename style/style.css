@@ -119,6 +119,13 @@ body {
     left: 30vmin;
     z-index: 104;
 }
+#win8 {
+    height: 50dvh;
+    width: 35dvw;
+    top: 35vmin;
+    left: 35vmin;
+    z-index: 105;
+}
 .window nav {
     cursor: move;
     position: absolute;
@@ -326,8 +333,8 @@ taskbar #start #startBtnBean {
     margin-right: .65rem;
 }
 #startmenu {
-    height: 60dvh;
-    width: 22dvw;
+    height: 500px;
+    width: 350px;
     background: darkgray;
     border: 3px ridge dimgray;
     box-sizing: border-box;
@@ -376,7 +383,6 @@ taskbar #start #startBtnBean {
     border-color: darkblue;
     background: dimgrey;
     color: lightgray;
-    transform: translateX(10px);
 }
 #startmenu .sidebar {
     width: 40px;
@@ -392,7 +398,7 @@ taskbar #start #startBtnBean {
     color: #fff;
     position: absolute;
     bottom: 10px;
-    left: -12.5px;
+    left: 50%;
     writing-mode: vertical-rl;
     text-orientation: mixed;
     transform: rotate(180deg);
@@ -592,4 +598,50 @@ codeblock {
     font-style: normal;
     font-size: .85rem;
     word-wrap: break-word;
+}
+#sm-contents { overflow-y: auto;  height: 100%;}
+.item {
+    width: 100%;
+    height: 125px;
+    background: lightgray;
+    border: 3px ridge gray;
+    box-sizing: border-box;
+    padding: 20px;
+    position: relative;
+    background-size: cover;
+    background-position: right;
+    background-image: url('../assets/bg/doom.jpg');
+}
+.item h1 {
+    margin: 0;
+    padding: 0;
+    line-height: 1rem;
+    font-size: 2.25rem;
+    color: #fff;
+    text-shadow: 4px 4px 2px #00000075;
+}
+.item button {
+    background: linear-gradient(180deg, rgba(19,170,62,1) 0%, rgba(96,255,166,1) 50%, rgba(58,232,133,1) 50%, rgba(0,143,62,1) 100%);
+    border: 2px ridge green;
+    box-sizing: border-box;
+    padding: 5px 25px;
+    cursor: pointer;
+    box-shadow: 4px 4px 2px #00000075, inset 0 0 5px rgb(0, 84, 0);
+    transition: .5s;
+}
+.item button:hover {
+    transform: translateY(-5px);
+    box-shadow: 4px 7px 3px #00000095, inset 0 0 6px white;
+    border: 2px ridge white;
+}
+.item .left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: gray;
+    height: 100%;
+    width: 200px;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 3px double dimgray;
 }

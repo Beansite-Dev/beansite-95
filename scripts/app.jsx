@@ -76,7 +76,7 @@ const App = () =>{
         <div id="topbar">
           <a id="fileTabButton">File</a>
         </div>
-        <div id="editor" contenteditable>
+        <div id="editor" contentEditable>
         </div>
       </SDK.Window>
 

@@ -95,10 +95,11 @@ ReactDOM.render(
   rootElement
 );
 
-SDK.init();
 SDK.closeWindow('2');
 SDK.closeWindow('3');
 SDK.closeWindow('4');
 SDK.closeWindow('5');
 SDK.closeWindow('6');
 SDK.closeWindow('7');
+
+SDK.init();

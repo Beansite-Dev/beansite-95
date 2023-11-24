@@ -238,6 +238,12 @@ class BeanSDK {
         isHidden.content="true";
       }
     });
+    // let buttons = document.getElementsByTagName('button')
+    // for (let i = 0; i < buttons.length; i++) {
+    //   buttons[i].addEventListener('click', () => {
+    //     new Audio('/assets/audio/click.wav').play();
+    //   })
+    // }
     for(let i=0;i<this.allWins.length;i++){
       this.dragElement(document.getElementById(`win${this.allWins[i]}`))
     }

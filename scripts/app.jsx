@@ -1,7 +1,10 @@
 const rootElement = document.getElementById('root');
 
 // creates new sdk class
-const SDK = new BeanSDK()
+const SDK = new BeanSDK();
+
+// creates new appstore class
+// const Store = new AppStore(SDK);
 
 const App = () =>{
   const openGame = (game) => {
@@ -19,6 +22,7 @@ const App = () =>{
         <SDK.TaskbarIcon winNum='5' winName="MicroBean DOS" iconPath="../assets/icons/dos.png" />,
         <SDK.TaskbarIcon winNum='6' winName="Settings" iconPath="../assets/icons/settings.png" />,
         <SDK.TaskbarIcon winNum='7' winName="Notepad" iconPath="../assets/icons/notepad.png" />,
+//      <SDK.TaskbarIcon winNum='8' winName="App Store" iconPath="../assets/icons/appstore.png" />,
       ]}
       StartMenuIcons={[
         <SDK.StartMenuShortcut winNum='1' winName="Welcome, User!!" iconPath="../assets/icons/smily.webp" />,
@@ -27,6 +31,7 @@ const App = () =>{
         <SDK.StartMenuShortcut winNum='5' winName="MicroBean DOS" iconPath="../assets/icons/dos.png" />,
         <SDK.StartMenuShortcut winNum='6' winName="Settings" iconPath="../assets/icons/settings.png" />,
         <SDK.StartMenuShortcut winNum='7' winName="Notepad" iconPath="../assets/icons/notepad.png" />,
+//      <SDK.StartMenuShortcut winNum='8' winName="App Store" iconPath="../assets/icons/appstore.png" />,
       ]}
     >
 
@@ -39,6 +44,7 @@ const App = () =>{
             <li class="link" onClick={() => SDK.openWindow('5')}> <u>Look like a hacker in MicroBean DOS</u> </li>
             <li class="link" onClick={() => SDK.openWindow('6')}> <u>Tweak your experience to perfection</u> </li>
             <li class="link" onClick={() => SDK.openWindow('7')}> <u>Write to your heart's content</u> </li>
+            {/* <li class="link" onClick={() => SDK.openWindow('8')}> <u>Download more ppas from the web</u> </li> */}
         </ul>
       </SDK.Window>
 
@@ -64,6 +70,7 @@ const App = () =>{
 
       <CMD />
       <FireBean />
+      <SettingsMenu />
 
       <SDK.Window winName="Notepad" winNum="7" defaultStyle={{"height": "350px", "width": "500px", "top": "25vmin", "left": "25vmin",}} includeNavButtons={{"del":true,"max":true,"min":true,}}>
         <div id="topbar">
@@ -73,7 +80,7 @@ const App = () =>{
         </div>
       </SDK.Window>
 
-      <SettingsMenu />
+      {/* <Store.Homepage /> */}
 
       <img src="./assets/error.jpg" id="bsod"/>
       <img src="./assets/icons/clippy.png" id="clippy"/>

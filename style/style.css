@@ -535,6 +535,7 @@ rainbow {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+#sm-contents { overflow-y: auto;  height: 100%;}
 codeblock {
     background: #000000;
     color: white;
@@ -547,7 +548,6 @@ codeblock {
     font-size: .85rem;
     word-wrap: break-word;
 }
-#sm-contents { overflow-y: auto;  height: 100%;}
 .item {
     width: 100%;
     height: 125px;
@@ -558,12 +558,12 @@ codeblock {
     position: relative;
     background-size: cover;
     background-position: right;
-    background-image: url('../assets/bg/doom.jpg');
 }
 .item h1 {
-    margin: 0;
+    margin: 0rem;
+    margin-bottom: 2rem;
     padding: 0;
-    line-height: 1rem;
+    line-height: 0rem;
     font-size: 2.25rem;
     color: #fff;
     text-shadow: 4px 4px 2px #00000075;
@@ -586,6 +586,10 @@ codeblock {
     position: absolute;
     top: 0;
     left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
     background: gray;
     height: 100%;
     width: 200px;

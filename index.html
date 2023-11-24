@@ -7,193 +7,24 @@
     <link rel="stylesheet" href="./style/style.css">
     <link rel="icon" type="image/x-icon" href="./assets/icons/clippy.png">
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://js-dos.com/v7/build/releases/latest/js-dos/js-dos.css">
-    <script src="https://js-dos.com/v7/build/releases/latest/js-dos/js-dos.js"></script>
+    <!-- <link rel="stylesheet" href="https://js-dos.com/v7/build/releases/latest/js-dos/js-dos.css"> -->
+    <!-- <script src="https://js-dos.com/v7/build/releases/latest/js-dos/js-dos.js"></script> -->
+
+    <script type="application/javascript" src="https://unpkg.com/react@16.0.0/umd/react.production.min.js"></script>
+    <script type="application/javascript" src="https://unpkg.com/react-dom@16.0.0/umd/react-dom.production.min.js"></script>
+    <script type="application/javascript" src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.js" integrity="sha512-vRqhAr2wsn+/cSsyz80psBbCcqzz2GTuhGk3bq3dAyytz4J/8XwFqMjiAGFBj+WM95lHBJ9cDf87T3P8yMrY7A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
 </head>
 <body id="body">
 
-    <!-- <div id="dos" style="z-index: 99999; position: fixed;  top: 0; left: 0; height: 100dvh; width: 100dvw;">
+    <div id="root" style="height: 100%; width: 100%; position: fixed; top: 0; left: 0;"></div>
 
-    </div>
-    <script>
-        Dos(document.getElementById("dos"))
-            .run("https://cdn.dos.zone/original/2X/2/24b00b14f118580763440ecaddcc948f8cb94f14.jsdos")
-    </script> -->
-    
-
-    <div class="window" id="win1">
-        <nav id="win1header" class="winnav">
-            <wintitle>Welcome, User!!!</wintitle>
-            <button id="win1del">🗙</button>
-            <button id="win1max">🗖</button>
-            <button id="win1min">🗕</button>
-        </nav>
-        <meta id="win1ismaximized" name="win1ismaximized" content="false"/>
-        <meta id="win1isminimized" name="win1isminimized" content="false"/>
-        <div class="contentHolder" id="win1contentHolder">
-            <ph1>Welcome to <logo>Bean Site<sup>95</sup></logo></ph1>
-            <h1>A site about <strong>!beans</strong> of all kind.</h1>
-            <ul>
-                <u>
-                    <li class="link" id="openGamesMenu">Check out games</li>
-                    <li class="link" id="openFireBean">Browse the Web with Mozilla FireBean™</li>
-                    <li class="link" id="openCmd">Play with commands!</li>
-                    <li class="link" id="openSettings">Tweak Every Setting</li>
-                </u>
-            </ul>
-        </div>
-    </div>
-
-    <div class="window" id="win3">
-        <nav id="win3header" class="winnav">
-            <wintitle>c:/bean_os/bean32/gamewindow.exe</wintitle>
-            <button id="win3del">🗙</button>
-            <button id="win3max">🗖</button>
-            <!-- <button id="win3min">🗕</button> -->
-        </nav>
-        <meta id="win3ismaximized" name="win3ismaximized" content="false"/>
-        <meta id="win3isminimized" name="win3isminimized" content="false"/>
-        <div class="contentHolder" id="win3contentHolder">
-            <img id="loading" src="./assets/loading.gif">
-            <iframe id="gameloader" src="" frameBorder="0">games will load here</iframe>
-        </div>
-    </div>
-
-    <div class="window" id="win2">
-        <nav id="win2header" class="winnav">
-            <wintitle>Top Beans</wintitle>
-            <button id="win2del">🗙</button>
-            <button id="win2max">🗖</button>
-            <button id="win2min">🗕</button>
-        </nav>
-        <meta id="win2ismaximized" name="win2ismaximized" content="false"/>
-        <meta id="win2isminimized" name="win2isminimized" content="false"/>
-        <div class="contentHolder" id="win2contentHolder">
-            <h1>Top<strong>_Games</strong></h1>
-            <ul>
-                <li class="link" id="g-drift"> <u>Drift Boss</u> </li>
-                <li class="link" id="g-slope"> <u>Slope</u> </li>
-                <li class="link" id="g-1v1lol"> <u>1v1.lol</u> </li>
-                <li class="link" id="g-smashkarts"> <u>Smash Karts</u> </li>
-                <li class="link" id="g-shellshockers"> <u>Shell Shockers</u> </li>
-                <li class="link" id="g-eagler"> <u>Eaglercraft</u> </li>
-                <li class="link" id="g-2048"> <u>2048</u> </li>
-                <li class="link" id="g-doom"> <u>Doom</u> </li>
-                <li class="link" id="g-ff7"> <u>Final Fanstasy VII</u> </li>
-                <li class="link" id="g-bloxdio"> <u>Bloxd.io</u> </li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="window" id="win4">
-        <nav id="win4header" class="winnav">
-            <wintitle>Mozilla FireBean</wintitle>
-            <button id="win4del">🗙</button>
-            <button id="win4max">🗖</button>
-            <button id="win4min">🗕</button>
-        </nav>
-        <meta id="win4ismaximized" name="win4ismaximized" content="false"/>
-        <meta id="win4isminimized" name="win4isminimized" content="false"/>
-        <div class="contentHolder" id="win4contentHolder">
-            <script>
-                // let updateURL = () => {
-                //     try {
-                //         document.getElementById('url').value = document.getElementById('webview').src;
-                //     }
-                //     catch (e) {
-                //         alert(`Error:\n${e.stack}\n${e.name}\n${e.message}`);
-                //     }
-                // };
-            </script>
-            <div id="browser-topbar">
-                <input type="text" id="url" value="https://firebean.com/home">
-            </div>
-            <img id="loading" src="./assets/loading.gif">
-            <iframe sandbox="allow-scripts allow-popups allow-same-origin allow-forms" id="webview" src="./web/fb/fb-home.html" style="height: calc(100% - 25px);" frameBorder="0">games will load here</iframe>
-        </div>
-    </div>
-
-    <div class="window" id="win5">
-        <nav id="win5header" class="winnav">
-            <wintitle>MicroBean DOS</wintitle>
-            <button id="win5del">🗙</button>
-            <button id="win5max">🗖</button>
-            <button id="win5min">🗕</button>
-        </nav>
-        <meta id="win5ismaximized" name="win5ismaximized" content="false"/>
-        <meta id="win5isminimized" name="win5isminimized" content="false"/>
-        <div class="contentHolder" id="win5contentHolder">
-            <cmd id="cmd">
-                Welcome to MicroBean Dos <br>
-                MicroBean (c) 1995
-            </cmd>
-            <input type="text" id="commandInput">
-            <button id="runCmd">Run</button>
-        </div>
-    </div>
-
-    <div class="window" id="win7">
-        <nav id="win7header" class="winnav">
-            <wintitle>Notepad</wintitle>
-            <button id="win7del">🗙</button>
-            <button id="win7max">🗖</button>
-            <button id="win7min">🗕</button>
-        </nav>
-        <meta id="win7ismaximized" name="win7ismaximized" content="false"/>
-        <meta id="win7isminimized" name="win7isminimized" content="false"/>
-        <div class="contentHolder" id="win7contentHolder">
-            <topbar>
-                <a id="fileTabButton">File</a>
-            </topbar>
-            <div id="editor" contenteditable>
-            </div>
-        </div>
-    </div>
-
-    <!-- <div class="window" id="win8">
-        <nav id="win8header" class="winnav">
-            <wintitle>App Store</wintitle>
-            <button id="win8del">🗙</button>
-            <button id="win8max">🗖</button>
-            <button id="win8min">🗕</button>
-        </nav>
-        <meta id="win8ismaximized" name="win8ismaximized" content="false"/>
-        <meta id="win8isminimized" name="win8isminimized" content="false"/>
-        <div class="contentHolder" id="win8contentHolder">
-            <div class="item" id="doom">
-                <div class="left">
-                    <h1>Doom</h1><br>
-                    <button id="doom-installbutton">Install Now</button>
-                    <meta id="doom-isinstalled" name="doom-isinstalled" content="false">
-                </div>
-            </div>
-        </div>
-    </div> -->
-
-    <div class="window" id="winerror">
-        <nav id="winerrorheader" class="winnav">
-            <wintitle>An error occured...</wintitle>
-            <button id="winerrordel">🗙</button>
-        </nav>
-        <meta id="winerrorismaximized" name="winerrorismaximized" content="false"/>
-        <meta id="winerrorisminimized" name="winerrorisminimized" content="false"/>
-        <div class="contentHolder" id="winerrorcontentHolder">
-            <h1>An error occured...</h1>
-            <p>
-                An error occured! This is not one of the various joke
-                error screens included but a real one. This means
-                something is wrong with the code! If you are reading 
-                this, please try reinstalling this and reproducing the
-                steps to this error. If it still occurs, contact us at:<br>
-                <a href="mailto:tvaz28@westex.org">tvaz28@westex.org</a><br><br>
-                Below are the error details; please include them in the
-                email and we will investigate the issue.
-            </p>
-            <codeblock id="errorBlock">
-                error will go here
-            </codeblock>
-        </div>
-    </div>
+    <script type="text/babel" src="/scripts/SDK.jsx"></script>
+    <script type="text/babel" src="/scripts/firebean.jsx"></script>
+    <script type="text/babel" src="/scripts/cmd.jsx"></script>
+    <script type="text/babel" src="/scripts/settings.jsx"></script>
+    <script type="text/babel" src="/scripts/app.jsx"></script>
+<!-- 
 
     <div class="window" id="win6">
         <nav id="win6header" class="winnav">
@@ -230,102 +61,13 @@
             <label for="tbClr">Titlebar Color:</label>
             <input name="tbClr" type="color" id="tbClr" value="#00008b"><br>
         </div>
-    </div>
+    </div> -->
 
 </body>
 
-<div id="startmenu">
-
-    <meta id="startmenuishidden" name="startmenuishidden" content="true"/>
-
-    <div class="sidebar">
-        <h1>Bean Site 95</h1>
-    </div>
-
-    <div class="main" id="sm-contents">
-
-    <div class="application" id="win1-startmenushortcut">
-        <img src="./assets/icons/smily.webp">
-        <h1>Welcome, User!!!</h1>
-    </div>
-
-    <div class="application" id="win2-startmenushortcut">
-        <img src="./assets/icons/game.png">
-        <h1>Top Games</h1>
-    </div>
-
-    <div class="application" id="win4-startmenushortcut">
-        <img src="./assets/icons/fb-logo.png">
-        <h1>FireBean</h1>
-    </div>
-
-    <div class="application" id="win5-startmenushortcut">
-        <img src="./assets/icons/dos.png">
-        <h1>MicroBean DOS</h1>
-    </div>
-
-    <div class="application" id="win6-startmenushortcut">
-        <img src="./assets/icons/settings.png">
-        <h1>Settings</h1>
-    </div>
-
-    <div class="application" id="win7-startmenushortcut">
-        <img src="./assets/icons/notepad.png">
-        <h1>Notepad</h1>
-    </div>
-
-    <!-- <div class="application" id="win8-startmenushortcut">
-        <img src="./assets/icons/appstore.png">
-        <h1>App Store</h1>
-    </div> -->
-
-    </div>
-
-</div>
-
-<taskbar id="taskbar">
-    <button id="start"><img id="startBtnBean" src="./assets/bean-icon.png"> Start</button>
-    <div class="icon" id="win1icon">
-        <img src="./assets/icons/smily.webp">
-        <h1>Welcome, User!!!</h1>
-    </div>
-    <div class="icon" id="win2icon">
-        <img src="./assets/icons/game.png">
-        <h1>Top Games</h1>
-    </div>
-    <div class="icon" id="win3icon">
-        <img src="./assets/icons/game.png">
-        <h1>c:/bean_os/bean32/ga..</h1>
-    </div>
-    <div class="icon" id="win4icon">
-        <img src="./assets/icons/fb-logo.png">
-        <h1>Mozilla FireBean</h1>
-    </div>
-    <div class="icon" id="win5icon">
-        <img src="./assets/icons/dos.png">
-        <h1>MicroBean Dos</h1>
-    </div>
-    <div class="icon" id="win6icon">
-        <img src="./assets/icons/settings.png">
-        <h1>Settings</h1>
-    </div>
-    <div class="icon" id="win7icon">
-        <img src="./assets/icons/notepad.png">
-        <h1>Notepad</h1>
-    </div>
-    <!-- <div class="icon" id="win8icon">
-        <img src="./assets/icons/appstore.png">
-        <h1>App Store</h1>
-    </div> -->
-</taskbar>
-
-<img src="./assets/error.jpg" id="bsod">
-<img src="./assets/icons/clippy.png" id="clippy">
-<div id="blackScreen"></div>
+<!--
 
 <script src="./scripts/script.js"></script>
-<script src="./scripts/cmd.js"></script>
-<!-- <script src="./scripts/appstore.js" type="module"></script> -->
 
 <script>
     let gameloader = document.getElementById("gameloader")
@@ -351,16 +93,7 @@
             alert(`Error:\n${e.stack}\n${e.name}\n${e.message}`);
         }
     }
-    mapURLtoID('https://driftboss.io', 'g-drift')
-    mapURLtoID('https://1v1.lol', 'g-1v1lol')
-    mapURLtoID('https://smashkarts.io', 'g-smashkarts')
-    mapURLtoID('https://shellshock.io', 'g-shellshockers')
-    mapURLtoID('./web/eag/eag.html', 'g-eagler')
-    mapURLtoID('https://slopegame.io', 'g-slope')
-    mapURLtoID('https://play2048.co', 'g-2048')
-    mapURLtoID('https://dos.zone/doom-dec-1993/', 'g-doom')
-    mapURLtoID('https://www.ps1fun.com/final-fantasy-vii', 'g-ff7')
-    mapURLtoID('https://bloxd.io', 'g-bloxdio')
+    
     // openNewGameURL('')
     document.getElementById(`openGamesMenu`).addEventListener('click', (e) => {
         e.preventDefault();
@@ -409,6 +142,6 @@
     } catch (e) {
         alert(`Error:\n${e.stack}\n${e.name}\n${e.message}`);
     }
-</script>
+</script> -->
 
 </html>

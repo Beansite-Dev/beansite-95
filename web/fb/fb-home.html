@@ -94,11 +94,11 @@ body {
     <script>
         document.getElementById('searchbtn').addEventListener('click', (e) => {
             e.preventDefault();
-            try {
+            window.location.href = `https://bing.com/search?q=${document.getElementById('search').value}`;
+        })
+        document.getElementById('search').addEventListener('keydown', (e) => {
+            if (e.key == 'Enter') {
                 window.location.href = `https://bing.com/search?q=${document.getElementById('search').value}`;
-            }
-            catch (e) {
-                alert(`Error:\n${e.stack}\n${e.name}\n${e.message}`);
             }
         })
     </script>

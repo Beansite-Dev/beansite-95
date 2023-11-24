@@ -69,63 +69,6 @@ body {
     display: block;
     transition: .35s;
 }
-#win1 {
-    height: 50dvh;
-    width: 35dvw;
-    top: 5vmin;
-    left: 5vmin;
-    z-index: 98;
-}
-#win2 {
-    height: 50dvh;
-    width: 35dvw;
-    top: 10vmin;
-    left: 10vmin;
-    z-index: 99;
-}
-#win3 {
-    --aspect-ratio-multiplier: 5;
-    height: calc(90px * var(--aspect-ratio-multiplier));
-    width: calc(160px * var(--aspect-ratio-multiplier));
-    top: calc(50% - (90px * var(--aspect-ratio-multiplier))/2);
-    left: calc(50% - (160px * var(--aspect-ratio-multiplier))/2);
-    z-index: 999;
-}
-#win4 {
-    height: 50dvh;
-    width: 35dvw;
-    top: 15vmin;
-    left: 15vmin;
-    z-index: 101;
-}
-#win5 {
-    height: 50dvh;
-    width: 35dvw;
-    top: 20vmin;
-    left: 20vmin;
-    z-index: 102;
-}
-#win6 {
-    height: 50dvh;
-    width: 35dvw;
-    top: 25vmin;
-    left: 25vmin;
-    z-index: 103;
-}
-#win7 {
-    height: 50dvh;
-    width: 35dvw;
-    top: 30vmin;
-    left: 30vmin;
-    z-index: 104;
-}
-#win8 {
-    height: 50dvh;
-    width: 35dvw;
-    top: 35vmin;
-    left: 35vmin;
-    z-index: 105;
-}
 .window nav {
     cursor: move;
     position: absolute;
@@ -163,6 +106,11 @@ body {
 }
 h1 {
     font-size: x-large;
+    margin: 0;
+    padding: 0;
+}
+.window h1 {
+    margin-bottom: 20px;
 }
 p {
     font-size: medium;
@@ -190,7 +138,7 @@ wintitle {
     color: #fff;
     text-shadow: 0 0 2px black;
 }
-logo {
+.logo {
     display: inline;
     font-size: xx-large;
     font-family: "logo";
@@ -213,7 +161,7 @@ sup {
     display: block;
 }
 
-ph1 {
+.ph1 {
     display: inline-block;
     height: auto;
     width: auto;
@@ -256,7 +204,7 @@ iframe {
     object-fit: contain;
     z-index: 199;
 }
-taskbar {
+#taskbar {
     height: 45px;
     width: 100dvw;
     position: fixed;
@@ -270,7 +218,7 @@ taskbar {
     justify-content: flex-start;
     align-items: center;
 }
-taskbar .icon {
+#taskbar .icon {
     height: 100%;
     width: auto;
     background: darkgray;
@@ -284,12 +232,12 @@ taskbar .icon {
     cursor: pointer;
     transition: .5s;
 }
-taskbar .icon h1 {
+#taskbar .icon h1 {
     font-size: 1.05rem;
     font-weight: 400;
     user-select: none;
 }
-taskbar .icon img {
+#taskbar .icon img {
     height: 80%;
     aspect-ratio: 1/1;
     object-fit: contain;
@@ -297,12 +245,12 @@ taskbar .icon img {
     padding: 0;
     margin-right: 5px;
 }
-taskbar .icon:hover {
+#taskbar .icon:hover {
     border-color: darkblue;
     background: dimgrey;
     color: lightgray;
 }
-taskbar #start {
+#taskbar #start {
     height: 100%;
     width: 100px;
     margin: 0;
@@ -318,12 +266,12 @@ taskbar #start {
     cursor: pointer;
     transition: .5s;
 }
-taskbar #start:hover {
+#taskbar #start:hover {
     border-color: darkblue;
     background: dimgrey;
     color: lightgray;
 }
-taskbar #start #startBtnBean {
+#taskbar #start #startBtnBean {
     height: 100%;
     box-sizing: border-box;
     padding: 2px;
@@ -405,7 +353,7 @@ taskbar #start #startBtnBean {
     font-size: 2rem;
     line-height: 0;
 }
-#browser-topbar {
+#browser-#topbar {
     height: 25px;
     width: 100%;
     background: lightgray;
@@ -426,7 +374,7 @@ taskbar #start #startBtnBean {
     border: 3px ridge dimgray;
     box-sizing: border-box;
 }
-cmd {
+#cmd {
     font-family: 'Courier New', Courier, monospace;
     height: calc(100% - 25px);
     width: 100%;
@@ -534,7 +482,7 @@ rainbow {
     display: none;
     background: #000000;
 }
-topbar {
+#topbar {
     height: 20px;
     width: 100%;
     background: rgb(222, 222, 222);
@@ -568,7 +516,7 @@ topbar {
     font-family: 'Courier New', Courier, monospace;
     font-size: 1rem;
 }
-topbar a {
+#topbar a {
     box-sizing: border-box;
     display: block;
     background: #cecece;
@@ -576,7 +524,7 @@ topbar a {
     cursor: pointer;
     transition: .5s;
 }
-topbar a:hover {
+#topbar a:hover {
     background: dimgray;
     color: lightgray;
 }

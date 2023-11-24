@@ -1,4 +1,3 @@
-try {
 
 let lastCommand;
 let directory = "c:"
@@ -228,12 +227,6 @@ let cmdScript = (e) => {
                 </error>
                 `;
                 sleep(3500).then(() => {
-                    document.getElementById('win1del').click();
-                    document.getElementById('win2del').click();
-                    document.getElementById('win3del').click();
-                    document.getElementById('win4del').click();
-                    document.getElementById('win5del').click();
-                    document.getElementById('win6del').click();
                     document.body.setAttribute('style', `background: darkred;`)
                     for (let i = 1; i < 200; i++) {
                         sleep(50).then(() => {
@@ -349,36 +342,26 @@ let cmdScript = (e) => {
     lastCommand = command;
 }
 
-document.getElementById("runCmd").addEventListener('click', (e) => cmdScript(e))
-document.getElementById('commandInput').addEventListener('keydown', function (e) {
-    // alert(e.key)
-    if (e.key === 'Enter') {
-      cmdScript(e)
-    }
-    if (e.key == "ArrowUp") {
-        // alert(lastCommand)
-        if (lastCommand) commandInput.value = lastCommand;
-    }
-});
-
+const CMD = () => {
+    let run = (e) => cmdScript(e);
+    let keybind = (e) => {
+        if (e.key == 'Enter') {
+          cmdScript(e)
+        }
+        if (e.key == "ArrowUp") {
+            // alert(lastCommand)
+            if (lastCommand) commandInput.value = lastCommand;
+        }
+    };
+    return (
+        <SDK.Window winName="MicroBean DOS" winNum="5" defaultStyle={{"height": "350px", "width": "500px", "top": "15vmin", "left": "15vmin",}} includeNavButtons={{"del":true,"max":true,"min":true,}}>
+            <div id="cmd">
+                Welcome to MicroBean Dos <br/>
+                MicroBean (c) 1995
+            </div>
+            <input type="text" id="commandInput" onKeyDown={() => keybind(event)} />
+            <button id="runCmd" onClick={() => run(event)}>Run</button>
+        </SDK.Window>
+    );
 }
-catch (e) {
-    try {
-      
-      document.getElementById('win1del').click();
-      document.getElementById('win2del').click();
-      document.getElementById('win3del').click();
-      document.getElementById('win4del').click();
-      document.getElementById('win5del').click();
-      document.getElementById('win6del').click();
-      document.getElementById('win7del').click();
-      document.getElementById('winerrordel').click();
-  
-      let errorwin = document.getElementById('winerror')
-      errorwin.setAttribute("style", "display: block !important;");
-      document.getElementById('errorBlock').innerHTML = `Error:\n${e.stack}\n${e.name}\n${e.message}`;
-    
-    } catch (e) {
-      alert(`Failed to display ErrorWin\nError:\n${e.stack}\n${e.name}\n${e.message}`);
-    }
-  }
+

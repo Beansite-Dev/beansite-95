@@ -47,14 +47,14 @@ const SettingsMenu = (prop) => {
                 <option value="no-repeat">No Repeat</option>
             </select><br/>
             <label for="bgclr">Background Color:</label>
-            <input name="bgclr" type="color" id="bgClr" value="#008080" onInput={() => changeBgColor(event)} /><br/>
+            <input name="bgclr" type="color" id="bgClr" defaultValue="#008080" onInput={() => changeBgColor(event)} /><br/>
             <label for="tbStyle">Background Image Mode:</label>
             <select name="tbStyle" type="color" id="tbStyle" onChange={() => changeTabStyle(event)}>
                 <option value="var(--tb-clr)">Solid</option>
                 <option selected value="linear-gradient(90deg, navy 0%, lightblue 100%)">Gradient</option>
             </select><br/>
             <label for="tbClr">Titlebar Color:</label>
-            <input name="tbClr" type="color" id="tbClr" value="#00008b" onInput={() => changeTitlebarColor(event)} /><br/><br/>
+            <input name="tbClr" type="color" id="tbClr" defaultValue="#00008b" onInput={() => changeTitlebarColor(event)} /><br/><br/>
         </SDK.Window>
     )
 }

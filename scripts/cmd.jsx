@@ -95,13 +95,11 @@ let directoryMap = {
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
-      
-
 let cmdScript = (e) => { 
     e.preventDefault();
     let cmd = document.getElementById("cmd");
-    let commandInput = document.getElementById("commandInput");
     let command = document.getElementById("commandInput").value;
+    document.getElementById("commandInput").value="";
     if (command.toLowerCase() == "help") {
         cmd.innerHTML = cmd.innerHTML + `<br><br>
         Welcome to MicroBean DOS! <br>
@@ -112,18 +110,15 @@ let cmdScript = (e) => {
         - echo -msg -type:optional <br>
         - cls
         `;
-        commandInput.value = "";
     } else if (command.toLowerCase().includes("dir")) {
         cmd.innerHTML = cmd.innerHTML + `<br><br>
         current directory: ${directory}<br>
         ${directoryMap[directory]}
         `;
-        commandInput.value = "";
     } else if (command.toLowerCase().includes("cd")) {
-        commandInput.value = "";
         try {
             if (command.split(" ")[1]==".." || command=="cd..") {
-                directorySplit = directory.split('/')
+                let directorySplit = directory.split('/')
                 directorySplit[directorySplit.length - 1]="";
                 directory = directorySplit.join('/').slice(0, -1)
                 if (directoryMap[directory] == undefined) {
@@ -171,12 +166,9 @@ let cmdScript = (e) => {
         cmd.innerHTML = cmd.innerHTML + `<br><br>
         I can't help you with that...
         `;
-        commandInput.value = "";
     } else if (command.toLowerCase().includes("cls")) {
         cmd.innerHTML = ``;
-        commandInput.value = "";
     } else if (command.toLowerCase().includes("echo")) {
-        commandInput.value = "";
         try {
         let split = command.match(/(?:[^\s"]+|"[^"]*")+/g);
             if (!split[2]) {
@@ -214,9 +206,7 @@ let cmdScript = (e) => {
         error code 1001
         </error>
         `;
-        commandInput.value = "";
     } else if (command.toLowerCase().includes("run")) {
-        commandInput.value = "";
         try {
             if (command.split(" ")[1]=="clippy.exe") {
                 cmd.innerHTML = cmd.innerHTML + `<error><br><br>
@@ -244,7 +234,6 @@ let cmdScript = (e) => {
                     document.getElementById('clippy').setAttribute('style', `display: none; height: 1%;`)
                 })
             } else if (command.split(" ")[1] == "null.exe") {
-                commandInput.value = "";
                 cmd.innerHTML = cmd.innerHTML + `<br><br>
                 Your curiosity got the better of you... <br>
                 <br>
@@ -312,7 +301,6 @@ let cmdScript = (e) => {
         error code 1001
         </error>
         `;
-        commandInput.value = "";
     } else if (command.toLowerCase().includes("rmdir")) {
         cmd.innerHTML = cmd.innerHTML + `<error><br><br>
         ERROR<br>
@@ -321,13 +309,11 @@ let cmdScript = (e) => {
         error code 1001
         </error>
         `;
-        commandInput.value = "";
     } else if (command.toLowerCase().includes("hacker-mode")) {
         cmd.innerHTML = cmd.innerHTML + `<br><br>
         ~ Hacker Mode: ACTIVATED!!!!!! s
         `;
         cmd.setAttribute('style', `color: #00ff00 !important;`)
-        commandInput.value = "";
     } else {
         cmd.innerHTML = cmd.innerHTML + `<error><br><br>
         ERROR<br>
@@ -336,7 +322,6 @@ let cmdScript = (e) => {
         error code 512
         </error>
         `;
-        commandInput.value = "";
     }
     cmd.scrollTop = cmd.scrollHeight;
     lastCommand = command;

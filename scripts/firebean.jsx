@@ -1,6 +1,17 @@
 const FireBean = (prop) => {
     return (
-        <SDK.Window winName="Mozilla Firebean" winNum="4" defaultStyle={{"height": "350px", "width": "500px", "top": "20vmin", "left": "20vmin",}} includeNavButtons={{"del":true,"max":true,"min":true,}}>
+        <SDK.Window 
+            winName="Mozilla Firebean" 
+            winNum="4" 
+            defaultStyle={{
+                "height": "350px", 
+                "width": "500px", 
+                "top": "20vmin", 
+                "left": 
+                "20vmin",
+            }} 
+            includeNavButtons={{"del":true,"max":true,"min":true,}}
+            beforeClose={()=>{ document.getElementById("webview").src="./web/fb/fb-home.html"; }}>
             <div id="browser-topbar">
                 <input type="text" id="url" value="https://firebean.com/home"/>
             </div>

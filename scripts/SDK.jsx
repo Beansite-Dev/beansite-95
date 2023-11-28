@@ -5,7 +5,7 @@ class BeanSDK {
   Window = (prop) => {
     const minimize = (e) => {
       e.preventDefault();
-      if (prop.beforeMinimize) prop.beforeMinimize();
+      prop.beforeMinimize ? prop.beforeMinimize() : null;
       let win = document.getElementById(`win${prop.winNum}`);
       let ismaxmized = document.getElementById(`win${prop.winNum}ismaximized`);
       let max = document.getElementById(`win${prop.winNum}max`);
@@ -34,7 +34,7 @@ class BeanSDK {
     }
     const maximize = (e) => {
       e.preventDefault();
-      if (prop.beforeMaximize) prop.beforeMaximize();
+      prop.beforeMaximize ? prop.beforeMaximize() : null;
       let win = document.getElementById(`win${prop.winNum}`)
       let content = document.getElementById(`win${prop.winNum}contentHolder`)
       let ismaxmized = document.getElementById(`win${prop.winNum}ismaximized`);
@@ -68,7 +68,7 @@ class BeanSDK {
     }
     const close = (e) => {
       e.preventDefault();
-      if (prop.beforeClose) prop.beforeClose();
+      prop.beforeClose ? prop.beforeClose() : null;
       let win = document.getElementById(`win${prop.winNum}`)
       win.style.display = "none";
       win.style.width = prop.defaultStyle.width || 0;
@@ -155,7 +155,6 @@ class BeanSDK {
     }
   
     function dragMouseDown(e) {
-      e = e || window.event;
       e.preventDefault();
       // get the mouse cursor position at startup:
       pos3 = e.clientX;
@@ -224,7 +223,6 @@ class BeanSDK {
   }
   init = () => {
     document.getElementById("startmenu").style.left = `-350px`;
-  
     document.getElementById("start").addEventListener('click', (e) => {
       e.preventDefault();
       // alert("clicked")
@@ -245,7 +243,16 @@ class BeanSDK {
     //   })
     // }
     for(let i=0;i<this.allWins.length;i++){
-      this.dragElement(document.getElementById(`win${this.allWins[i]}`))
+      let element = document.getElementById(`win${this.allWins[i]}`);
+      new ResizeObserver(() => {
+        // console.log('resizing');
+        element.style.transition = "0s";
+      }).observe(element);
+      // element.addEventListener('mouseup', (e) => {
+      //   e.preventDefault();
+      //   element.style.transition = ".35s";
+      // })s
+      this.dragElement(element)
     }
   }
 }

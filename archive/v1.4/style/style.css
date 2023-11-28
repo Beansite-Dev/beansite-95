@@ -1,0 +1,584 @@
+:root {
+    --bg-clr: #008080;
+    --tb-clr: #00008b;
+}
+
+@font-face {
+    font-family: 'logo';
+    src: url('../assets/fonts/logo.woff') format('woff');
+}
+@font-face {
+    font-family: "goofy";
+    src: url("../assets/fonts/goofy.ttf");
+}
+@font-face {
+    font-family: "Comic Sans MS";
+    src: url("https://db.onlinewebfonts.com/t/7cc6719bd5f0310be3150ba33418e72e.eot");
+    src: url("https://db.onlinewebfonts.com/t/7cc6719bd5f0310be3150ba33418e72e.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/7cc6719bd5f0310be3150ba33418e72e.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/7cc6719bd5f0310be3150ba33418e72e.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/7cc6719bd5f0310be3150ba33418e72e.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/7cc6719bd5f0310be3150ba33418e72e.svg#Comic Sans MS")format("svg");
+}
+html * {
+    font-family: "Comic Sans MS";
+}
+
+::-webkit-scrollbar {
+    width: .5rem;
+}
+ 
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    outline: 1px ridge rgb(167, 167, 167);
+    box-sizing: border-box;
+    background: #cecece;
+}
+ 
+::-webkit-scrollbar-thumb {
+    background-color: rgb(155, 155, 155);
+    outline: 1px ridge rgb(167, 167, 167);
+    box-sizing: border-box;
+}
+
+body {
+    height: 100dvh;
+    width: 100dvw;
+    margin: 0;
+    padding: 0;
+    background: var(--bg-clr);
+    background-size: cover;
+    background-position: center;
+    transition: .5s;
+    overflow: hidden;
+}
+
+.window {
+    overflow: hidden;
+    box-sizing: border-box;
+    border: 3px ridge #c4c4c4;
+    background-image: url("../assets/grid.png");
+    background-size: 16px;
+    background-repeat: repeat;
+    position: absolute;
+    resize: both;
+    overflow: auto;
+    box-shadow: 4px 4px 3px #000000, 0 0 4px #00000050;
+    min-width: 18.5dvw;
+    min-height: 10dvw;
+    display: block;
+    transition: .35s;
+}
+#win1 {
+    height: 50dvh;
+    width: 35dvw;
+    top: 5vmin;
+    left: 5vmin;
+    z-index: 98;
+}
+#win2 {
+    height: 50dvh;
+    width: 35dvw;
+    top: 10vmin;
+    left: 10vmin;
+    z-index: 99;
+}
+#win3 {
+    --aspect-ratio-multiplier: 5;
+    height: calc(90px * var(--aspect-ratio-multiplier));
+    width: calc(160px * var(--aspect-ratio-multiplier));
+    top: calc(50% - (90px * var(--aspect-ratio-multiplier))/2);
+    left: calc(50% - (160px * var(--aspect-ratio-multiplier))/2);
+    z-index: 100;
+}
+#win4 {
+    height: 50dvh;
+    width: 35dvw;
+    top: 15vmin;
+    left: 15vmin;
+    z-index: 101;
+}
+#win5 {
+    height: 50dvh;
+    width: 35dvw;
+    top: 20vmin;
+    left: 20vmin;
+    z-index: 102;
+}
+#win6 {
+    height: 50dvh;
+    width: 35dvw;
+    top: 25vmin;
+    left: 25vmin;
+    z-index: 103;
+}
+#win7 {
+    height: 50dvh;
+    width: 35dvw;
+    top: 30vmin;
+    left: 30vmin;
+    z-index: 104;
+}
+.window nav {
+    cursor: move;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 24px;
+    width: 100%;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(90deg, navy 0%, lightblue 100%);
+    border: 2px double #b0b0b0;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: center;
+    transition: .5s;
+}
+.window nav button {
+    height: 100%;
+    aspect-ratio: 1/1;
+    box-sizing: border-box;
+    font-size: .75rem;
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+    border-radius: 0;
+    background: #eeeeee;
+    border: 2px ridge #ffffff;
+    cursor: pointer;
+    transition: .5s;
+}
+.window nav button:hover {
+    transform: scale(110%);
+    border-color: darkblue;
+}
+h1 {
+    font-size: x-large;
+}
+p {
+    font-size: medium;
+}
+strong {
+    font-weight: bold;
+    font-family: "goofy";
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+    color: red;
+    text-shadow:
+        -1px 1px orange,
+        -2px 2px yellow,
+        -3px 3px green,
+        -4px 4px blue,
+        -5px 5px purple;
+}
+wintitle {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: .85rem;
+    color: #fff;
+    text-shadow: 0 0 2px black;
+}
+logo {
+    display: inline;
+    font-size: xx-large;
+    font-family: "logo";
+}
+sup {
+    font-size: 1rem;
+    font-family: "logo";
+    font-weight: 600;
+}
+.window .contentHolder {
+    height: calc(100% - 24px);
+    width: 100%;
+    padding: 5vmin;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    resize: both;
+    overflow: auto;
+    display: block;
+}
+
+ph1 {
+    display: inline-block;
+    height: auto;
+    width: auto;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+li {
+    font-size: 1.15rem;
+    height: auto;
+    width: auto;
+}
+.link {
+    color: darkblue;
+    cursor: pointer;
+}
+.link:hover {
+    font-weight: 800;
+}
+.link:active {
+    color: purple;
+}
+iframe {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    outline: none;
+    border: none;
+    z-index: 200;
+}
+#loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 50%;
+    object-fit: contain;
+    z-index: 199;
+}
+taskbar {
+    height: 45px;
+    width: 100dvw;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: gray;
+    border: 2px ridge darkgray;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+taskbar .icon {
+    height: 100%;
+    width: auto;
+    background: darkgray;
+    border: 3px ridge dimgray;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5px;
+    padding: 5px;
+    cursor: pointer;
+    transition: .5s;
+}
+taskbar .icon h1 {
+    font-size: 1.05rem;
+    font-weight: 400;
+    user-select: none;
+}
+taskbar .icon img {
+    height: 80%;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+    margin: 0;
+    padding: 0;
+    margin-right: 5px;
+}
+taskbar .icon:hover {
+    border-color: darkblue;
+    background: dimgrey;
+    color: lightgray;
+}
+taskbar #start {
+    height: 100%;
+    width: 100px;
+    margin: 0;
+    margin-right: 5px;
+    box-sizing: border-box;
+    font-size: 1.05rem;
+    line-height: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: darkgray;
+    border: 3px ridge dimgray;
+    cursor: pointer;
+    transition: .5s;
+}
+taskbar #start:hover {
+    border-color: darkblue;
+    background: dimgrey;
+    color: lightgray;
+}
+taskbar #start #startBtnBean {
+    height: 100%;
+    box-sizing: border-box;
+    padding: 2px;
+    object-fit: cover;
+    aspect-ratio: .5 / 1;
+    display: inline;
+    margin-right: .65rem;
+}
+#startmenu {
+    height: 60dvh;
+    width: 22dvw;
+    background: darkgray;
+    border: 3px ridge dimgray;
+    box-sizing: border-box;
+    padding: 5px;
+    padding-left: 45px;
+    position: fixed;
+    bottom: 45px;
+    /* left: -22dvw; */
+    z-index: 295;
+    transition: .35s;
+}
+#startmenu h1 {
+    font-size: x-large;
+    line-height: 5px;
+}
+#startmenu p {
+    font-size: medium;
+    line-height: 1rem;
+}
+.application {
+    height: 3rem;
+    width: 100%;
+    background: darkgray;
+    border: 3px ridge dimgray;
+    box-sizing: border-box;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+}
+.application h1 {
+    font-size: 1.05rem;
+    font-weight: 400;
+    user-select: none;
+}
+.application img {
+    height: 80%;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+    margin: 0;
+    padding: 0;
+    margin-right: 5px;
+}
+.application:hover {
+    border-color: darkblue;
+    background: dimgrey;
+    color: lightgray;
+    transform: translateX(10px);
+}
+#startmenu .sidebar {
+    width: 40px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(0deg, rgba(7,0,47,1) 0%, rgba(199,207,255,1) 100%);
+}
+#startmenu .sidebar h1 {
+    font-family: "logo";
+    font-weight: 800;
+    color: #fff;
+    position: absolute;
+    bottom: 10px;
+    left: -12.5px;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    transform: rotate(180deg);
+    font-size: 2rem;
+    line-height: 0;
+}
+#browser-topbar {
+    height: 25px;
+    width: 100%;
+    background: lightgray;
+    border: 3px ridge gray;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+}
+#url {
+    height: 100%;
+    width: 75%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: gray;
+    border: 3px ridge dimgray;
+    box-sizing: border-box;
+}
+cmd {
+    font-family: 'Courier New', Courier, monospace;
+    height: calc(100% - 25px);
+    width: 100%;
+    box-sizing: border-box;
+    background: black;
+    padding: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: lightgray;
+    overflow-y: scroll;
+    line-height: 1rem;
+    font-size: 1rem;
+}
+#runCmd {
+    width: 10%;
+    height: 25px;
+    background: black;
+    border: 2px double lightgray;
+    color: lightgray;
+    font-family: 'Courier New', Courier, monospace;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: .5s;
+}
+#runCmd:hover {
+    color: black;
+    background: white;
+}
+#commandInput {
+    width: 90%;
+    box-sizing: border-box;
+    height: 25px;
+    background: black;
+    border: 2px double lightgray;
+    color: lightgray;
+    font-family: 'Courier New', Courier, monospace;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    outline: none;
+    transition: .5s;
+}
+#commandInput:hover, #commandInput:focus {
+    color: black;
+    background: white;
+}
+error {
+    display: inline;
+    color: #ff0000;
+    font-family: 'Courier New', Courier, monospace;
+}
+success {
+    display: inline;
+    color: #00ff00;
+    font-family: 'Courier New', Courier, monospace;
+}
+warn {
+    display: inline;
+    color: #ff9500;
+    font-family: 'Courier New', Courier, monospace;
+}
+rainbow {
+    display: inline;
+    background: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet, red);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#bsod {
+    height: 100dvh;
+    width: 100dvw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: 9999;
+    display: none;
+}
+#clippy {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    aspect-ratio: 1/1;
+    height: 1%;
+    z-index: 5789;
+    display: none;
+    transition: 2s;
+    user-select: none;
+}
+topbar {
+    height: 20px;
+    width: 100%;
+    background: rgb(222, 222, 222);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+}
+#editor {
+    height: calc(100% - 20px);
+    width: 100%;
+    background: white;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    box-sizing: border-box;
+    padding: 15px;
+    font-size: 1rem;
+    outline: none;
+    overflow-y: auto;
+    overflow-x: hidden;
+    word-wrap: break-word;
+    text-wrap: wrap;
+}
+#editor * {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+}
+topbar a {
+    box-sizing: border-box;
+    display: block;
+    background: #cecece;
+    padding: 5px;
+    cursor: pointer;
+    transition: .5s;
+}
+topbar a:hover {
+    background: dimgray;
+    color: lightgray;
+}
+#winerror {
+    width: 500px;
+    height: 300px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+codeblock {
+    background: #000000;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    display: block;
+    box-sizing: border-box;
+    padding: 15px;
+    text-wrap: wrap !important;
+    font-style: normal;
+    font-size: .85rem;
+    word-wrap: break-word;
+}

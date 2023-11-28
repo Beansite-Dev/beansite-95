@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FireBean - Home</title>
+</head>
+
+<style>
+html * {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+body { 
+    background: darkred;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#logo {
+    height: 50dvh;
+    width: auto;
+    object-fit: contain;
+    z-index: 5;
+    transition: .5s;
+    cursor: pointer;
+}
+#logo:hover {
+    transform: translateY(-5px);
+}
+.searchWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    z-index: 6;
+    filter: drop-shadow(4px 4px 4px #000);
+}
+#search {
+    width: 45dvw;
+    background: darkgray;
+    border: 3px ridge dimgray;
+    box-sizing: border-box;
+    outline: none;
+    cursor: text;
+    transition: .5s;
+}
+#search:focus, #search:hover {
+    background: lightgray;
+    border: 3px ridge red;
+    color: darkred;
+    transform: translateY(-5px);
+}
+#searchbtn {
+    background: darkgray;
+    border: 3px ridge dimgray;
+    box-sizing: border-box;
+    transition: .5s;
+    cursor: pointer;
+}
+#searchbtn:hover {
+    transform: translateY(-5px);
+    background: linear-gradient(0deg, rgba(255,190,0,1) 0%, rgba(255,230,197,1) 50%, rgba(255,233,0,1) 50%, rgba(255,143,0,1) 100%);
+}
+#searchbtn:active {
+    transition: 0s;
+    border: 3px ridge red;
+    color: red;
+}
+#fire {
+    width: 100dvw;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+</style>
+
+<body>
+    
+    <a href="#"><img id="logo" src="./fb-logo-full.png"></a>
+    <div class="searchWrapper">
+        <input type="input" id="search">
+        <button id="searchbtn">Search</button>
+    </div>
+    <img id="fire" src="./fire.png">
+    <script>
+        document.getElementById('searchbtn').addEventListener('click', (e) => {
+            e.preventDefault();
+            try {
+                window.location.href = `https://bing.com/search?q=${document.getElementById('search').value}`;
+            }
+            catch (e) {
+                alert(`Error:\n${e.stack}\n${e.name}\n${e.message}`);
+            }
+        })
+    </script>
+
+</body>
+
+</html>

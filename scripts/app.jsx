@@ -2,7 +2,7 @@ const rootElement = document.getElementById('root');
 
 // creates new sdk class
 const SDK = new BeanSDK();
-
+const LoaderUI = new ArchiveLoader(SDK);
 // creates new appstore class
 // const Store = new AppStore(SDK);
 
@@ -22,6 +22,7 @@ const App = () =>{
         <SDK.TaskbarIcon winNum='5' winName="MicroBean DOS" iconPath="../assets/icons/dos.png" />,
         <SDK.TaskbarIcon winNum='6' winName="Settings" iconPath="../assets/icons/settings.png" />,
         <SDK.TaskbarIcon winNum='7' winName="Notepad" iconPath="../assets/icons/notepad.png" />,
+        <SDK.TaskbarIcon winNum='9' winName="Version Loader" iconPath="../assets/icons/cd.png" />,
 //      <SDK.TaskbarIcon winNum='8' winName="App Store" iconPath="../assets/icons/appstore.png" />,
       ]}
       StartMenuIcons={[
@@ -31,6 +32,7 @@ const App = () =>{
         <SDK.StartMenuShortcut winNum='5' winName="MicroBean DOS" iconPath="../assets/icons/dos.png" />,
         <SDK.StartMenuShortcut winNum='6' winName="Settings" iconPath="../assets/icons/settings.png" />,
         <SDK.StartMenuShortcut winNum='7' winName="Notepad" iconPath="../assets/icons/notepad.png" />,
+        <SDK.StartMenuShortcut winNum='9' winName="Version Loader" iconPath="../assets/icons/cd.png" />,
 //      <SDK.StartMenuShortcut winNum='8' winName="App Store" iconPath="../assets/icons/appstore.png" />,
       ]}
     >
@@ -44,6 +46,7 @@ const App = () =>{
             <li class="link" onClick={() => SDK.openWindow('5')}> <u>Look like a hacker in MicroBean DOS</u> </li>
             <li class="link" onClick={() => SDK.openWindow('6')}> <u>Tweak your experience to perfection</u> </li>
             <li class="link" onClick={() => SDK.openWindow('7')}> <u>Write to your heart's content</u> </li>
+            <li class="link" onClick={() => SDK.openWindow('9')}> <u>Check out old versions</u> </li>
             {/* <li class="link" onClick={() => SDK.openWindow('8')}> <u>Download more ppas from the web</u> </li> */}
         </ul>
       </SDK.Window>
@@ -80,6 +83,8 @@ const App = () =>{
         </div>
       </SDK.Window>
 
+      <LoaderUI.Window />
+
       {/* <Store.Homepage /> */}
 
       <img src="./assets/error.jpg" id="bsod"/>
@@ -101,5 +106,6 @@ SDK.closeWindow('4');
 SDK.closeWindow('5');
 SDK.closeWindow('6');
 SDK.closeWindow('7');
+SDK.closeWindow('9');
 
 SDK.init();

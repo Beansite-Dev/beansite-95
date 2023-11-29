@@ -193,7 +193,6 @@ iframe {
     left: 0;
     outline: none;
     border: none;
-    z-index: 200;
 }
 #loading {
     position: absolute;
@@ -202,7 +201,6 @@ iframe {
     transform: translate(-50%, -50%);
     height: 50%;
     object-fit: contain;
-    z-index: 199;
 }
 #taskbar {
     height: 45px;
@@ -388,6 +386,8 @@ iframe {
     overflow-y: scroll;
     line-height: 1rem;
     font-size: 1rem;
+    word-wrap: break-word;
+    text-wrap: wrap;
 }
 #runCmd {
     width: 10%;
@@ -458,6 +458,7 @@ rainbow {
     object-fit: cover;
     z-index: 9999;
     display: none;
+    user-select: none;
 }
 #clippy {
     position: fixed;
@@ -470,18 +471,8 @@ rainbow {
     display: none;
     transition: 2s;
     user-select: none;
+    user-select: none;
 }
-#bsod {
-    height: 100dvh;
-    width: 100dvw;
-    position: fixed;
-    top: 0;
-    left: 0;
-    object-fit: cover;
-    z-index: 19999;
-    display: none;
-    background: #000000;
-} 
 #topbar {
     height: 20px;
     width: 100%;

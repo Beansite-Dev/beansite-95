@@ -54,8 +54,8 @@ const App = () =>{
       <SDK.Window winName="Games" winNum="2" defaultStyle={{"height": "350px", "width": "500px", "top": "10vmin", "left": "10vmin",}} includeNavButtons={{"del":true,"max":true,"min":true,}}>
         <h1>Top<strong>_Games</strong></h1>
         <ul>
-            <li class="link" onClick={() => openGame("https://driftboss.io")}> <u>Drift Boss</u> </li>
-            <li class="link" onClick={() => openGame('https://slopegame.io')}> <u>Slope</u> </li>
+            <li class="link" onClick={() => openGame("https://html5.gamedistribution.com/0a8b51e5eaee42e7b4db83ca00afc92e/")}> <u>Drift Boss</u> </li>
+            <li class="link" onClick={() => openGame('http://trouta.com/slope.html')}> <u>Slope</u> </li>
             <li class="link" onClick={() => openGame('https://1v1.lol')}> <u>1v1.lol</u> </li>
             <li class="link" onClick={() => openGame('https://smashkarts.io')}> <u>Smash Karts</u> </li>
             <li class="link" onClick={() => openGame('https://shellshock.io')}> <u>Shell Shockers</u> </li>
@@ -63,6 +63,8 @@ const App = () =>{
             <li class="link" onClick={() => openGame('https://dos.zone/doom-dec-1993/')}> <u>Doom</u> </li>
             <li class="link" onClick={() => openGame('https://www.ps1fun.com/final-fantasy-vii')}> <u>Final Fanstasy VII</u> </li>
             <li class="link" onClick={() => openGame('https://bloxd.io')}> <u>Bloxd.io</u> </li>
+            <li class="link" onClick={() => openGame('https://d2yh0uqycmhzn9.cloudfront.net/en/x-trench-run/index.html?token=hc8j1DOq1591613358sfaNwz7pYSNRJcAg')}> <u>X-Trench Run</u> </li>
+            <li class="link" onClick={() => openGame('https://armedforces.io')}> <u>Armed Forces</u> </li>
         </ul>
       </SDK.Window>
 
@@ -87,9 +89,9 @@ const App = () =>{
 
       {/* <Store.Homepage /> */}
 
-      <img src="./assets/error.jpg" id="bsod"/>
-      <img src="./assets/icons/clippy.png" id="clippy"/>
-      <div id="blackScreen"></div>
+      <img src="./assets/error.jpg" id="bsod" draggable="false"/>
+      <img src="./assets/icons/clippy.png" id="clippy" draggable="false"/>
+      {/* <div id="blackScreen"></div> */}
 
     </SDK.TemplateUI>
   );

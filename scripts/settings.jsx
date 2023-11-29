@@ -41,8 +41,8 @@ const SettingsMenu = (prop) => {
                 <option value="contain">Contain</option>
                 <option value="none">Hide</option>
             </select><br/>
-            <label for="bgRepeat" onChange={() => changeBgRepeat(event)} >Background Image Repeat:</label>
-            <select name="bgRepeat" type="color" id="bgRepeat">
+            <label for="bgRepeat">Background Image Repeat:</label>
+            <select name="bgRepeat" type="color" id="bgRepeat" onChange={() => changeBgRepeat(event)}>
                 <option selected value="repeat">Repeat</option>
                 <option value="no-repeat">No Repeat</option>
             </select><br/>

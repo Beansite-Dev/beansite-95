@@ -12,6 +12,21 @@ const App = () =>{
     document.getElementById('win3icon').style.display = "flex";
     document.getElementById("gameloader").src = game;
   }
+  const notepadKeyDown = (e) => {
+    if(e.key=="Tab"){
+      e.preventDefault();
+      var editor = e.target;
+      var doc = editor.ownerDocument.defaultView;
+      var sel = doc.getSelection();
+      var range = sel.getRangeAt(0);
+      var tabNode = document.createTextNode("\u00a0\u00a0\u00a0\u00a0");
+      range.insertNode(tabNode);
+      range.setStartAfter(tabNode);
+      range.setEndAfter(tabNode); 
+      sel.removeAllRanges();
+      sel.addRange(range);
+    }
+  }
   return (
     <SDK.TemplateUI 
       TaskBarIcons={[
@@ -34,6 +49,15 @@ const App = () =>{
         <SDK.StartMenuShortcut winNum='7' winName="Notepad" iconPath="../assets/icons/notepad.png" />,
         <SDK.StartMenuShortcut winNum='9' winName="Version Loader" iconPath="../assets/icons/cd.png" />,
 //      <SDK.StartMenuShortcut winNum='8' winName="App Store" iconPath="../assets/icons/appstore.png" />,
+      ]}
+      DesktopShortcuts={[
+        <SDK.DesktopShortcut winNum='1' winName="Welcome, User!!" iconPath="../assets/icons/smily.webp" />,
+        <SDK.DesktopShortcut winNum='2' winName="Games" iconPath="../assets/icons/game.png" />,
+        <SDK.DesktopShortcut winNum='4' winName="Mozilla FireBean" iconPath="../assets/icons/fb-logo.png" />,
+        <SDK.DesktopShortcut winNum='5' winName="MicroBean DOS" iconPath="../assets/icons/dos.png" />,
+        <SDK.DesktopShortcut winNum='6' winName="Settings" iconPath="../assets/icons/settings.png" />,
+        <SDK.DesktopShortcut winNum='7' winName="Notepad" iconPath="../assets/icons/notepad.png" />,
+        <SDK.DesktopShortcut winNum='9' winName="Version Loader" iconPath="../assets/icons/cd.png" />,
       ]}
     >
 
@@ -61,10 +85,13 @@ const App = () =>{
             <li class="link" onClick={() => openGame('https://shellshock.io')}> <u>Shell Shockers</u> </li>
             <li class="link" onClick={() => openGame('https://play2048.co')}> <u>2048</u> </li>
             <li class="link" onClick={() => openGame('https://dos.zone/doom-dec-1993/')}> <u>Doom</u> </li>
+            <li class="link" onClick={() => window.open('./web/eag/eag.html', '_blank') }> <u>Eaglercraft</u> </li>
             <li class="link" onClick={() => openGame('https://www.ps1fun.com/final-fantasy-vii')}> <u>Final Fanstasy VII</u> </li>
             <li class="link" onClick={() => openGame('https://bloxd.io')}> <u>Bloxd.io</u> </li>
             <li class="link" onClick={() => openGame('https://d2yh0uqycmhzn9.cloudfront.net/en/x-trench-run/index.html?token=hc8j1DOq1591613358sfaNwz7pYSNRJcAg')}> <u>X-Trench Run</u> </li>
             <li class="link" onClick={() => openGame('https://armedforces.io')}> <u>Armed Forces</u> </li>
+            <li class="link" onClick={() => openGame('https://www.retrogames.cc/embed/44169-ocarina-of-time-redux.html')}> <u>Zelda: Ocarina of Time</u> </li>
+            <li class="link" onClick={() => openGame('https://www.retrogames.cc/embed/43806-super-mario-bros-simplified.html')}> <u>Super Mario</u> </li>
         </ul>
       </SDK.Window>
 
@@ -81,7 +108,7 @@ const App = () =>{
         <div id="topbar">
           <a id="fileTabButton">File</a>
         </div>
-        <div id="editor" contentEditable>
+        <div id="editor" contentEditable onKeyDown={() => notepadKeyDown(event)}>
         </div>
       </SDK.Window>
 

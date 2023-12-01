@@ -588,3 +588,47 @@ codeblock {
     box-sizing: border-box;
     border: 3px double dimgray;
 }
+#root {
+    height: 100%; 
+    width: 100%; 
+    position: fixed; 
+    top: 0; left: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.desktopshortcut {
+    height: 90px;
+    width: 75px;
+    /* background: #b0b0b0; */
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.desktopshortcut:active {
+    border: 1px dotted #c4c4c4;
+}
+.desktopshortcut * {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+.desktopshortcut img {
+    object-fit: contain;
+    width: 100%;
+}
+.desktopshortcut h1 {
+    font-size: .7rem;
+    height: auto;
+    width: 100%;
+    text-align: center;
+    width: 100%;
+    word-wrap: break-word;
+    font-weight: 400;
+}

@@ -109,6 +109,8 @@ let cmdScript = (e) => {
         - run -file <br>
         - echo -msg -type:optional <br>
         - cls
+        - dir
+        - cd -directory
         `;
     } else if (command.toLowerCase().includes("dir")) {
         cmd.innerHTML = cmd.innerHTML + `<br><br>

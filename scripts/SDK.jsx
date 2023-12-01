@@ -122,6 +122,14 @@ class BeanSDK {
       </div>
     )
   }
+  DesktopShortcut = (prop) => {
+    return (
+      <div class="desktopshortcut" id={`win${prop.winNum}-desktopshortcut`} onClick={() => this.openWindow(prop.winNum)}>
+          <img src={prop.iconPath} />
+          <h1>{prop.winName}</h1>
+      </div>
+    )
+  }
   StartMenuShortcut = (prop) => {
     const handleClick = (e) => {
       e.preventDefault();
@@ -202,6 +210,7 @@ class BeanSDK {
   TemplateUI = (prop) => {
     return (
       <div>
+        {prop.DesktopShortcuts}
         {/* you can create a new window using the BeanSDK.Window method with parameters */}
         {prop.children}
 

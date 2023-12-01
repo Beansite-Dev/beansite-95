@@ -209,10 +209,12 @@ class BeanSDK {
   
   TemplateUI = (prop) => {
     return (
-      <div>
+      <div id="templateuiwrapper">
         {prop.DesktopShortcuts}
         {/* you can create a new window using the BeanSDK.Window method with parameters */}
+        <div id="desktopwrapper">
         {prop.children}
+        </div>
 
         <SDK.StartMenu>
             {prop.StartMenuIcons}

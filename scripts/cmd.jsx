@@ -1,5 +1,5 @@
-
-let lastCommand;
+let currentHistoryIndex=0;
+let lastCommand=[];
 let directory = "c:"
 let directoryMap = {
     "c:": `
@@ -97,6 +97,7 @@ function sleep(ms) {
 }
 let cmdScript = (e) => { 
     e.preventDefault();
+    currentHistoryIndex=0
     let cmd = document.getElementById("cmd");
     let command = document.getElementById("commandInput").value;
     document.getElementById("commandInput").value="";
@@ -326,7 +327,7 @@ let cmdScript = (e) => {
         `;
     }
     cmd.scrollTop = cmd.scrollHeight;
-    lastCommand = command;
+    lastCommand.push(command);
 }
 
 const CMD = () => {
@@ -335,9 +336,20 @@ const CMD = () => {
         if (e.key == 'Enter') {
           cmdScript(e)
         }
+        // console.log(currentHistoryIndex);
         if (e.key == "ArrowUp") {
             // alert(lastCommand)
-            if (lastCommand) commandInput.value = lastCommand;
+            if (lastCommand[lastCommand.length - (currentHistoryIndex + 1)]) {
+                commandInput.value = lastCommand[lastCommand.length - (currentHistoryIndex + 1)];
+                currentHistoryIndex++;
+            };
+        }
+        if (e.key == "ArrowDown") {
+            // alert(lastCommand)
+            if (lastCommand[lastCommand.length - (currentHistoryIndex - 1)]) {
+                commandInput.value = lastCommand[lastCommand.length - (currentHistoryIndex - 1)];
+                currentHistoryIndex--;
+            };
         }
     };
     return (

@@ -78,7 +78,7 @@ const App = () =>{
       <SDK.Window winName="Games" winNum="2" defaultStyle={{"height": "350px", "width": "500px", "top": "10vmin", "left": "10vmin",}} includeNavButtons={{"del":true,"max":true,"min":true,}}>
         <h1>Top<strong>_Games</strong></h1>
         <ul>
-            <li class="link" onClick={() => openGame("https://html5.gamedistribution.com/0a8b51e5eaee42e7b4db83ca00afc92e/")}> <u>Drift Boss</u> </li>
+            <li class="link" onClick={() => openGame("https://www.mathplayground.com/drift-boss-v3/index.html")}> <u>Drift Boss</u> </li>
             <li class="link" onClick={() => openGame('http://trouta.com/slope.html')}> <u>Slope</u> </li>
             <li class="link" onClick={() => openGame('https://1v1.lol')}> <u>1v1.lol</u> </li>
             <li class="link" onClick={() => openGame('https://smashkarts.io')}> <u>Smash Karts</u> </li>
@@ -88,7 +88,7 @@ const App = () =>{
             <li class="link" onClick={() => window.open('./web/eag/eag.html', '_blank') }> <u>Eaglercraft</u> </li>
             <li class="link" onClick={() => openGame('https://www.ps1fun.com/final-fantasy-vii')}> <u>Final Fanstasy VII</u> </li>
             <li class="link" onClick={() => openGame('https://bloxd.io')}> <u>Bloxd.io</u> </li>
-            <li class="link" onClick={() => openGame('https://d2yh0uqycmhzn9.cloudfront.net/en/x-trench-run/index.html?token=hc8j1DOq1591613358sfaNwz7pYSNRJcAg')}> <u>X-Trench Run</u> </li>
+            <li class="link" onClick={() => openGame('https://www.mathplayground.com/x-trench-run/index.html')}> <u>X-Trench Run</u> </li>
             <li class="link" onClick={() => openGame('https://armedforces.io')}> <u>Armed Forces</u> </li>
             <li class="link" onClick={() => openGame('https://www.retrogames.cc/embed/44169-ocarina-of-time-redux.html')}> <u>Zelda: Ocarina of Time</u> </li>
             <li class="link" onClick={() => openGame('https://www.retrogames.cc/embed/43806-super-mario-bros-simplified.html')}> <u>Super Mario</u> </li>

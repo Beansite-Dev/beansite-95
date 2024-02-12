@@ -142,6 +142,6 @@ SDK.closeWindow('5');
 SDK.closeWindow('6');
 SDK.closeWindow('7');
 SDK.closeWindow('9');
-SDK.closeWindow('99'); // special: ad
+// SDK.closeWindow('99'); // special: ad
 
 SDK.init();

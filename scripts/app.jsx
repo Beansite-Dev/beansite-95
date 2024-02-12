@@ -112,7 +112,7 @@ const App = () =>{
         </div>
       </SDK.Window>
 
-      <SDK.Window winName="Shameless Advertisment" winNum="99" defaultStyle={{"height": "350px", "width": "500px", "top": "230min", "left": "30vmin",}} includeNavButtons={{"del":true,"max":true,"min":true,}}>
+      <SDK.Window winName="Shameless Advertisment" winNum="99" defaultStyle={{"height": "350px", "width": "500px", "bottom": "5vmin","right": "5vmin",}} includeNavButtons={{"del":true,"max":true,"min":true,}}>
         <h1>Check out Snack Central!</h1>
         <p>You like gum, me too. Get a good deal on your gum.</p>
         <a href="https://snackcentral.vercel.app">Official Website</a>

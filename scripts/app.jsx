@@ -112,6 +112,12 @@ const App = () =>{
         </div>
       </SDK.Window>
 
+      <SDK.Window winName="Shameless Advertisment" winNum="99" defaultStyle={{"height": "350px", "width": "500px", "top": "230min", "left": "30vmin",}} includeNavButtons={{"del":true,"max":true,"min":true,}}>
+        <h1>Check out Snack Central!</h1>
+        <p>You like gum, me too. Get a good deal on your gum.</p>
+        <a href="https://snackcentral.vercel.app">Official Website</a>
+      </SDK.Window>
+
       <LoaderUI.Window />
 
       {/* <Store.Homepage /> */}
@@ -136,5 +142,6 @@ SDK.closeWindow('5');
 SDK.closeWindow('6');
 SDK.closeWindow('7');
 SDK.closeWindow('9');
+SDK.closeWindow('99'); // special: ad
 
 SDK.init();

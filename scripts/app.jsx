@@ -79,7 +79,7 @@ const App = () =>{
         <h1>Top<strong>_Games</strong></h1>
         <ul>
             <li class="link" onClick={() => openGame("https://www.mathplayground.com/drift-boss-v3/index.html")}> <u>Drift Boss</u> </li>
-            <li class="link" onClick={() => openGame('http://trouta.com/slope.html')}> <u>Slope</u> </li>
+            <li class="link" onClick={() => openGame('https://slope2.github.io/')}> <u>Slope</u> </li>
             <li class="link" onClick={() => openGame('https://1v1.lol')}> <u>1v1.lol</u> </li>
             <li class="link" onClick={() => openGame('https://smashkarts.io')}> <u>Smash Karts</u> </li>
             <li class="link" onClick={() => openGame('https://shellshock.io')}> <u>Shell Shockers</u> </li>

@@ -209,7 +209,10 @@ class BeanSDK {
   
   TemplateUI = (prop) => {
     return (
-      <div id="templateuiwrapper">
+      <div id="templateuiwrapper" beforeClose={function (e) {
+        e = e || window.event;
+        if (e) { e.returnValue = 'Sure?'; } 
+        return 'Sure?'; }}>
         <div id="desktopwrapper">
         {prop.DesktopShortcuts}
         </div>

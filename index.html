@@ -15,7 +15,7 @@
     <script type="application/javascript" src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.js" integrity="sha512-vRqhAr2wsn+/cSsyz80psBbCcqzz2GTuhGk3bq3dAyytz4J/8XwFqMjiAGFBj+WM95lHBJ9cDf87T3P8yMrY7A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
 </head>
-<body id="body" onbeforeunload="function (e) {
+<body id="body" onbeforeunload="(e)=>{
     e = e || window.event;
     if (e) { e.returnValue = 'Sure?'; } 
     return 'Sure?'; }">

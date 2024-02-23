@@ -73,7 +73,7 @@ const App = () =>{
             <li class="link" onClick={() => SDK.openWindow('9')}> <u>Check out old versions</u> </li>
             {/* <li class="link" onClick={() => SDK.openWindow('8')}> <u>Download more ppas from the web</u> </li> */}
         </ul>
-        <p>Version 2.3.4<br/>M1dnightDev (c) 2023</p>
+        <p>Version 2.3.6<br/>M1dnightDev (c) 2023</p>
       </SDK.Window>
 
       <SDK.Window winName="Games" winNum="2" defaultStyle={{"height": "350px", "width": "500px", "top": "10vmin", "left": "10vmin",}} includeNavButtons={{"del":true,"max":true,"min":true,}}>

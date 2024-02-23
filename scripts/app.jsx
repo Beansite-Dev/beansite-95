@@ -94,6 +94,7 @@ const App = () =>{
             <li class="link" onClick={() => openGame('https://armedforces.io')}> <u>Armed Forces</u> </li>
             <li class="link" onClick={() => openGame('https://www.retrogames.cc/embed/44169-ocarina-of-time-redux.html')}> <u>Zelda: Ocarina of Time</u> </li>
             <li class="link" onClick={() => openGame('https://www.retrogames.cc/embed/43806-super-mario-bros-simplified.html')}> <u>Super Mario</u> </li>
+            <li class="link" onClick={() => openGame('https://minigolfclub.io')}> <u>Mini Gold Club</u> </li>
         </ul>
       </SDK.Window>
 

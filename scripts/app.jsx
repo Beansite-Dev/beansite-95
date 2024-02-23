@@ -118,6 +118,10 @@ const App = () =>{
         <h1>Check out Snack Central!</h1>
         <p>You like gum, me too. Get a good deal on your gum.</p>
         <a href="https://snackcentral.vercel.app">Official Website</a>
+        <hr/>
+        <h1>Webcache has Returned!</h1>
+        <p>Mackin has it's problems, but webcache? Webcache is perfect, and now its returned!</p>
+        <a href="https://mwcnd.vercel.app">Official Website</a>
       </SDK.Window>
 
       <LoaderUI.Window />

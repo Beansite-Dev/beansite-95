@@ -116,12 +116,12 @@ const App = () =>{
       </SDK.Window>
 
       <SDK.Window winName="Shameless Advertisment" winNum="99" defaultStyle={{"height": "350px", "width": "500px", "top": "5vmin","right": "5vmin",}} includeNavButtons={{"del":true,"max":true,"min":true,}}>
-        <h1>Check out Snack Central!</h1>
-        <p>You like gum, me too. Get a good deal on your gum.</p>
+        <h1>Check out the Kandy Krew!</h1>
+        <p>Gum can be expensive and hard to get as a middle schooler. We fix that, with deals 25%-50% cheaper than walgreens.</p>
         <a href="https://snackcentral.vercel.app">Official Website</a>
         <hr/>
         <h1>Webcache has Returned!</h1>
-        <p>Mackin has it's problems, but webcache? Webcache is perfect, and now its returned!</p>
+        <p>Mackin and Webcache has been blocked, but recently I found a way to bring it back.</p>
         <a href="https://mwcnd.vercel.app">Official Website</a>
       </SDK.Window>
 

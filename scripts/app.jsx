@@ -7,6 +7,7 @@ const LoaderUI = new ArchiveLoader(SDK);
 // const Store = new AppStore(SDK);
 
 const App = () =>{
+  const vnum = "2.4.1";
   const openGame = (game) => {
     document.getElementById("win3").style.display = "block";
     document.getElementById('win3icon').style.display = "flex";
@@ -73,7 +74,7 @@ const App = () =>{
             <li class="link" onClick={() => SDK.openWindow('9')}> <u>Check out old versions</u> </li>
             {/* <li class="link" onClick={() => SDK.openWindow('8')}> <u>Download more ppas from the web</u> </li> */}
         </ul>
-        <p>Version 2.3.6<br/>M1dnightDev (c) 2023</p>
+        <p>Version {vnum}<br/>M1dnightDev (c) 2023</p>
       </SDK.Window>
 
       <SDK.Window winName="Games" winNum="2" defaultStyle={{"height": "350px", "width": "500px", "top": "10vmin", "left": "10vmin",}} includeNavButtons={{"del":true,"max":true,"min":true,}}>
@@ -94,7 +95,10 @@ const App = () =>{
             <li class="link" onClick={() => openGame('https://armedforces.io')}> <u>Armed Forces</u> </li>
             <li class="link" onClick={() => openGame('https://www.retrogames.cc/embed/44169-ocarina-of-time-redux.html')}> <u>Zelda: Ocarina of Time</u> </li>
             <li class="link" onClick={() => openGame('https://www.retrogames.cc/embed/43806-super-mario-bros-simplified.html')}> <u>Super Mario</u> </li>
-            <li class="link" onClick={() => openGame('https://minigolfclub.io')}> <u>Mini Gold Club</u> </li>
+            <li class="link" onClick={() => openGame('https://minigolfclub.io')}> <u>Mini Golf Club</u> </li>
+            <li class="link" onClick={() => openGame('https://neal.fun/infinite-craft/')}> <u>Infinite Craft</u> </li>
+            <li class="link" onClick={() => openGame('https://neal.fun/password-game/')}> <u>The Password Game</u> </li>
+            {/* didnt work :< <li class="link" onClick={() => openGame('https://pokemon-planet.com')}> <u>Pokemon Planet</u> </li> */}
         </ul>
       </SDK.Window>
 
@@ -123,6 +127,14 @@ const App = () =>{
         <h1>Webcache has Returned!</h1>
         <p>Mackin and Webcache has been blocked, but recently I found a way to bring it back.</p>
         <a href="https://mwcnd.vercel.app">Official Website</a>
+      </SDK.Window>
+
+      <SDK.Window winName="Changelog" winNum="973" defaultStyle={{"height": "350px", "width": "500px", "top": "calc(10vmin + 350px)","right": "5vmin",}} includeNavButtons={{"del":true,"max":false,"min":false,}}>
+        <h1>Changelog: {vnum}</h1>
+        <ul>
+          <li>Added Infinite Craft (check "Games")</li>
+          <li>Added Password Game (check "Games")</li>
+        </ul>
       </SDK.Window>
 
       <LoaderUI.Window />

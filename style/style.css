@@ -595,13 +595,13 @@ codeblock {
     top: 0; left: 0;
 }
 .desktopshortcut {
-    height: 90px;
-    width: 75px;
+    height: 125px;
+    width: 85px;
     background: none;
     position: relative;
     border: none;
     /* background: #b0b0b0; */
-    margin: 5px;
+    /* margin: 5px; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -636,12 +636,15 @@ codeblock {
     position: fixed;
     top: 0;
     left: 0;
+    /* display: grid; */
     display: flex;
     flex-direction: column;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
+    gap: 5px;
     flex-flow: column wrap;
     justify-content: flex-start;
     align-items: flex-start;
+    align-content: flex-start;
     min-height: calc(100vh - 45px);
     max-height: calc(100vh - 45px);
     max-width: 100vw;

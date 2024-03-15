@@ -109,8 +109,8 @@ let cmdScript = (e) => {
         - hacker-mode <br>
         - run -file <br>
         - echo -msg -type:optional <br>
-        - cls
-        - dir
+        - cls <br>
+        - dir <br>
         - cd -directory
         `;
     } else if (command.toLowerCase().includes("dir")) {

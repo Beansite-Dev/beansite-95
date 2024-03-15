@@ -98,6 +98,9 @@ const App = () =>{
             <li class="link" onClick={() => openGame('https://minigolfclub.io')}> <u>Mini Golf Club</u> </li>
             <li class="link" onClick={() => openGame('https://neal.fun/infinite-craft/')}> <u>Infinite Craft</u> </li>
             <li class="link" onClick={() => openGame('https://neal.fun/password-game/')}> <u>The Password Game</u> </li>
+            <li class="link" onClick={() => openGame('https://player03.com/run/3/beta/')}> <u>Run 3</u> </li>
+            <li class="link" onClick={() => openGame('https://fnafgame.io/fnaf')}> <u>Fnaf 1</u> </li>
+            <li class="link" onClick={() => openGame('https://hole-io.com')}> <u>Hole.io</u> </li>
             {/* didnt work :< <li class="link" onClick={() => openGame('https://pokemon-planet.com')}> <u>Pokemon Planet</u> </li> */}
         </ul>
       </SDK.Window>

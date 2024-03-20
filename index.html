@@ -73,6 +73,17 @@
     <script type="text/babel" src="/scripts/settings.jsx"></script>
     <script type="text/babel" src="/scripts/archiveLoader.jsx"></script>
     <script type="text/babel" src="/scripts/app.jsx"></script>
+    <loading id="boot">
+       <img src="./assets/loading.gif" class="bootimg_loadingicon"/> 
+    </loading>
+    <script>
+        const bootimg = document.getElementById("boot");
+        window.addEventListener('load',()=>{
+            console.log('Loaded!');
+            bootimg.classList.add('loading_fadeout')
+            setTimeout(() => {  bootimg.style.display="none"; }, 1000);
+        })
+    </script>
     <!-- <audio display="none" src="./assets/audio/bootsound.mp3" autoplay="autoplay"></audio> -->
 </body>
 </html>

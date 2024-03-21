@@ -7,7 +7,7 @@ const LoaderUI = new ArchiveLoader(SDK);
 // const Store = new AppStore(SDK);
 
 const App = () =>{
-  const vnum = "2.4.1";
+  const vnum = "2.4.2";
   const openGame = (game) => {
     document.getElementById("win3").style.display = "block";
     document.getElementById('win3icon').style.display = "flex";
@@ -34,7 +34,7 @@ const App = () =>{
         <SDK.TaskbarIcon winNum='1' winName="Welcome, User!!" iconPath="../assets/icons/smily.webp" />,
         <SDK.TaskbarIcon winNum='2' winName="Games" iconPath="../assets/icons/game.png" />,
         <SDK.TaskbarIcon winNum='3' winName="c:/bean_os/bean32/ga..." iconPath="../assets/icons/cd.png" />,
-        <SDK.TaskbarIcon winNum='4' winName="Mozilla FireBean" iconPath="../assets/icons/fb-logo.png" />,
+        <SDK.TaskbarIcon winNum='4' winName="Mozzarella FireBean" iconPath="../assets/icons/fb-logo.png" />,
         <SDK.TaskbarIcon winNum='5' winName="MicroBean DOS" iconPath="../assets/icons/dos.png" />,
         <SDK.TaskbarIcon winNum='6' winName="Settings" iconPath="../assets/icons/settings.png" />,
         <SDK.TaskbarIcon winNum='7' winName="Notepad" iconPath="../assets/icons/notepad.png" />,
@@ -44,7 +44,7 @@ const App = () =>{
       StartMenuIcons={[
         <SDK.StartMenuShortcut winNum='1' winName="Welcome, User!!" iconPath="../assets/icons/smily.webp" />,
         <SDK.StartMenuShortcut winNum='2' winName="Games" iconPath="../assets/icons/game.png" />,
-        <SDK.StartMenuShortcut winNum='4' winName="Mozilla FireBean" iconPath="../assets/icons/fb-logo.png" />,
+        <SDK.StartMenuShortcut winNum='4' winName="Mozzarella FireBean" iconPath="../assets/icons/fb-logo.png" />,
         <SDK.StartMenuShortcut winNum='5' winName="MicroBean DOS" iconPath="../assets/icons/dos.png" />,
         <SDK.StartMenuShortcut winNum='6' winName="Settings" iconPath="../assets/icons/settings.png" />,
         <SDK.StartMenuShortcut winNum='7' winName="Notepad" iconPath="../assets/icons/notepad.png" />,
@@ -54,7 +54,7 @@ const App = () =>{
       DesktopShortcuts={[
         <SDK.DesktopShortcut winNum='1' winName="Welcome, User!!" iconPath="../assets/icons/smily.webp" />,
         <SDK.DesktopShortcut winNum='2' winName="Games" iconPath="../assets/icons/game.png" />,
-        <SDK.DesktopShortcut winNum='4' winName="Mozilla FireBean" iconPath="../assets/icons/fb-logo.png" />,
+        <SDK.DesktopShortcut winNum='4' winName="Mozzarella FireBean" iconPath="../assets/icons/fb-logo.png" />,
         <SDK.DesktopShortcut winNum='5' winName="MicroBean DOS" iconPath="../assets/icons/dos.png" />,
         <SDK.DesktopShortcut winNum='6' winName="Settings" iconPath="../assets/icons/settings.png" />,
         <SDK.DesktopShortcut winNum='7' winName="Notepad" iconPath="../assets/icons/notepad.png" />,
@@ -67,7 +67,7 @@ const App = () =>{
         <h1>It's the <strong>ultimate</strong> playground for bean enjoyers!</h1>
         <ul>
             <li class="link" onClick={() => SDK.openWindow('2')}> <u>Check out games!</u> </li>
-            <li class="link" onClick={() => SDK.openWindow('4')}> <u>Browse the web in Mozilla FireBean</u> </li>
+            <li class="link" onClick={() => SDK.openWindow('4')}> <u>Browse the web in Mozzarella FireBean</u> </li>
             <li class="link" onClick={() => SDK.openWindow('5')}> <u>Look like a hacker in MicroBean DOS</u> </li>
             <li class="link" onClick={() => SDK.openWindow('6')}> <u>Tweak your experience to perfection</u> </li>
             <li class="link" onClick={() => SDK.openWindow('7')}> <u>Write to your heart's content</u> </li>
@@ -137,6 +137,8 @@ const App = () =>{
         <ul>
           <li>Added Infinite Craft (check "Games")</li>
           <li>Added Password Game (check "Games")</li>
+          <li>Rebranded Mozilla Firebean to Mozzarella Firebean (so my ass doesn't get sued)</li>
+          <li>Added boot animation (temporary I will improve it)</li>
         </ul>
       </SDK.Window>
 

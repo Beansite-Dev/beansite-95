@@ -656,10 +656,49 @@ loading {
 	width: 100%;
 	height: 100%;
 	z-index: 9999;
-	background-image: url('../assets/loading_img.png');
-    background-size: cover;
-    background-repeat: repeat;
+	/* background-image: url('../assets/loading_img.png'); */
+    /* background-size: cover; */
+    /* background-repeat: repeat; */
+    /* background-position: center; */
+    background: #000000;
+}
+@-webkit-keyframes moving-gradient {
+    0% { background-position: left bottom; }
+    100% { background-position: right bottom; }
+}
+.loadingbar {
+    position: fixed;
+    bottom: 22.5dvh;
+    border: 2px outset #a4a4a4;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 15px;
+    width: 50dvw;
+    background: -webkit-linear-gradient(
+        left,
+        #0193CD 30%,
+        #66D4E5 80%,
+        #0193CD 100%
+    ) repeat;
+    -webkit-background-size: 50% 100%;
+    -webkit-animation-name: moving-gradient;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+}
+.loadinglogo {
+    height: 50dvh;
+    width: 65dvw;
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /* background: #fff; */
+    background-image: url("../assets/beansite_logo.png");
     background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    filter: drop-shadow(0 0 5px hsla(0, 0%, 100%, 0.75));
 }
 .loading_fadeout{
     animation: fadeout 1s forwards;

@@ -74,13 +74,15 @@
     <script type="text/babel" src="/scripts/archiveLoader.jsx"></script>
     <script type="text/babel" src="/scripts/app.jsx"></script>
     <loading id="boot">
-       <img src="./assets/loading.gif" class="bootimg_loadingicon"/> 
+       <!-- <img src="./assets/loading.gif" class="bootimg_loadingicon"/>  -->
+       <div class="loadinglogo"></div>
+       <div class="loadingbar"></div>
     </loading>
     <script>
         const bootimg = document.getElementById("boot");
         window.addEventListener('load',()=>{
             console.log('Loaded!');
-            bootimg.classList.add('loading_fadeout')
+            bootimg.classList.add('loading_fadeout');
             setTimeout(() => {  bootimg.style.display="none"; }, 1000);
         })
     </script>

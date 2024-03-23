@@ -7,7 +7,24 @@ const LoaderUI = new ArchiveLoader(SDK);
 // const Store = new AppStore(SDK);
 
 const App = () =>{
-  const vnum = "2.4.2";
+  const vnum = "2.4.4";
+  function download(data, filename, type) {
+    var file = new Blob([data], {type: type});
+    if (window.navigator.msSaveOrOpenBlob) // IE10+
+        window.navigator.msSaveOrOpenBlob(file, filename);
+    else { // Others
+        var a = document.createElement("a"),
+                url = URL.createObjectURL(file);
+        a.href = url;
+        a.download = filename;
+        document.body.appendChild(a);
+        a.click();
+        setTimeout(function() {
+            document.body.removeChild(a);
+            window.URL.revokeObjectURL(url);  
+        }, 0); 
+    }
+}
   const openGame = (game) => {
     document.getElementById("win3").style.display = "block";
     document.getElementById('win3icon').style.display = "flex";
@@ -62,7 +79,7 @@ const App = () =>{
       ]}
     >
 
-      <SDK.Window winName="Welcome, User!!" winNum="1" defaultStyle={{"height": "350px", "width": "500px", "top": "5vmin", "left": "5vmin",}} includeNavButtons={{"del":true,"max":true,"min":true,}}>
+      <SDK.Window winName="Welcome, User!!" winNum="1" defaultStyle={{"height": "40vmin", "width": "65vmin", "top": "5vmin", "left": "5vmin",}} includeNavButtons={{"del":true,"max":true,"min":true,}}>
         <h1 class="ph1">Welcome To <h1 class="logo">Bean Site <sup>95</sup></h1></h1>
         <h1>It's the <strong>ultimate</strong> playground for bean enjoyers!</h1>
         <ul>
@@ -77,7 +94,7 @@ const App = () =>{
         <p>Version {vnum}<br/>M1dnightDev (c) 2023</p>
       </SDK.Window>
 
-      <SDK.Window winName="Games" winNum="2" defaultStyle={{"height": "350px", "width": "500px", "top": "10vmin", "left": "10vmin",}} includeNavButtons={{"del":true,"max":true,"min":true,}}>
+      <SDK.Window winName="Games" winNum="2" defaultStyle={{"height": "40vmin", "width": "65vmin", "top": "10vmin", "left": "10vmin",}} includeNavButtons={{"del":true,"max":true,"min":true,}}>
         <h1>Top<strong>_Games</strong></h1>
         <ul>
             <li class="link" onClick={() => openGame("https://www.mathplayground.com/drift-boss-v3/index.html")}> <u>Drift Boss</u> </li>
@@ -114,15 +131,19 @@ const App = () =>{
       <FireBean />
       <SettingsMenu />
 
-      <SDK.Window winName="Notepad" winNum="7" defaultStyle={{"height": "350px", "width": "500px", "top": "25vmin", "left": "25vmin",}} includeNavButtons={{"del":true,"max":true,"min":true,}}>
+      <SDK.Window winName="Notepad" winNum="7" defaultStyle={{"height": "40vmin", "width": "65vmin", "top": "25vmin", "left": "25vmin",}} includeNavButtons={{"del":true,"max":true,"min":true,}}>
         <div id="topbar">
-          <a id="fileTabButton">File</a>
+          <a id="fileTabButton" onClick={()=>{
+            const editor = document.getElementById('editor');
+            console.log(editor.innerHTML);
+            download(editor.innerHTML,"file","txt");
+          }}>Save</a>
         </div>
         <div id="editor" contentEditable onKeyDown={() => notepadKeyDown(event)}>
         </div>
       </SDK.Window>
 
-      <SDK.Window winName="Shameless Advertisment" winNum="99" defaultStyle={{"height": "350px", "width": "500px", "top": "5vmin","right": "5vmin",}} includeNavButtons={{"del":true,"max":true,"min":true,}}>
+      <SDK.Window winName="Shameless Advertisment" winNum="99" defaultStyle={{"height": "40vmin", "width": "65vmin", "top": "5vmin","right": "5vmin",}} includeNavButtons={{"del":true,"max":true,"min":true,}}>
         <h1>Check out the Kandy Krew!</h1>
         <p>Gum can be expensive and hard to get as a middle schooler. We fix that, with deals 25%-50% cheaper than walgreens.</p>
         <a href="https://snackcentral.vercel.app">Official Website</a>
@@ -132,13 +153,16 @@ const App = () =>{
         <a href="https://mwcnd.vercel.app">Official Website</a>
       </SDK.Window>
 
-      <SDK.Window winName="Changelog" winNum="973" defaultStyle={{"height": "350px", "width": "500px", "top": "calc(10vmin + 350px)","right": "5vmin",}} includeNavButtons={{"del":true,"max":false,"min":false,}}>
+      <SDK.Window winName="Changelog" winNum="973" defaultStyle={{"height": "40vmin", "width": "65vmin", "top": "calc(10vmin + 40vmin)","right": "5vmin",}} includeNavButtons={{"del":true,"max":false,"min":false,}}>
         <h1>Changelog: {vnum}</h1>
         <ul>
           <li>Added Infinite Craft (check "Games")</li>
           <li>Added Password Game (check "Games")</li>
           <li>Rebranded Mozilla Firebean to Mozzarella Firebean (so my ass doesn't get sued)</li>
-          <li>Added boot animation (temporary I will improve it)</li>
+          <li><strike>Added boot animation (temporary I will improve it)</strike></li>
+          <li>Improved Boot Animation</li>
+          <li>Changed window scaling to fix sum stupid bugs</li>
+          <li>Made Notepad Functional</li>
         </ul>
       </SDK.Window>
 

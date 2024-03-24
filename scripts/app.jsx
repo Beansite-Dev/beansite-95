@@ -115,7 +115,7 @@ const App = () =>{
             <li class="link" onClick={() => openGame('https://minigolfclub.io')}> <u>Mini Golf Club</u> </li>
             <li class="link" onClick={() => openGame('https://neal.fun/infinite-craft/')}> <u>Infinite Craft</u> </li>
             <li class="link" onClick={() => openGame('https://neal.fun/password-game/')}> <u>The Password Game</u> </li>
-            <li class="link" onClick={() => openGame('/games/df77df4c3289b689eb6194aec96d5d7cb0f0f4c5e128d745156ff396b34d6e1e.html')}> <u>Run 3</u> </li>
+            <li class="link" onClick={() => window.open('/games/df77df4c3289b689eb6194aec96d5d7cb0f0f4c5e128d745156ff396b34d6e1e.html', '_blank')}> <u>Run 3</u> </li>
             <li class="link" onClick={() => openGame('https://fnafgame.io/fnaf')}> <u>Fnaf 1</u> </li>
             <li class="link" onClick={() => openGame('https://hole-io.com')}> <u>Hole.io</u> </li>
             {/* didnt work :< <li class="link" onClick={() => openGame('https://pokemon-planet.com')}> <u>Pokemon Planet</u> </li> */}

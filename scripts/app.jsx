@@ -105,7 +105,7 @@ const App = () =>{
             <li class="link" onClick={() => openGame('https://shellshock.io')}> <u>Shell Shockers</u> </li>
             <li class="link" onClick={() => openGame('https://play2048.co')}> <u>2048</u> </li>
             <li class="link" onClick={() => openGame('https://dos.zone/doom-dec-1993/')}> <u>Doom</u> </li>
-            <li class="link" onClick={() => window.open('./web/eag/eag.html', '_blank') }> <u>Eaglercraft</u> </li>
+            <li class="link" onClick={() => window.open('/games/07ed39eb95c1ce7e451192d7c7517c6c3382a59cb40702d8bab86dc61e3b555d.html', '_blank') }> <u>Eaglercraft</u> </li>
             <li class="link" onClick={() => openGame('https://www.ps1fun.com/final-fantasy-vii')}> <u>Final Fanstasy VII</u> </li>
             <li class="link" onClick={() => openGame('https://bloxd.io')}> <u>Bloxd.io</u> </li>
             <li class="link" onClick={() => openGame('https://www.mathplayground.com/x-trench-run/index.html')}> <u>X-Trench Run</u> </li>

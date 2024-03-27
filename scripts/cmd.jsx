@@ -304,13 +304,10 @@ let cmdScript = (e) => {
         error code 1001
         </error>
         `;
-    } else if (command.toLowerCase().includes("rmdir")) {
-        cmd.innerHTML = cmd.innerHTML + `<error><br><br>
-        ERROR<br>
-        read-only error<br>
-        (system file mode: read-only)<br>
-        error code 1001
-        </error>
+    } else if (command.toLowerCase().includes("secret")) {
+        cmd.innerHTML = cmd.innerHTML + `<br><br>
+        You found some secrets ;)<br>
+        None so far tho :(
         `;
     } else if (command.toLowerCase().includes("hacker-mode")) {
         cmd.innerHTML = cmd.innerHTML + `<br><br>

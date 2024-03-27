@@ -7,7 +7,8 @@ const LoaderUI = new ArchiveLoader(SDK);
 // const Store = new AppStore(SDK);
 
 const App = () =>{
-  const vnum = "2.4.5";
+  const vnum = "2.5.1";
+  const vnum_rdate = "3/27/24";
   function download(data, filename, type) {
     var file = new Blob([data], {type: type});
     if (window.navigator.msSaveOrOpenBlob) // IE10+
@@ -118,6 +119,9 @@ const App = () =>{
             <li class="link" onClick={() => window.open('/games/df77df4c3289b689eb6194aec96d5d7cb0f0f4c5e128d745156ff396b34d6e1e.html', '_blank')}> <u>Run 3</u> </li>
             <li class="link" onClick={() => openGame('https://fnafgame.io/fnaf')}> <u>Fnaf 1</u> </li>
             <li class="link" onClick={() => openGame('https://hole-io.com')}> <u>Hole.io</u> </li>
+            <li class="link" onClick={() => openGame('https://html5.gamedistribution.com/rvvASMiM/1377b99c10284c229423118a941af3b1/index.html?gd_sdk_referrer_url=https%3A%2F%2Fdinosaur-game.io%2Fovo&gd_zone_config=eyJwYXJlbnRVUkwiOiJodHRwczovL2Rpbm9zYXVyLWdhbWUuaW8vb3ZvIiwicGFyZW50RG9tYWluIjoiZGlub3NhdXItZ2FtZS5pbyIsInRvcERvbWFpbiI6ImRpbm9zYXVyLWdhbWUuaW8iLCJoYXNJbXByZXNzaW9uIjpmYWxzZSwibG9hZGVyRW5hYmxlZCI6dHJ1ZSwiaG9zdCI6Imh0bWw1LmdhbWVkaXN0cmlidXRpb24uY29tIiwidmVyc2lvbiI6IjEuNS4xNyJ9')}> <u>OvO</u> </li>
+            <li class="link" onClick={() => openGame('https://dedragames.com/games/ovo2/0.2alpha/')}> <u>OvO 2</u> </li>
+            <li class="link" onClick={() => openGame('https://game316009.konggames.com/gamez/0031/6009/live/index.html')}> <u>Retro Bowl</u> </li>
             {/* didnt work :< <li class="link" onClick={() => openGame('https://pokemon-planet.com')}> <u>Pokemon Planet</u> </li> */}
         </ul>
       </SDK.Window>
@@ -154,14 +158,17 @@ const App = () =>{
       </SDK.Window>
 
       <SDK.Window winName="Changelog" winNum="973" defaultStyle={{"height": "40vmin", "width": "65vmin", "top": "calc(10vmin + 40vmin)","right": "5vmin",}} includeNavButtons={{"del":true,"max":false,"min":false,}}>
-        <h1>Changelog: {vnum}</h1>
+        <h1>Changelog: {vnum} - {vnum_rdate}</h1>
         <ul>
-          <li>Added Infinite Craft (check "Games")</li>
-          <li>Added Password Game (check "Games")</li>
-          <li>Rebranded Mozilla Firebean to Mozzarella Firebean (so my ass doesn't get sued)</li>
-          <li>Finalized Boot Animation (for now ;])</li>
-          <li>Changed window scaling to fix sum stupid bugs</li>
-          <li>Made Notepad Functional</li>
+          <li>Added Games</li>
+          <ul>
+            <li>OvO</li>
+            <li>OvO 2</li>
+            <li>Retro Bowl</li>
+          </ul>
+          <li>Added Secret Commands (run "secret" in DOS)</li>
+          <li>Added DOS Commands</li>
+          <li>Increased Code Efficiency</li>
         </ul>
       </SDK.Window>
 

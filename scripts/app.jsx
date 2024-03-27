@@ -7,7 +7,7 @@ const LoaderUI = new ArchiveLoader(SDK);
 // const Store = new AppStore(SDK);
 
 const App = () =>{
-  const vnum = "2.4.4";
+  const vnum = "2.4.5";
   function download(data, filename, type) {
     var file = new Blob([data], {type: type});
     if (window.navigator.msSaveOrOpenBlob) // IE10+
@@ -159,8 +159,7 @@ const App = () =>{
           <li>Added Infinite Craft (check "Games")</li>
           <li>Added Password Game (check "Games")</li>
           <li>Rebranded Mozilla Firebean to Mozzarella Firebean (so my ass doesn't get sued)</li>
-          <li><strike>Added boot animation (temporary I will improve it)</strike></li>
-          <li>Improved Boot Animation</li>
+          <li>Finalized Boot Animation (for now ;])</li>
           <li>Changed window scaling to fix sum stupid bugs</li>
           <li>Made Notepad Functional</li>
         </ul>

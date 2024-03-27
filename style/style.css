@@ -708,7 +708,7 @@ loading {
     left: 50%;
     transform: translate(-50%,-50%);
     /* background: #fff; */
-    background-image: url("../assets/beansite_logo.png");
+    background-image: url("../assets/beansite_logo_tiny.png");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;

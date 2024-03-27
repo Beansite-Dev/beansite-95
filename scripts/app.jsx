@@ -126,6 +126,7 @@ const App = () =>{
         </ul>
       </SDK.Window>
 
+
       <SDK.Window winName="c:/bean_os/bean32/gameloader.exe" winNum="3" defaultStyle={{"height": "75dvh", "width": "75dvw", "top": "calc(50% - (75dvh / 2))", "left": "calc(50% - (75dvw / 2))",}} includeNavButtons={{"del":true,"max":true,"min":false,}} beforeClose={() => document.getElementById('gameloader').src=""} >
         <img id="loading" src="./assets/loading.gif" />
         <iframe id="gameloader" src="" frameBorder="0">games will load here</iframe>
@@ -169,6 +170,7 @@ const App = () =>{
           <li>Added Secret Commands (run "secret" in DOS)</li>
           <li>Added DOS Commands</li>
           <li>Increased Code Efficiency</li>
+          <li>Improved loading time</li>
         </ul>
       </SDK.Window>
 

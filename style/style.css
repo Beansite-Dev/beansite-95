@@ -672,8 +672,10 @@ loading {
     border: 2px outset #a4a4a4;
     left: 50%;
     transform: translateX(-50%);
-    height: 15px;
+    height: 25px;
     width: 50dvw;
+    text-align: center;
+    vertical-align: middle;
     background: -webkit-linear-gradient(
         left,
         #0193CD 30%,
@@ -685,6 +687,18 @@ loading {
     -webkit-animation-duration: 1s;
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-timing-function: linear;
+}
+.loadingbar p {
+    padding: 0 !important;
+    margin: 0 !important;
+    display: inline;
+    animation: flash 1s linear infinite;
+    text-shadow: 0 0 2.5px #000;
+}
+@keyframes flash {
+    0% {color:red;}
+    50% {color:yellow;}
+    100% {color:red;}
 }
 .loadinglogo {
     height: 50dvh;
@@ -699,6 +713,18 @@ loading {
     background-size: contain;
     background-repeat: no-repeat;
     filter: drop-shadow(0 0 5px hsla(0, 0%, 100%, 0.75));
+}
+#lsTips {
+    position: fixed;
+    bottom: 5dvh;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 25dvw;
+    height: 6vmin;
+    /* background: #fff; */
+    color: #5f5f5f;
+    text-align: center;
+    vertical-align: middle;
 }
 .loading_fadeout{
     animation: fadeout 1s forwards;

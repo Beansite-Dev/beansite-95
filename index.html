@@ -76,15 +76,33 @@
     <loading id="boot">
        <!-- <img src="./assets/loading.gif" class="bootimg_loadingicon"/>  -->
        <div class="loadinglogo"></div>
-       <div class="loadingbar"></div>
+       <div class="loadingbar"><p>Loading</p></div>
+       <div id="lsTips"></div>
     </loading>
     <script>
-        const bootimg = document.getElementById("boot");
+        const bootimg=document.getElementById("boot");
+        const tipElm=document.getElementById("lsTips");
+        const tips=[
+            "There are tons of easter eggs in CMD; Try to find them all",
+            "Did you know Boston is also called Beantown? Just me? oh...",
+            "I actually have a youtube! Please subscribe, I want to buy new cymbals for my drums but I have a bank balance of $-2.59",
+            "Are you reading these?",
+            "Ancient Greece used to elect public officials with beans! Another reason to love them",
+            "Pythogoras hated beans. Stupid, robe wearing triangle guy; he doesn't have the right to an opinion",
+            "Beans on toast are good, I don't care what you say",
+            "British people are very scary",
+        ]
+        tipElm.innerHTML=tips[Math.floor(Math.random()*tips.length)];
+        const lsTips=setInterval(()=>{
+            tipElm.innerHTML=tips[Math.floor(Math.random()*tips.length)];
+        },5000)
         window.addEventListener('load',()=>{
             console.log('Loaded!');
+            clearInterval(lsTips);
             bootimg.classList.add('loading_fadeout');
             setTimeout(() => {  bootimg.style.display="none"; }, 1000);
-        })
+        });
+        // do{}while(!loaded); // scary code right here
     </script>
     <!-- <audio display="none" src="./assets/audio/bootsound.mp3" autoplay="autoplay"></audio> -->
 </body>

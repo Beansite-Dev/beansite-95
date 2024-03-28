@@ -28,8 +28,12 @@ const SettingsMenu = (prop) => {
             // alert(`changed ${navs[i].id}'s bg to ${e.target.value}`)
 	    }
     }
-    const changeBgColor = (e) => document.body.style.backgroundColor = e.target.value;
-    const changeTitlebarColor = (e) => document.querySelector(":root").style.setProperty('--tb-clr', e.target.value);
+    const changeBgColor = (e) => {
+        document.body.style.backgroundColor = e.target.value;
+    };
+    const changeTitlebarColor = (e) => {
+        document.querySelector(":root").style.setProperty('--tb-clr', e.target.value);
+    };
     return (
         <SDK.Window winName="Settings Menu" winNum="6" defaultStyle={{"height": "350px", "width": "500px", "top": "30vmin", "left": "30vmin",}} includeNavButtons={{"del":true,"max":true,"min":true,}}>
             <h1>Appearance</h1>

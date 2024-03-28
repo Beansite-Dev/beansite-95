@@ -1,8 +1,14 @@
 :root {
     --bg-clr: #008080;
     --tb-clr: #00008b;
+    
+    --bp-bg1: #0e1218;
+    --bp-bg2: #161f34;
+    --bp-bg3: #24354d;
+    --bg-accent-border: rgb(70, 80, 85);
+    --bp-pos: #68911b;
+    --bp-cardbg: #071019;
 }
-
 @font-face {
     font-family: 'logo';
     src: url('../assets/fonts/logo.woff') format('woff');
@@ -19,6 +25,12 @@
     url("https://db.onlinewebfonts.com/t/7cc6719bd5f0310be3150ba33418e72e.woff")format("woff"),
     url("https://db.onlinewebfonts.com/t/7cc6719bd5f0310be3150ba33418e72e.ttf")format("truetype"),
     url("https://db.onlinewebfonts.com/t/7cc6719bd5f0310be3150ba33418e72e.svg#Comic Sans MS")format("svg");
+}
+@font-face {
+	font-family: 'Motiva Sans';
+	src: url('https://community.akamai.steamstatic.com/public/shared/fonts/MotivaSans-Regular.ttf?v=4.015') format('truetype');
+	font-weight: normal;
+	font-style: normal;
 }
 html * {
     font-family: "Comic Sans MS";
@@ -740,3 +752,191 @@ loading {
     from {opacity: 1;}
     to {opacity: 0;display:none;}
 }
+.BeanpoweredMWindow {
+    height: auto;
+    width: 100%;
+    margin: 0;
+    position: absolute;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    background: var(--bp-bg2);
+    --bp-pad: 3.5vmin;
+    padding: var(--bp-pad);
+    padding-top: calc(50px + var(--bp-pad));
+}
+.BeanpoweredMWindow .bp_nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50px;
+    width: 100%;
+    background: var(--bp-bg3);
+}
+.bp_nav #bp_logo {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    height: 100%;
+    width: 25%;
+    background-image: url(../assets/bp_assets/logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+.BeanpoweredMWindow .card_trendinggame {
+    /* height: 25vmin; */
+    width: 100%;
+    aspect-ratio: 2.5 / 1;
+    overflow: hidden;
+    display: block;
+    position: relative;
+    background: linear-gradient(45deg, var(--bp-cardbg) 65%, var(--bp-bg1));
+    border-radius: 5px;
+    border: var(--bg-accent-border) 1px solid;
+}
+#bp_tg_preview {
+    position: absolute;
+    height: 100%;
+    width: 65%;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    background: gray;
+    background-position: center;
+    background-size: cover;
+    background-image: url('../assets/gbanner/drift.png');
+}
+#bp_cwrap {
+    width: 100%;
+    max-width: 100vmin;
+    margin: auto;
+}
+#bp_tg_rs {
+    height: 100%;
+    width: 35%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 1vmin;
+    box-sizing: border-box;
+    /* line-height: 1em; */
+    color: #fff;
+}
+#bp_tg_rs h2 {
+    font-size: 1em;
+    line-height: 0;
+    padding: none;
+    margin: none;
+    font-family: 'Motiva Sans';
+    color: lightgray;
+}
+#bp_tg_rs h1 {
+    font-size: 2em;
+    font-family: 'Motiva Sans';
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 1em;
+    padding: none;
+    margin: none;
+    overflow: hidden;
+}
+#bp_tg_rs button {
+    width: calc(100% - 2vmin);
+    padding: 3px;
+    background: var(--bp-pos);
+    border: 1px #7ea570 solid;
+    font-family: 'Motiva Sans';
+    border-radius: 3px;
+    color: #fff;
+    position: absolute;
+    bottom: 1vmin;
+    left: 1vmin;
+    transition: .35s;
+    cursor: pointer;
+}
+#bp_tg_rs button:hover {
+    transform: translateY(-5px);
+}
+.bp_gameWrapper {
+    /* padding: 2px; */
+    box-sizing: border-box;
+    background: linear-gradient(45deg, var(--bp-cardbg), var(--bp-bg1));
+    margin-top: 2vmin;
+    border-radius: 5px;
+    border: var(--bg-accent-border) 1px solid;
+    overflow: hidden;
+}
+.bp_gcard {
+    width: 100%;
+    height: 13.5vmin;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    align-items: flex-end;
+    box-sizing: border-box;
+    padding-right: 1vmin;
+    /* border-radius: 5px; */
+    border-bottom: var(--bg-accent-border) 1px solid;
+}
+.bp_gcard h1 {
+    font-size: 1.75em;
+    line-height: 1.25em;
+    font-family: 'Motiva Sans';
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    color:#fff;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+}
+.bp_gcard button {
+    width: 35%;
+    padding: 3px;
+    background: var(--bp-pos);
+    border: 1px #7ea570 solid;
+    font-family: 'Motiva Sans';
+    border-radius: 3px;
+    color: #fff;
+    transition: .35s;
+    cursor: pointer;
+}
+.bp_gcard button:hover {
+    transform: translateY(-5px);
+}
+.bp_gcard_preview {
+    height: 100%;
+    aspect-ratio: 18 / 9;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: gray;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#g_slope {background-image: url('../assets/gbanner/slope.jpg');}
+#g_slope2 {background-image: url('../assets/gbanner/slope2.jpg');}
+#g_1v1lol {background-image: url('../assets/gbanner/1v1lol.jpg');}
+#g_smashk {background-image: url('../assets/gbanner/smashk.jpg');}
+#g_shells {background-image: url('../assets/gbanner/shells.jpg');}
+#g_2048 {background-image: url('../assets/gbanner/2048.avif');}
+#g_doom {background-image: url('../assets/gbanner/doom.webp');}
+#g_eag {background-image: url('../assets/gbanner/eag.webp');}
+#g_ffvii {background-image: url('../assets/gbanner/ffvii.jpg');}
+#g_bloxd {background-image: url('../assets/gbanner/bloxd.avif');}
+#g_xtr {background-image: url('../assets/gbanner/xtr.png');}
+#g_armedf {background-image: url('../assets/gbanner/armedf.jpg');}
+#g_ocarinaot {background-image: url('../assets/gbanner/ocarinaot.jpg');}
+#g_mario {background-image: url('../assets/gbanner/mario.avif');}
+#g_mgclub {background-image: url('../assets/gbanner/mgclub.avif');}
+#g_infinitec {background-image: url('../assets/gbanner/infinitec.png');}
+#g_password {background-image: url('../assets/gbanner/password.png');}
+#g_fnaf1 {background-image: url('../assets/gbanner/fnaf1.jpg');}
+#g_hole {background-image: url('../assets/gbanner/hole.avif');}
+#g_ovo {background-image: url('../assets/gbanner/ovo.avif');background-size: contain !important;background-color:#fff;}
+#g_ovo2 {background-image: url('../assets/gbanner/ovo2.jpg');background-size: contain !important;background-color:#fff;}
+#g_retrob {background-image: url('../assets/gbanner/retro.avif');}

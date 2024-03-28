@@ -7,8 +7,8 @@ const LoaderUI = new ArchiveLoader(SDK);
 // const Store = new AppStore(SDK);
 
 const App = () =>{
-  const vnum = "2.5.1";
-  const vnum_rdate = "3/27/24";
+  const vnum = "2.6.3";
+  const vnum_rdate = "3/28/24";
   function download(data, filename, type) {
     var file = new Blob([data], {type: type});
     if (window.navigator.msSaveOrOpenBlob) // IE10+
@@ -106,7 +106,10 @@ const App = () =>{
             <li class="link" onClick={() => SDK.openWindow('9')}> <u>Check out old versions</u> </li>
             {/* <li class="link" onClick={() => SDK.openWindow('8')}> <u>Download more ppas from the web</u> </li> */}
         </ul>
-        <p>Version {vnum}<br/>M1dnightDev (c) 2023</p>
+        <p>Version {vnum}
+        <br/>M1dnightDev (c) 2023
+        <br/>Socials: <a href="https://youtube.com/@m1dnightdev">Youtube</a> | <a href="https://twitter.com/@m1dnightdev">Twitter</a> | <a href="https://github.com/m1dnight-ofcl">Github</a>
+        </p>
       </SDK.Window>
 
       <SDK.Window winName="Beanpowered" winNum="2" defaultStyle={{"height": "40vmin", "width": "65vmin", "top": "10vmin", "left": "10vmin",}} includeNavButtons={{"del":true,"max":true,"min":true,}}>
@@ -147,6 +150,7 @@ const App = () =>{
               <Game name="OvO" url="https://html5.gamedistribution.com/rvvASMiM/1377b99c10284c229423118a941af3b1/index.html?gd_sdk_referrer_url=https%3A%2F%2Fdinosaur-game.io%2Fovo&gd_zone_config=eyJwYXJlbnRVUkwiOiJodHRwczovL2Rpbm9zYXVyLWdhbWUuaW8vb3ZvIiwicGFyZW50RG9tYWluIjoiZGlub3NhdXItZ2FtZS5pbyIsInRvcERvbWFpbiI6ImRpbm9zYXVyLWdhbWUuaW8iLCJoYXNJbXByZXNzaW9uIjpmYWxzZSwibG9hZGVyRW5hYmxlZCI6dHJ1ZSwiaG9zdCI6Imh0bWw1LmdhbWVkaXN0cmlidXRpb24uY29tIiwidmVyc2lvbiI6IjEuNS4xNyJ9" type="OpenInGL" gID="ovo" />
               <Game name="OvO 2" url="https://dedragames.com/games/ovo2/0.2alpha/" type="OpenInGL" gID="ovo2" />
               <Game name="Retro Bowl" url="https://game316009.konggames.com/gamez/0031/6009/live/index.html" type="OpenInGL" gID="retrob" />
+              <Game name="Doom II" url="https://dos.zone/doom-ii-oct-10-1994/" type="OpenInGL" gID="doom2" />
 
             </div>
           </div>
@@ -187,17 +191,16 @@ const App = () =>{
 
       <SDK.Window winName="Changelog" winNum="973" defaultStyle={{"height": "40vmin", "width": "65vmin", "top": "calc(10vmin + 40vmin)","right": "5vmin",}} includeNavButtons={{"del":true,"max":false,"min":false,}}>
         <h1>Changelog: {vnum} - {vnum_rdate}</h1>
+        <p>I spent f**king 4 hours making this please</p>
         <ul>
           <li>Added Games</li>
           <ul>
-            <li>OvO</li>
-            <li>OvO 2</li>
-            <li>Retro Bowl</li>
+            <li>Doom II</li>
           </ul>
-          <li>Added Secret Commands (run "secret" in DOS)</li>
-          <li>Added DOS Commands</li>
-          <li>Increased Code Efficiency</li>
-          <li>Improved loading time</li>
+          <li>Rewrote ALL the code for the "Games" (now Beanpowered)</li>
+          <li>Renamed "Games" to Beanpowered (wonder what that's based off lmao)</li>
+          <li>Added my socials (gotta get that recognition {">:]"} )</li>
+          <li>Added more tips</li>
         </ul>
       </SDK.Window>
 

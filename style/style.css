@@ -34,6 +34,7 @@
 }
 html * {
     font-family: "Comic Sans MS";
+    image-rendering: pixelated;
 }
 
 ::-webkit-scrollbar {
@@ -941,3 +942,9 @@ loading {
 #g_ovo2 {background-image: url('../assets/gbanner/ovo2.jpg');background-size: contain !important;background-color:#fff;}
 #g_retrob {background-image: url('../assets/gbanner/retro.avif');}
 #g_doom2 {background-image: url('../assets/gbanner/doom2.jpg');}
+#g_subways {background-image: url('../assets/gbanner/subways.png');}
+#g_dr3d {background-image: url('../assets/gbanner/dr3d.jpg');}
+#g_helix {background-image: url('../assets/gbanner/helix.avif');}
+#g_funkin {background-image: url('../assets/gbanner/funkin.webp');}
+#g_dwtd {background-image: url('../assets/gbanner/dwtd.png');}
+#g_tombr {background-image: url('../assets/gbanner/tombr.png');}

@@ -7,8 +7,8 @@ const LoaderUI = new ArchiveLoader(SDK);
 // const Store = new AppStore(SDK);
 
 const App = () =>{
-  const vnum = "2.6.3";
-  const vnum_rdate = "3/28/24";
+  const vnum = "2.7.0";
+  const vnum_rdate = "4/15/24";
   function download(data, filename, type) {
     var file = new Blob([data], {type: type});
     if (window.navigator.msSaveOrOpenBlob) // IE10+
@@ -70,8 +70,8 @@ const App = () =>{
         <SDK.TaskbarIcon winNum='5' winName="MicroBean DOS" iconPath="../assets/icons/dos.png" />,
         <SDK.TaskbarIcon winNum='6' winName="Settings" iconPath="../assets/icons/settings.png" />,
         <SDK.TaskbarIcon winNum='7' winName="Notepad" iconPath="../assets/icons/notepad.png" />,
+        <SDK.TaskbarIcon winNum='8' winName="Bean Paint" iconPath="../assets/icons/bpaint.webp" />,
         <SDK.TaskbarIcon winNum='9' winName="Version Loader" iconPath="../assets/icons/cd.png" />,
-//      <SDK.TaskbarIcon winNum='8' winName="App Store" iconPath="../assets/icons/appstore.png" />,
       ]}
       StartMenuIcons={[
         <SDK.StartMenuShortcut winNum='1' winName="Welcome, User!!" iconPath="../assets/icons/smily.webp" />,
@@ -80,8 +80,8 @@ const App = () =>{
         <SDK.StartMenuShortcut winNum='5' winName="MicroBean DOS" iconPath="../assets/icons/dos.png" />,
         <SDK.StartMenuShortcut winNum='6' winName="Settings" iconPath="../assets/icons/settings.png" />,
         <SDK.StartMenuShortcut winNum='7' winName="Notepad" iconPath="../assets/icons/notepad.png" />,
+        <SDK.StartMenuShortcut winNum='8' winName="Bean Paint" iconPath="../assets/icons/bpaint.webp" />,
         <SDK.StartMenuShortcut winNum='9' winName="Version Loader" iconPath="../assets/icons/cd.png" />,
-//      <SDK.StartMenuShortcut winNum='8' winName="App Store" iconPath="../assets/icons/appstore.png" />,
       ]}
       DesktopShortcuts={[
         <SDK.DesktopShortcut winNum='1' winName="Welcome, User!!" iconPath="../assets/icons/smily.webp" />,
@@ -90,12 +90,13 @@ const App = () =>{
         <SDK.DesktopShortcut winNum='5' winName="MicroBean DOS" iconPath="../assets/icons/dos.png" />,
         <SDK.DesktopShortcut winNum='6' winName="Settings" iconPath="../assets/icons/settings.png" />,
         <SDK.DesktopShortcut winNum='7' winName="Notepad" iconPath="../assets/icons/notepad.png" />,
+        <SDK.DesktopShortcut winNum='8' winName="Bean Paint" iconPath="../assets/icons/bpaint.webp" />,
         <SDK.DesktopShortcut winNum='9' winName="Version Loader" iconPath="../assets/icons/cd.png" />,
       ]}
     >
 
       <SDK.Window winName="Welcome, User!!" winNum="1" defaultStyle={{"height": "40vmin", "width": "65vmin", "top": "5vmin", "left": "5vmin",}} includeNavButtons={{"del":true,"max":true,"min":true,}}>
-        <h1 class="ph1">Welcome To <h1 class="logo">Bean Site <sup>95</sup></h1></h1>
+        <h1 class="ph1">Welcome To <h1 class="logo">Bean Site 95</h1></h1>
         <h1>It's the <strong>ultimate</strong> playground for bean enjoyers!</h1>
         <ul>
             <li class="link" onClick={() => SDK.openWindow('2')}> <u>Check out games on Beanpowered</u> </li>
@@ -103,6 +104,7 @@ const App = () =>{
             <li class="link" onClick={() => SDK.openWindow('5')}> <u>Look like a hacker in MicroBean DOS</u> </li>
             <li class="link" onClick={() => SDK.openWindow('6')}> <u>Tweak your experience to perfection</u> </li>
             <li class="link" onClick={() => SDK.openWindow('7')}> <u>Write to your heart's content</u> </li>
+            <li class="link" onClick={() => SDK.openWindow('8')}> <u>Paint some artworks!</u> </li>
             <li class="link" onClick={() => SDK.openWindow('9')}> <u>Check out old versions</u> </li>
             {/* <li class="link" onClick={() => SDK.openWindow('8')}> <u>Download more ppas from the web</u> </li> */}
         </ul>
@@ -151,6 +153,12 @@ const App = () =>{
               <Game name="OvO 2" url="https://dedragames.com/games/ovo2/0.2alpha/" type="OpenInGL" gID="ovo2" />
               <Game name="Retro Bowl" url="https://game316009.konggames.com/gamez/0031/6009/live/index.html" type="OpenInGL" gID="retrob" />
               <Game name="Doom II" url="https://dos.zone/doom-ii-oct-10-1994/" type="OpenInGL" gID="doom2" />
+              <Game name="Subway Surfers" url="https://subwaysurfersgame.io" type="OpenInGL" gID="subways" />
+              <Game name="Deathrun 3D" url="https://deathrun3d.io" type="OpenInGL" gID="dr3d" />
+              <Game name="Helix Jump" url="https://helixjump2.com" type="OpenInGL" gID="helix" />
+              <Game name="Fridy Night Funkin'" url="https://friday-nightfunkin.io/friday-night-funkin" type="OpenInGL" gID="funkin" />
+              <Game name="Dumb Ways to Die" url="https://dumbwaystodie.io" type="OpenInGL" gID="dwtd" />
+              <Game name="Tomb Runner" url="https://lagged.com/en/g/tomb-runner" type="OpenInGL" gID="tombr" />
 
             </div>
           </div>
@@ -179,6 +187,8 @@ const App = () =>{
         </div>
       </SDK.Window>
 
+      <BeanPaint />
+
       <SDK.Window winName="Shameless Advertisment" winNum="99" defaultStyle={{"height": "40vmin", "width": "65vmin", "top": "5vmin","right": "5vmin",}} includeNavButtons={{"del":true,"max":true,"min":true,}}>
         <h1>Check out the Kandy Krew!</h1>
         <p>Gum can be expensive and hard to get as a middle schooler. We fix that, with deals 25%-50% cheaper than walgreens.</p>
@@ -191,16 +201,21 @@ const App = () =>{
 
       <SDK.Window winName="Changelog" winNum="973" defaultStyle={{"height": "40vmin", "width": "65vmin", "top": "calc(10vmin + 40vmin)","right": "5vmin",}} includeNavButtons={{"del":true,"max":false,"min":false,}}>
         <h1>Changelog: {vnum} - {vnum_rdate}</h1>
-        <p>I spent f**king 4 hours making this please</p>
         <ul>
-          <li>Added Games</li>
+          <li>Added Paint App</li>
+          <li>Fixed Render Issues</li>
+          <li>Optimized SDK</li>
+          <li>Added more loading texts</li>
+          
+          <li>Added Games: </li>
           <ul>
-            <li>Doom II</li>
+            <li>Added Deathrun 3D</li>
+            <li>Added Helix Jump</li>
+            <li>Added Friday Night Funkin'</li>
+            <li>Added Tomb Raider</li>
+            <li>Added Dumb Ways to Die</li>
+            <li>Added Subway Surfers</li>
           </ul>
-          <li>Rewrote ALL the code for the "Games" (now Beanpowered)</li>
-          <li>Renamed "Games" to Beanpowered (wonder what that's based off lmao)</li>
-          <li>Added my socials (gotta get that recognition {">:]"} )</li>
-          <li>Added more tips</li>
         </ul>
       </SDK.Window>
 
@@ -227,7 +242,9 @@ SDK.closeWindow('4');
 SDK.closeWindow('5');
 SDK.closeWindow('6');
 SDK.closeWindow('7');
+SDK.closeWindow('8'); 
 SDK.closeWindow('9');
+// SDK.closeWindow('973'); // special: changelog
 // SDK.closeWindow('99'); // special: ad
 
 SDK.init();

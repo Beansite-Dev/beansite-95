@@ -225,12 +225,8 @@ class BeanSDK {
       </div>
     )
   }
-  closeWindow = (winNum) => {
-    if (document.getElementById(`win${winNum}del`)) document.getElementById(`win${winNum}del`).click();
-  }
-  openWindow = (winNum) => {
-    if (document.getElementById(`win${winNum}-startmenushortcut`)) document.getElementById(`win${winNum}-startmenushortcut`).click();
-  }
+  closeWindow=(winNum)=>{if(document.getElementById(`win${winNum}del`)) document.getElementById(`win${winNum}del`).click();}
+  openWindow=(winNum)=>{if(document.getElementById(`win${winNum}-startmenushortcut`)) document.getElementById(`win${winNum}-startmenushortcut`).click();}
   init = () => {
     document.getElementById("startmenu").style.left = `-350px`;
     document.getElementById("start").addEventListener('click', (e) => {

@@ -919,32 +919,32 @@ loading {
     background-size: cover;
 }
 
-#g_slope {background-image: url('../assets/gbanner/slope.jpg');}
-#g_slope2 {background-image: url('../assets/gbanner/slope2.jpg');}
-#g_1v1lol {background-image: url('../assets/gbanner/1v1lol.jpg');}
-#g_smashk {background-image: url('../assets/gbanner/smashk.jpg');}
-#g_shells {background-image: url('../assets/gbanner/shells.jpg');}
-#g_2048 {background-image: url('../assets/gbanner/2048.avif');}
-#g_doom {background-image: url('../assets/gbanner/doom.webp');}
-#g_eag {background-image: url('../assets/gbanner/eag.webp');}
-#g_ffvii {background-image: url('../assets/gbanner/ffvii.jpg');}
-#g_bloxd {background-image: url('../assets/gbanner/bloxd.avif');}
-#g_xtr {background-image: url('../assets/gbanner/xtr.png');}
-#g_armedf {background-image: url('../assets/gbanner/armedf.jpg');}
+#g_slope     {background-image: url('../assets/gbanner/slope.jpg');}
+#g_slope2    {background-image: url('../assets/gbanner/slope2.jpg');}
+#g_1v1lol    {background-image: url('../assets/gbanner/1v1lol.jpg');}
+#g_smashk    {background-image: url('../assets/gbanner/smashk.jpg');}
+#g_shells    {background-image: url('../assets/gbanner/shells.jpg');}
+#g_2048      {background-image: url('../assets/gbanner/2048.avif');}
+#g_doom      {background-image: url('../assets/gbanner/doom.webp');}
+#g_eag       {background-image: url('../assets/gbanner/eag.webp');}
+#g_ffvii     {background-image: url('../assets/gbanner/ffvii.jpg');}
+#g_bloxd     {background-image: url('../assets/gbanner/bloxd.avif');}
+#g_xtr       {background-image: url('../assets/gbanner/xtr.png');}
+#g_armedf    {background-image: url('../assets/gbanner/armedf.jpg');}
 #g_ocarinaot {background-image: url('../assets/gbanner/ocarinaot.jpg');}
-#g_mario {background-image: url('../assets/gbanner/mario.avif');}
-#g_mgclub {background-image: url('../assets/gbanner/mgclub.avif');}
+#g_mario     {background-image: url('../assets/gbanner/mario.avif');}
+#g_mgclub    {background-image: url('../assets/gbanner/mgclub.avif');}
 #g_infinitec {background-image: url('../assets/gbanner/infinitec.png');}
-#g_password {background-image: url('../assets/gbanner/password.png');}
-#g_fnaf1 {background-image: url('../assets/gbanner/fnaf1.jpg');}
-#g_hole {background-image: url('../assets/gbanner/hole.avif');}
-#g_ovo {background-image: url('../assets/gbanner/ovo.avif');background-size: contain !important;background-color:#fff;}
-#g_ovo2 {background-image: url('../assets/gbanner/ovo2.jpg');background-size: contain !important;background-color:#fff;}
-#g_retrob {background-image: url('../assets/gbanner/retro.avif');}
-#g_doom2 {background-image: url('../assets/gbanner/doom2.jpg');}
-#g_subways {background-image: url('../assets/gbanner/subways.png');}
-#g_dr3d {background-image: url('../assets/gbanner/dr3d.jpg');}
-#g_helix {background-image: url('../assets/gbanner/helix.avif');}
-#g_funkin {background-image: url('../assets/gbanner/funkin.webp');}
-#g_dwtd {background-image: url('../assets/gbanner/dwtd.png');}
-#g_tombr {background-image: url('../assets/gbanner/tombr.png');}
+#g_password  {background-image: url('../assets/gbanner/password.png');}
+#g_fnaf1     {background-image: url('../assets/gbanner/fnaf1.jpg');}
+#g_hole      {background-image: url('../assets/gbanner/hole.avif');}
+#g_ovo       {background-image: url('../assets/gbanner/ovo.avif');background-size: contain !important;background-color:#fff;}
+#g_ovo2      {background-image: url('../assets/gbanner/ovo2.jpg');background-size: contain !important;background-color:#fff;}
+#g_retrob    {background-image: url('../assets/gbanner/retro.avif');}
+#g_doom2     {background-image: url('../assets/gbanner/doom2.jpg');}
+#g_subways   {background-image: url('../assets/gbanner/subways.png');}
+#g_dr3d      {background-image: url('../assets/gbanner/dr3d.jpg');}
+#g_helix     {background-image: url('../assets/gbanner/helix.avif');}
+#g_funkin    {background-image: url('../assets/gbanner/funkin.webp');}
+#g_dwtd      {background-image: url('../assets/gbanner/dwtd.png');}
+#g_tombr     {background-image: url('../assets/gbanner/tombr.png');}

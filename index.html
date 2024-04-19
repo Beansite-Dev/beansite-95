@@ -118,6 +118,15 @@
         });
         // do{}while(!loaded); // scary code right here
     </script>
+    <script>
+        // url detection
+        console.log(`hostname: ${window.location.hostname}`)
+        if (window.location.hostname!=="127.0.0.1"
+          ||window.location.hostname!=="localhost"
+          ||window.location.hostname!=="beansite.vercel.app"){
+
+        }
+    </script>
     <!-- <audio display="none" src="./assets/audio/bootsound.mp3" autoplay="autoplay"></audio> -->
 </body>
 </html>

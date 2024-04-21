@@ -118,16 +118,15 @@
         });
         // do{}while(!loaded); // scary code right here
     </script>
-    <!-- Did not infact work :< -->
-    <!-- <script>
+    <script>
         // url detection
         console.log(`hostname: ${window.location.hostname}`)
-        if ((window.location.hostname!=="127.0.0.1")||
-            (window.location.hostname!=="localhost")||
-            (window.location.hostname!=="beansite.vercel.app")){
+        if (window.location.hostname!=="127.0.0.1"&&
+            window.location.hostname!=="localhost"&&
+            window.location.hostname!=="beansite.vercel.app"){
             alert("This is not an official URL of Beansite. If you want to support my work, go to https://beansite.vercel.app")
         }
-    </script> -->
+    </script>
     <!-- <audio display="none" src="./assets/audio/bootsound.mp3" autoplay="autoplay"></audio> -->
 </body>
 </html>

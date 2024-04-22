@@ -7,8 +7,8 @@ const LoaderUI = new ArchiveLoader(SDK);
 // const Store = new AppStore(SDK);
 
 const App = () =>{
-  const vnum = "2.7.0";
-  const vnum_rdate = "4/15/24";
+  const vnum = "2.7.3";
+  const vnum_rdate = "4/22/24";
   function download(data, filename, type) {
     var file = new Blob([data], {type: type});
     if (window.navigator.msSaveOrOpenBlob) // IE10+
@@ -95,6 +95,30 @@ const App = () =>{
       ]}
     >
 
+      {/* Special ------------------------------------------------------ */}
+      <SDK.Window winName="Shameless Advertisment" winNum="-99" defaultStyle={{"height": "40vmin", "width": "65vmin", "top": "5vmin","right": "5vmin",}} includeNavButtons={{"del":true,"max":true,"min":true,}}>
+        <h1>Check out the Kandy Krew!</h1>
+        <p>Gum can be expensive and hard to get as a middle schooler. We fix that, with deals 25%-50% cheaper than walgreens.</p>
+        <a href="https://snackcentral.vercel.app">Official Website</a>
+        <hr/>
+        <h1>Webcache has Returned!</h1>
+        <p>Mackin and Webcache has been blocked, but recently I found a way to bring it back.</p>
+        <a href="https://mwcnd.vercel.app">Official Website</a>
+      </SDK.Window>
+
+      <SDK.Window winName="Changelog" winNum="-973" defaultStyle={{"height": "40vmin", "width": "65vmin", "top": "calc(10vmin + 40vmin)","right": "5vmin",}} includeNavButtons={{"del":true,"max":false,"min":false,}}>
+        <h1>Changelog: {vnum} - {vnum_rdate}</h1>
+        <ul>
+          <li>Fixed Layering Isssue</li>
+          <li>Made BeanPowered Window Larger</li>
+          <li>Added Games: </li>
+          <ul>
+            <li>None!</li>
+          </ul>
+        </ul>
+      </SDK.Window>
+      {/* -------------------------------------------------------------- */}
+
       <SDK.Window winName="Welcome, User!!" winNum="1" defaultStyle={{"height": "40vmin", "width": "65vmin", "top": "5vmin", "left": "5vmin",}} includeNavButtons={{"del":true,"max":true,"min":true,}}>
         <h1 class="ph1">Welcome To <h1 class="logo">Bean Site 95</h1></h1>
         <h1>It's the <strong>ultimate</strong> playground for bean enjoyers!</h1>
@@ -114,7 +138,7 @@ const App = () =>{
         </p>
       </SDK.Window>
 
-      <SDK.Window winName="Beanpowered" winNum="2" defaultStyle={{"height": "40vmin", "width": "65vmin", "top": "10vmin", "left": "10vmin",}} includeNavButtons={{"del":true,"max":true,"min":true,}}>
+      <SDK.Window winName="Beanpowered" winNum="2" defaultStyle={{"height": "65vmin", "width": "100vmin", "top": "10vmin", "left": "10vmin",}} includeNavButtons={{"del":true,"max":true,"min":true,}}>
         <div className="BeanpoweredMWindow">
           <div className="bp_nav">
             <div id="bp_logo"></div>
@@ -189,36 +213,6 @@ const App = () =>{
 
       <BeanPaint />
 
-      <SDK.Window winName="Shameless Advertisment" winNum="99" defaultStyle={{"height": "40vmin", "width": "65vmin", "top": "5vmin","right": "5vmin",}} includeNavButtons={{"del":true,"max":true,"min":true,}}>
-        <h1>Check out the Kandy Krew!</h1>
-        <p>Gum can be expensive and hard to get as a middle schooler. We fix that, with deals 25%-50% cheaper than walgreens.</p>
-        <a href="https://snackcentral.vercel.app">Official Website</a>
-        <hr/>
-        <h1>Webcache has Returned!</h1>
-        <p>Mackin and Webcache has been blocked, but recently I found a way to bring it back.</p>
-        <a href="https://mwcnd.vercel.app">Official Website</a>
-      </SDK.Window>
-
-      <SDK.Window winName="Changelog" winNum="973" defaultStyle={{"height": "40vmin", "width": "65vmin", "top": "calc(10vmin + 40vmin)","right": "5vmin",}} includeNavButtons={{"del":true,"max":false,"min":false,}}>
-        <h1>Changelog: {vnum} - {vnum_rdate}</h1>
-        <ul>
-          <li>Added Paint App</li>
-          <li>Fixed Render Issues</li>
-          <li>Optimized SDK</li>
-          <li>Added more loading texts</li>
-          
-          <li>Added Games: </li>
-          <ul>
-            <li>Added Deathrun 3D</li>
-            <li>Added Helix Jump</li>
-            <li>Added Friday Night Funkin'</li>
-            <li>Added Tomb Raider</li>
-            <li>Added Dumb Ways to Die</li>
-            <li>Added Subway Surfers</li>
-          </ul>
-        </ul>
-      </SDK.Window>
-
       <LoaderUI.Window />
 
       {/* <Store.Homepage /> */}
@@ -244,7 +238,7 @@ SDK.closeWindow('6');
 SDK.closeWindow('7');
 SDK.closeWindow('8'); 
 SDK.closeWindow('9');
-// SDK.closeWindow('973'); // special: changelog
-// SDK.closeWindow('99'); // special: ad
+// SDK.closeWindow('-973'); // special: changelog
+// SDK.closeWindow('-99'); // special: ad
 
 SDK.init();

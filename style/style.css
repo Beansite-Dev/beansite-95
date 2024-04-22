@@ -885,6 +885,8 @@ loading {
     font-size: 1.75em;
     line-height: 1.25em;
     font-family: 'Motiva Sans';
+    width: 45%;
+    text-align: right;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;

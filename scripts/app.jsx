@@ -60,6 +60,7 @@ const App = () =>{
       sel.addRange(range);
     }
   }
+  const alt=(prop)=>{return(<li><a href={prop.URL}>{prop.URL}</a></li>)}
   return (
     <SDK.TemplateUI 
       TaskBarIcons={[
@@ -133,6 +134,17 @@ const App = () =>{
             <li class="link" onClick={() => SDK.openWindow('8')}> <u>Paint some artworks!</u> </li>
             <li class="link" onClick={() => SDK.openWindow('9')}> <u>Check out old versions</u> </li>
             {/* <li class="link" onClick={() => SDK.openWindow('8')}> <u>Download more ppas from the web</u> </li> */}
+        </ul>
+        <h1>Alternate URLS:</h1>
+        <p>All of these are just incase our primary URL got blocked</p>
+        <ul>
+          <alt URL="https://mb95.vercel.app"/>
+          <alt URL="https://dontblockbeansire.vercel.app"/>
+          <alt URL="https://beanabc.vercel.app"/>
+          <alt URL="https://ilovebeans.vercel.app"/>
+          <alt URL="https://iluvbeans.vercel.app"/>
+          <alt URL="https://beans4lyfe.vercel.app"/>
+          <alt URL="https://beans4life.vercel.app"/>
         </ul>
         <p>Version {vnum}
         <br/>M1dnightDev (c) 2023

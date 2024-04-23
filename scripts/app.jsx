@@ -7,8 +7,8 @@ const LoaderUI = new ArchiveLoader(SDK);
 // const Store = new AppStore(SDK);
 
 const App = () =>{
-  const vnum = "2.7.3";
-  const vnum_rdate = "4/22/24";
+  const vnum = "2.8.2";
+  const vnum_rdate = "4/23/24";
   function download(data, filename, type) {
     var file = new Blob([data], {type: type});
     if (window.navigator.msSaveOrOpenBlob) // IE10+
@@ -111,6 +111,8 @@ const App = () =>{
         <ul>
           <li>Fixed Layering Isssue</li>
           <li>Made BeanPowered Window Larger</li>
+          <li>Fixed Mislabel in Settings</li>
+          <li>Added Dark Mode (check settings)</li>
           <li>Added Games: </li>
           <ul>
             <li>None!</li>

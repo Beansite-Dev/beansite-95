@@ -65,7 +65,6 @@ body {
     transition: .5s;
     overflow: hidden;
 }
-
 .window {
     overflow: hidden;
     box-sizing: border-box;
@@ -134,7 +133,7 @@ strong {
     font-size: 1rem;
     margin: 0;
     padding: 0;
-    color: red;
+    color: red !important;
     text-shadow:
         -1px 1px orange,
         -2px 2px yellow,
@@ -950,3 +949,7 @@ loading {
 #g_funkin    {background-image: url('../assets/gbanner/funkin.webp');}
 #g_dwtd      {background-image: url('../assets/gbanner/dwtd.png');}
 #g_tombr     {background-image: url('../assets/gbanner/tombr.png');}
+
+.settingsDropdown {
+    background: lightgray
+}

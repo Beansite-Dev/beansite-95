@@ -1,5 +1,5 @@
 .window { background-image: url("../assets/grid_dm.png") !important; background-color: #222222 !important; }
-.window h1, .window p, .window li *, :not(strong) { color: #FFF !important; }
+.window h1, .window p, .window li *, :not(strong,#runCmd) { color: #FFF !important; }
 .window nav button { background-color: #2f2f2f !important; border-color: #171717 !important; }
 .window select { background-color: #222222 !important; }
 #taskbar { background-color: #222222 !important; }
@@ -7,12 +7,6 @@
 #startmenu { background: #222222 !important; }
 .application { background-color: #363636 !important; }
 .window nav { background: linear-gradient(90deg, #212121, #9a9a9a) !important; border-color: #424242 !important; }
-#topbar {
- background: #1b1b1b;
-}
-#topbar a {
-    background: #171717;
-}
-#editor {
-    background: #222222;
-}
+#topbar { background: #1b1b1b; }
+#topbar a { background: #171717; }
+#editor { background: #222222; }

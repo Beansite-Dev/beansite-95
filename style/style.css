@@ -35,6 +35,7 @@
 html * {
     font-family: "Comic Sans MS";
     image-rendering: pixelated;
+    user-select: none;
 }
 
 ::-webkit-scrollbar {

@@ -114,6 +114,8 @@ const App = () =>{
           <li>Made BeanPowered Window Larger</li>
           <li>Fixed Mislabel in Settings</li>
           <li>Added Dark Mode (check settings)</li>
+          <li>GREATLY improved loading times</li>
+          <li>Fixed Darkmode CMD Input Bug</li>
           <li>Added Games: </li>
           <ul>
             <li>None!</li>
@@ -197,6 +199,7 @@ const App = () =>{
               <Game name="Fridy Night Funkin'" url="https://friday-nightfunkin.io/friday-night-funkin" type="OpenInGL" gID="funkin" />
               <Game name="Dumb Ways to Die" url="https://dumbwaystodie.io" type="OpenInGL" gID="dwtd" />
               <Game name="Tomb Runner" url="https://lagged.com/en/g/tomb-runner" type="OpenInGL" gID="tombr" />
+              <Game name="Fallout 1" url="https://playclassic.games/games/role-playing-dos-games-online/play-fallout-online/play/" type="OpenInGL" gID="fallout1" />
 
             </div>
           </div>

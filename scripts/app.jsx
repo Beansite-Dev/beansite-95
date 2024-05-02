@@ -7,8 +7,8 @@ const LoaderUI = new ArchiveLoader(SDK);
 // const Store = new AppStore(SDK);
 
 const App = () =>{
-  const vnum = "2.8.2";
-  const vnum_rdate = "4/23/24";
+  const vnum = "2.8.3";
+  const vnum_rdate = "5/2/24";
   function download(data, filename, type) {
     var file = new Blob([data], {type: type});
     if (window.navigator.msSaveOrOpenBlob) // IE10+
@@ -109,6 +109,7 @@ const App = () =>{
 
       <SDK.Window winName="Changelog" winNum="-973" defaultStyle={{"height": "40vmin", "width": "65vmin", "top": "calc(10vmin + 40vmin)","right": "5vmin",}} includeNavButtons={{"del":true,"max":false,"min":false,}}>
         <h1>Changelog: {vnum} - {vnum_rdate}</h1>
+        <p>yall better appreciate this one cuz i had to write it on my mom's netflix ipad thats slow as s**t since im grounded</p>
         <ul>
           <li>Fixed Layering Isssue</li>
           <li>Made BeanPowered Window Larger</li>
@@ -118,7 +119,7 @@ const App = () =>{
           <li>Fixed Darkmode CMD Input Bug</li>
           <li>Added Games: </li>
           <ul>
-            <li>None!</li>
+            <li>Burrito Bison: Launcha Libre</li>
           </ul>
         </ul>
       </SDK.Window>
@@ -200,6 +201,7 @@ const App = () =>{
               <Game name="Dumb Ways to Die" url="https://dumbwaystodie.io" type="OpenInGL" gID="dwtd" />
               <Game name="Tomb Runner" url="https://lagged.com/en/g/tomb-runner" type="OpenInGL" gID="tombr" />
               <Game name="Fallout 1" url="https://playclassic.games/games/role-playing-dos-games-online/play-fallout-online/play/" type="OpenInGL" gID="fallout1" />
+              <Game name="Burrito Bison: Launcha Libre" url="https://en.gameslol.net/burrito-bison-launcha-libre-1382.html" type="OpenInGL" gID="burritobll" />
 
             </div>
           </div>

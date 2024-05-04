@@ -150,7 +150,7 @@ const App = () =>{
           blocked at some point. If you want to contineu using 
           beansite, download our locals clients
         </p>
-        <button onClick={()=>{SDK.openWindow('10')}}>Download Here</button>
+        <button onClick={(e)=>{e.preventDefault();SDK.openWindow('10')}}>Download Here</button>
         <h1>Alternate URLS:</h1>
         <p>All of these are just incase our primary URL got blocked</p>
         <ul>
@@ -262,7 +262,7 @@ const App = () =>{
         </p>
         <h2>Current Versions:</h2>
         <ul>
-          <li>NetV: Canela (<a href="file://///assets/local_clients/bsc_canela.html">Download</a>)</li>
+          <li>NetV: Canela (<a href="">Google Drive Mirror</a>)</li>
         </ul>
       </SDK.Window>
 

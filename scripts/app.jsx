@@ -73,6 +73,7 @@ const App = () =>{
         <SDK.TaskbarIcon winNum='7' winName="Notepad" iconPath="../assets/icons/notepad.png" />,
         <SDK.TaskbarIcon winNum='8' winName="Bean Paint" iconPath="../assets/icons/bpaint.webp" />,
         <SDK.TaskbarIcon winNum='9' winName="Version Loader" iconPath="../assets/icons/cd.png" />,
+        <SDK.TaskbarIcon winNum='10' winName="Local Client Download" iconPath="../assets/icons/cd.png" />,
       ]}
       StartMenuIcons={[
         <SDK.StartMenuShortcut winNum='1' winName="Welcome, User!!" iconPath="../assets/icons/smily.webp" />,
@@ -83,6 +84,7 @@ const App = () =>{
         <SDK.StartMenuShortcut winNum='7' winName="Notepad" iconPath="../assets/icons/notepad.png" />,
         <SDK.StartMenuShortcut winNum='8' winName="Bean Paint" iconPath="../assets/icons/bpaint.webp" />,
         <SDK.StartMenuShortcut winNum='9' winName="Version Loader" iconPath="../assets/icons/cd.png" />,
+        <SDK.StartMenuShortcut winNum='10' winName="Local Client Download" iconPath="../assets/icons/cd.png" />,
       ]}
       DesktopShortcuts={[
         <SDK.DesktopShortcut winNum='1' winName="Welcome, User!!" iconPath="../assets/icons/smily.webp" />,
@@ -93,6 +95,7 @@ const App = () =>{
         <SDK.DesktopShortcut winNum='7' winName="Notepad" iconPath="../assets/icons/notepad.png" />,
         <SDK.DesktopShortcut winNum='8' winName="Bean Paint" iconPath="../assets/icons/bpaint.webp" />,
         <SDK.DesktopShortcut winNum='9' winName="Version Loader" iconPath="../assets/icons/cd.png" />,
+        <SDK.DesktopShortcut winNum='10' winName="Local Client Download" iconPath="../assets/icons/cd.png" />,
       ]}
     >
 

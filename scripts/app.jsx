@@ -141,6 +141,12 @@ const App = () =>{
             <li class="link" onClick={() => SDK.openWindow('9')}> <u>Check out old versions</u> </li>
             {/* <li class="link" onClick={() => SDK.openWindow('8')}> <u>Download more ppas from the web</u> </li> */}
         </ul>
+        <h1>Beansite needs YOUR help!!</h1>
+        <p>
+          Beansite, being an unblocked game website, will be 
+          blocked at some point. If you want to contineu using 
+          beansite, download our <a onClick={()=>{SDK.openWindow('10')}}>locals clients</a>
+        </p>
         <h1>Alternate URLS:</h1>
         <p>All of these are just incase our primary URL got blocked</p>
         <ul>

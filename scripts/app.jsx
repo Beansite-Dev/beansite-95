@@ -147,7 +147,7 @@ const App = () =>{
           blocked at some point. If you want to contineu using 
           beansite, download our locals clients
         </p>
-        <a onClick={()=>{SDK.openWindow('10')}}>Download Here</a>
+        <button onClick={()=>{SDK.openWindow('10')}}>Download Here</button>
         <h1>Alternate URLS:</h1>
         <p>All of these are just incase our primary URL got blocked</p>
         <ul>

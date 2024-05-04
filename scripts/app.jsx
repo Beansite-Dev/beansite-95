@@ -263,8 +263,8 @@ const App = () =>{
         <h2>Current Versions:</h2>
         <ul>
           <li>NetV: Canela - <a 
-          href="https://drive.google.com/uc?export=download&id=10F2olobD4VuLWsHe1ml1F4VuD91vFeC">
-            Download (Google Drive Mirror)</a>)</li>
+          href="https://drive.google.com/uc?export=download&id=10F2oIobD4RVuLWsHe1mI1F4VuD91vFeC">
+            Download (Google Drive Mirror)</a></li>
         </ul>
       </SDK.Window>
 

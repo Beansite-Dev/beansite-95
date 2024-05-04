@@ -7,8 +7,8 @@ const LoaderUI = new ArchiveLoader(SDK);
 // const Store = new AppStore(SDK);
 
 const App = () =>{
-  const vnum = "2.8.3";
-  const vnum_rdate = "5/2/24";
+  const vnum = "2.9.2";
+  const vnum_rdate = "5/4/24";
   function download(data, filename, type) {
     var file = new Blob([data], {type: type});
     if (window.navigator.msSaveOrOpenBlob) // IE10+
@@ -117,9 +117,12 @@ const App = () =>{
           <li>Added Dark Mode (check settings)</li>
           <li>GREATLY improved loading times</li>
           <li>Fixed Darkmode CMD Input Bug</li>
+          <li>Added Beansite local clients</li>
           <li>Added Games: </li>
           <ul>
-            <li>Burrito Bison: Launcha Libre</li>
+            <li>Burrito Bison: Launcha Libre (broken/will update)</li>
+            <li>Tomb of the Mask</li>
+            <li>Drive Mad</li>
           </ul>
         </ul>
       </SDK.Window>
@@ -202,6 +205,8 @@ const App = () =>{
               <Game name="Tomb Runner" url="https://lagged.com/en/g/tomb-runner" type="OpenInGL" gID="tombr" />
               <Game name="Fallout 1" url="https://playclassic.games/games/role-playing-dos-games-online/play-fallout-online/play/" type="OpenInGL" gID="fallout1" />
               <Game name="Burrito Bison: Launcha Libre" url="https://en.gameslol.net/burrito-bison-launcha-libre-1382.html" type="OpenInGL" gID="burritobll" />
+              <Game name="Tomb of the Mask" url="https://mountain658.github.io/tombofthemask.html" type="OpenInGL" gID="totm"/>
+              <Game name="Drive Mad" url="https://mountain658.github.io/drivemad.html" type="OpenInGL" gID="drivem" />
 
             </div>
           </div>
@@ -228,6 +233,27 @@ const App = () =>{
         </div>
         <div id="editor" contentEditable onKeyDown={() => notepadKeyDown(event)}>
         </div>
+      </SDK.Window>
+      
+      <SDK.Window winName="Bean Paint" winNum="10" defaultStyle={{"height": "350px", "width": "500px", "top": "35vmin", "left": "35vmin",}} includeNavButtons={{"del":true,"max":true,"min":true,}}>
+        <h1>Beansite Local Client download</h1>
+        <p>
+          Beansite need YOUR help! Beansite, being a website 
+          that holds games, is probably going to be blocked.
+          If you want to have a local version of beansite for
+          when that happens, download our local clients!
+        </p>
+        <h4>Why Local Clients?</h4>
+        <p>
+          You should download a local client, as they can't
+          be blocked by go-guardian. They are local files, 
+          meaning your teacher can't url block them in class 
+          and the school cant block the url either. 
+        </p>
+        <h2>Current Versions:</h2>
+        <ul>
+          <li>NetV: Canela (<a href="file://///assets/local_clients/bsc_canela.html">Download</a>)</li>
+        </ul>
       </SDK.Window>
 
       <BeanPaint />
@@ -257,6 +283,7 @@ SDK.closeWindow('6');
 SDK.closeWindow('7');
 SDK.closeWindow('8'); 
 SDK.closeWindow('9');
+SDK.closeWindow('10');
 // SDK.closeWindow('-973'); // special: changelog
 // SDK.closeWindow('-99'); // special: ad
 

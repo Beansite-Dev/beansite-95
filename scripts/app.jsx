@@ -157,7 +157,7 @@ const App = () =>{
           beansite, download our locals clients
         </p>
         <button onClick={(e)=>{e.preventDefault();SDK.openWindow('10')}}>Download Here</button>
-        <br/>
+        <br/><br/>
         <h1>Alternate URLS:</h1>
         <p>All of these are just incase our primary URL got blocked</p>
         <ul>

@@ -15,20 +15,21 @@
 }
 @font-face {
     font-family: "goofy";
-    src: url("../assets/fonts/goofy.ttf");
+    src: url("../assets/fonts/goofy.ttf") format('truetype');
 }
-@font-face {
+/* @font-face {
     font-family: "Comic Sans MS";
     src: url("../assets/fonts/comic.ttf")format("truetype");
-}
+} */
 @font-face {
 	font-family: 'Motiva Sans';
-	src: url('https://community.akamai.steamstatic.com/public/shared/fonts/MotivaSans-Regular.ttf?v=4.015') format('truetype');
+	src: url('../assets/fonts/motiva.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
 html * {
-    font-family: "Comic Sans MS";
+    /* font-family: "Comic Sans MS"; */
+    font-family: "Brush Script MT", cursive;
     image-rendering: pixelated;
     user-select: none;
 }

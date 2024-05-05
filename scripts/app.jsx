@@ -7,8 +7,8 @@ const LoaderUI = new ArchiveLoader(SDK);
 // const Store = new AppStore(SDK);
 
 const App = () =>{
-  const vnum = "2.9.2";
-  const vnum_rdate = "5/4/24";
+  const vnum = "2.9.5";
+  const vnum_rdate = "5/5/24";
   function download(data, filename, type) {
     var file = new Blob([data], {type: type});
     if (window.navigator.msSaveOrOpenBlob) // IE10+
@@ -118,7 +118,7 @@ const App = () =>{
           <li>Made BeanPowered Window Larger</li>
           <li>Fixed Mislabel in Settings</li>
           <li>Added Dark Mode (check settings)</li>
-          <li>GREATLY improved loading times</li>
+          <li>GREATLY improved loading times (pro tip: don't use CDNs, they're slow)</li>
           <li>Fixed Darkmode CMD Input Bug</li>
           <li>Created/Updated Beansite local clients:</li>
           <ul>

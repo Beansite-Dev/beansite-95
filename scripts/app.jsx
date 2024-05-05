@@ -120,7 +120,11 @@ const App = () =>{
           <li>Added Dark Mode (check settings)</li>
           <li>GREATLY improved loading times</li>
           <li>Fixed Darkmode CMD Input Bug</li>
-          <li>Added Beansite local clients</li>
+          <li>Created/Updated Beansite local clients:</li>
+          <ul>
+            <li>Pinto (NetV + BeanCloak v1.1)</li>
+            <li>Canela (NetV)</li>
+          </ul>
           <li>Added Games: </li>
           <ul>
             <li>Burrito Bison: Launcha Libre (broken/will update)</li>
@@ -266,8 +270,9 @@ const App = () =>{
         </p>
         <h2>Current Versions:</h2>
         <ul>
-          <li>NetV: Canela - <a 
-          href="https://drive.google.com/uc?export=download&id=10F2oIobD4RVuLWsHe1mI1F4VuD91vFeC">
+          <li>NetV: Canela - <a href="https://drive.google.com/uc?export=download&id=10F2oIobD4RVuLWsHe1mI1F4VuD91vFeC">
+            Download (Google Drive Mirror)</a></li>
+          <li>NetV + BeanCloak v1.1: Pinto - <a href="https://drive.google.com/uc?export=download&id=1wU2ASX9uMMJNlC92Cm65cU6hISBioRXC">
             Download (Google Drive Mirror)</a></li>
         </ul>
       </SDK.Window>

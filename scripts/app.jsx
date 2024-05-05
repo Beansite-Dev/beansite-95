@@ -127,7 +127,7 @@ const App = () =>{
           </ul>
           <li>Added Games: </li>
           <ul>
-            <li>Burrito Bison: Launcha Libre (broken/will update)</li>
+            <li>Burrito Bison: Launcha Libre (fixed)</li>
             <li>Tomb of the Mask</li>
             <li>Drive Mad</li>
             <li>Run 3</li>

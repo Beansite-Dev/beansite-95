@@ -157,6 +157,7 @@ const App = () =>{
           beansite, download our locals clients
         </p>
         <button onClick={(e)=>{e.preventDefault();SDK.openWindow('10')}}>Download Here</button>
+        <br/>
         <h1>Alternate URLS:</h1>
         <p>All of these are just incase our primary URL got blocked</p>
         <ul>
@@ -270,10 +271,8 @@ const App = () =>{
         </p>
         <h2>Current Versions:</h2>
         <ul>
-          <li>NetV: Canela - <a href="https://drive.google.com/uc?export=download&id=10F2oIobD4RVuLWsHe1mI1F4VuD91vFeC">
-            Download (Google Drive Mirror)</a></li>
-          <li>NetV + BeanCloak v1.1: Pinto - <a href="https://drive.google.com/uc?export=download&id=1wU2ASX9uMMJNlC92Cm65cU6hISBioRXC">
-            Download (Google Drive Mirror)</a></li>
+          <li>NetV: Canela - <a href="https://drive.google.com/uc?export=download&id=10F2oIobD4RVuLWsHe1mI1F4VuD91vFeC">Download</a></li>
+          <li>NetV + BeanCloak v1.1: Pinto - <a href="https://drive.google.com/uc?export=download&id=1wU2ASX9uMMJNlC92Cm65cU6hISBioRXC">Download</a></li>
         </ul>
       </SDK.Window>
 

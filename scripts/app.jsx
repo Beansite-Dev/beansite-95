@@ -170,7 +170,8 @@ const App = () =>{
           <Alt URL="https://beans4life.vercel.app"/>
         </ul>
         <p>Version {vnum}
-        <br/>M1dnightDev (c) 2023
+        <br/>M1dnightDev (c) 2024
+        <br/>Developed with {`<3`} since 2023
         <br/>Socials: <a href="https://youtube.com/@m1dnightdev">Youtube</a> | <a href="https://twitter.com/@m1dnightdev">Twitter</a> | <a href="https://github.com/m1dnight-ofcl">Github</a>
         </p>
       </SDK.Window>

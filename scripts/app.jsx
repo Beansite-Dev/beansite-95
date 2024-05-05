@@ -126,6 +126,8 @@ const App = () =>{
             <li>Burrito Bison: Launcha Libre (broken/will update)</li>
             <li>Tomb of the Mask</li>
             <li>Drive Mad</li>
+            <li>Run 3</li>
+            <li>Celeste</li>
           </ul>
         </ul>
       </SDK.Window>
@@ -214,9 +216,11 @@ const App = () =>{
               <Game name="Dumb Ways to Die" url="https://dumbwaystodie.io" type="OpenInGL" gID="dwtd" />
               <Game name="Tomb Runner" url="https://lagged.com/en/g/tomb-runner" type="OpenInGL" gID="tombr" />
               <Game name="Fallout 1" url="https://playclassic.games/games/role-playing-dos-games-online/play-fallout-online/play/" type="OpenInGL" gID="fallout1" />
-              <Game name="Burrito Bison: Launcha Libre" url="https://en.gameslol.net/burrito-bison-launcha-libre-1382.html" type="OpenInGL" gID="burritobll" />
+              <Game name="Burrito Bison: Launcha Libre" url="https://mountain658.github.io/BurritoBison.html" type="OpenInGL" gID="burritobll" />
               <Game name="Tomb of the Mask" url="https://mountain658.github.io/tombofthemask.html" type="OpenInGL" gID="totm"/>
               <Game name="Drive Mad" url="https://mountain658.github.io/drivemad.html" type="OpenInGL" gID="drivem" />
+              <Game name="Run 3" url="https://mountain658.glitch.me/run3.html" type="OpenInGL" gID="run3" />
+              <Game name="Celeste" url="https://mountain658.glitch.me/celeste.html" type="OpenInGL" gID="celeste" />
 
             </div>
           </div>

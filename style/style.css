@@ -950,6 +950,8 @@ loading {
 #g_burritobll {background-image: url('../assets/gbanner/burritobll.jpg');}
 #g_totm       {background-image: url('../assets/gbanner/totm.jpg');}
 #g_drivem     {background-image: url('../assets/gbanner/drivem.jpg');}
+#g_run3       {background-image: url("../assets/gbanner/run3.webp");}
+#g_celeste    {background-image: url("../assets/gbanner/celeste.jpg");}
 
 .settingsDropdown {
     background: lightgray

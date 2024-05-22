@@ -222,7 +222,7 @@ const App = () =>{
               <Game name="Dumb Ways to Die" url="https://dumbwaystodie.io" type="OpenInGL" gID="dwtd" />
               <Game name="Tomb Runner" url="https://lagged.com/en/g/tomb-runner" type="OpenInGL" gID="tombr" />
               <Game name="Fallout 1" url="https://playclassic.games/games/role-playing-dos-games-online/play-fallout-online/play/" type="OpenInGL" gID="fallout1" />
-              <Game name="Burrito Bison: Launcha Libre" url="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://tybsi.com/games/burrito-bison-launcha-libre/&ved=2ahUKEwjuxbSrxYSGAxU0GVkFHZJsAwkQFnoECB8QAQ&usg=AOvVaw2ytuDaj2-vwqqw5kP-JgrB" type="OpenInGL" gID="burritobll" />
+              <Game name="Burrito Bison: Launcha Libre" url="https://tybsi.com/games/burrito-bison-launcha-libre/" type="OpenInGL" gID="burritobll" />
               <Game name="Tomb of the Mask" url="https://mountain658.github.io/tombofthemask.html" type="OpenInGL" gID="totm"/>
               <Game name="Drive Mad" url="https://mountain658.github.io/drivemad.html" type="OpenInGL" gID="drivem" />
               <Game name="Run 3" url="https://mountain658.glitch.me/run3.html" type="OpenInGL" gID="run3" />

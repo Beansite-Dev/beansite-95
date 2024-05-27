@@ -62,10 +62,32 @@
         
         window.__h82AlnkH6D91__("WyJwdWItNzQxMjM5NDczMDMwMDAyMSIsW251bGwsbnVsbCxudWxsLCJodHRwczovL2Z1bmRpbmdjaG9pY2VzbWVzc2FnZXMuZ29vZ2xlLmNvbS9iL3B1Yi03NDEyMzk0NzMwMzAwMDIxIl0sbnVsbCxudWxsLCJodHRwczovL2Z1bmRpbmdjaG9pY2VzbWVzc2FnZXMuZ29vZ2xlLmNvbS9lbC9BR1NLV3hYajNJbmtCWFY2RG52dXVZcGp5aGcwWE92VDhwQjgtdVh5OWRLRXI1WW9za3F2VUdTOWRlTGRfQUp4Wk5JcFBaX0c2bGtiM2FoSnNSUzc1SEVyZ1RMdEZ3XHUwMDNkXHUwMDNkP3RlXHUwMDNkVE9LRU5fRVhQT1NFRCIsImh0dHBzOi8vZnVuZGluZ2Nob2ljZXNtZXNzYWdlcy5nb29nbGUuY29tL2VsL0FHU0tXeFcweExBbW0wWkZYdGU1aEZpbHRjWjE3MXEzcnhaeFRRRERrOThLcGxzTHd4WkNwUFhNejd0dS12dkEzVkZRT1VTN3ppMVQ0aEl5SGc4dXYtY2RQNmJ0UUFcdTAwM2RcdTAwM2Q/YWJcdTAwM2QxXHUwMDI2c2JmXHUwMDNkMSIsImh0dHBzOi8vZnVuZGluZ2Nob2ljZXNtZXNzYWdlcy5nb29nbGUuY29tL2VsL0FHU0tXeFVzSjBJZlFndHV2ZWx3ZnBnVmdSd1NrQ293NUNTQUFDX1FpV0kxOTZMeVhCblU3OHdxRUxCVkFCTnk1LXlDLWVDWk5KUzlDendWWGx4dXNGOVdoUG1OSWdcdTAwM2RcdTAwM2Q/YWJcdTAwM2QyXHUwMDI2c2JmXHUwMDNkMSIsImh0dHBzOi8vZnVuZGluZ2Nob2ljZXNtZXNzYWdlcy5nb29nbGUuY29tL2VsL0FHU0tXeFVPYWJ5aDVpOFpuNzNIb3dUN19MT0VTT2pfcDcwNFItUHlmSVBmelMxSW9SZUZqS054NXFKalBWU2RDUkhkaEc1c2lLWEpIZzRCVDdCLURTNl9jeEM5c2dcdTAwM2RcdTAwM2Q/c2JmXHUwMDNkMiIsImRpdi1ncHQtYWQiLDIwLDEwMCwiY0hWaUxUYzBNVEl6T1RRM016QXpNREF3TWpFXHUwMDNkIixbbnVsbCxudWxsLG51bGwsImh0dHBzOi8vd3d3LmdzdGF0aWMuY29tLzBlbW4vZi9wL3B1Yi03NDEyMzk0NzMwMzAwMDIxLmpzP3VzcXBcdTAwM2RDQTAiXSwiaHR0cHM6Ly9mdW5kaW5nY2hvaWNlc21lc3NhZ2VzLmdvb2dsZS5jb20vZWwvQUdTS1d4WHB5d1RmYkJvODJmTF9jZ0hOcWFqaDJfNzl5QV9uUVlEWWFzUENGWmhPUUpPWGU0eFpZS1pUY1VjcjBaSm1WZTM3bkVUaEVZZWFiUDh3b28ySkFPUHN6Z1x1MDAzZFx1MDAzZCJd");</script>
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.js" integrity="sha512-vRqhAr2wsn+/cSsyz80psBbCcqzz2GTuhGk3bq3dAyytz4J/8XwFqMjiAGFBj+WM95lHBJ9cDf87T3P8yMrY7A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    <script>
+        window.addEventListener("beforeunload",(e)=>{
+            let closeMsg="Are you sure you want to close beansite? (this may be gogaurdian trying to close your tab or redirect you)"
+            let cmsg=document.getElementById("closeconfirm");
+            cmsg.style.display="flex";
+            e = e || window.event;
+            if (e) e.returnValue = closeMsg;
+            return closeMsg;
+        })
+    </script>
 </head>
-<body id="body"></body>
-    <script>window.onbeforeunload = function() {return "Are you sure? Cancel this if this is gogaurdian attempting a redirect";};</script>
+<body id="body">
     <div id="root"></div>
+    <div id="closeconfirm" style="display: none;">
+        <h1>Did you really want to close?</h1>
+        <p>
+            GoGaurdian has features that allow it to close/redirect your tabs. 
+            I've found a way to get around this. If you make a close confirmation 
+            apear before someone closes the window, it doesn't let gogaurdian close 
+            your tab. The only issue is, all major browser don't let you have custom close 
+            confirmation message. I know this is for security, but it makes it so I can't explain 
+            info like this to you. I have found a workaround, but it's only so good. Better than 
+            nothing, I suppose.
+        </p>
+        <button onclick="document.getElementById('closeconfirm').style.display='none'">Return to Beansite</button>
+    </div>
     <script type="text/babel" src="/scripts/SDK.jsx"></script>
     <script type="text/babel" src="/scripts/firebean.jsx"></script>
     <script type="text/babel" src="/scripts/cmd.jsx"></script>
@@ -106,6 +128,8 @@
             "Sub to my yt pls",
             "balls",
             "Sorry about loading speeds, this project is HUGE!!",
+            "beans beans beans. jessie ate some beans. he was happy, happy, happy that he ate some beans",
+            "kurt cobian once wrote a song about beans (yes, he was sober)",
         ]
         tipElm.innerHTML=tips[Math.floor(Math.random()*tips.length)];
         const lsTips=setInterval(()=>{
@@ -115,6 +139,7 @@
             console.log('Loaded!');
             clearInterval(lsTips);
             bootimg.classList.add('loading_fadeout');
+            setTimeout(()=>{bootimg.remove()},1250);
         });
         // do{}while(!loaded); // scary code right here
     </script>

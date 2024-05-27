@@ -211,7 +211,6 @@ iframe {
     transform: translate(-50%, -50%);
     height: 50%;
     object-fit: contain;
-    z-index: 999272;
 }
 #taskbar {
     height: 45px;
@@ -666,7 +665,7 @@ loading {
 	top: 0px;
 	width: 100%;
 	height: 100%;
-	z-index: 9999;
+	z-index: 999;
 	/* background-image: url('../assets/loading_img.png'); */
     /* background-size: cover; */
     /* background-repeat: repeat; */
@@ -955,6 +954,12 @@ loading {
 #g_drivem     {background-image: url('../assets/gbanner/drivem.jpg');}
 #g_run3       {background-image: url("../assets/gbanner/run3.webp");}
 #g_celeste    {background-image: url("../assets/gbanner/celeste.jpeg");}
+#g_jpjr       {background-image: url("../assets/gbanner/jpjr.png");}
+#g_frnin      {background-image: url("../assets/gbanner/frnin.png");}
+#g_flappy     {background-image: url("../assets/gbanner/flappy.png");}
+#g_pokered    {background-image: url("../assets/gbanner/pokered.jpg");}
+#g_pokeblue   {background-image: url("../assets/gbanner/pokeblue.jpg");}
+#g_streetftr  {background-image: url("../assets/gbanner/streetftr.jpg");}
 
 .settingsDropdown {
     background: lightgray
@@ -966,7 +971,7 @@ loading {
     transform: translate(-50%,-50%);
     height: 100dvh;
     width: 100dvw;
-    z-index: 999;
+    z-index: 993;
     background: #000;
     display: flex;
     justify-content: center;

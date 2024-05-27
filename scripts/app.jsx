@@ -7,8 +7,8 @@ const LoaderUI = new ArchiveLoader(SDK);
 // const Store = new AppStore(SDK);
 
 const App = () =>{
-  const vnum = "2.9.5";
-  const vnum_rdate = "5/5/24";
+  const vnum = "2.9.7";
+  const vnum_rdate = "5/27/24";
   function download(data, filename, type) {
     var file = new Blob([data], {type: type});
     if (window.navigator.msSaveOrOpenBlob) // IE10+
@@ -120,6 +120,7 @@ const App = () =>{
           <li>Added Dark Mode (check settings)</li>
           <li>GREATLY improved loading times (pro tip: don't use CDNs, they're slow)</li>
           <li>Fixed Darkmode CMD Input Bug</li>
+          <li>Added close confirmation message</li>
           <li>Created/Updated Beansite local clients:</li>
           <ul>
             <li>Pinto (NetV + BeanCloak v1.1)</li>
@@ -132,6 +133,16 @@ const App = () =>{
             <li>Drive Mad</li>
             <li>Run 3</li>
             <li>Celeste</li>
+            <li>Jetpack Joyride</li>
+            <li>Flappy Bird</li>
+            <li>Pokemon Red</li>
+            <li>Pokemon Blue</li>
+            <li>Street Fighter</li>
+          </ul>
+          <li>Removed Games:</li>
+          <ul>
+            <li>Password Game (broken embed)</li>
+            <li>Infinite Craft (broken embed)</li>
           </ul>
         </ul>
       </SDK.Window>
@@ -207,8 +218,8 @@ const App = () =>{
               <Game name="Ocarina of Time" url="https://www.retrogames.cc/embed/44169-ocarina-of-time-redux.html" type="OpenInGL" gID="ocarinaot" />
               <Game name="Super Mario" url="https://www.retrogames.cc/embed/43806-super-mario-bros-simplified.html" type="OpenInGL" gID="mario" />
               <Game name="Mini Golf Club" url="https://minigolfclub.io" type="OpenInGL" gID="mgclub" />
-              <Game name="Infinite Craft" url="https://neal.fun/infinite-craft/" type="OpenInGL" gID="infinitec" />
-              <Game name="Password Game" url="https://neal.fun/password-game/" type="OpenInGL" gID="password" />
+              {/* <Game name="Infinite Craft" url="https://neal.fun/infinite-craft/" type="OpenInGL" gID="infinitec" /> */}
+              {/* <Game name="Password Game" url="https://neal.fun/password-game/" type="OpenInGL" gID="password" /> */}
               <Game name="Fnaf 1" url="https://fnafgame.io/fnaf" type="OpenInGL" gID="fnaf1" />
               <Game name="Hole.io" url="https://hole-io.com" type="OpenInGL" gID="hole" />
               <Game name="OvO" url="https://html5.gamedistribution.com/rvvASMiM/1377b99c10284c229423118a941af3b1/index.html?gd_sdk_referrer_url=https%3A%2F%2Fdinosaur-game.io%2Fovo&gd_zone_config=eyJwYXJlbnRVUkwiOiJodHRwczovL2Rpbm9zYXVyLWdhbWUuaW8vb3ZvIiwicGFyZW50RG9tYWluIjoiZGlub3NhdXItZ2FtZS5pbyIsInRvcERvbWFpbiI6ImRpbm9zYXVyLWdhbWUuaW8iLCJoYXNJbXByZXNzaW9uIjpmYWxzZSwibG9hZGVyRW5hYmxlZCI6dHJ1ZSwiaG9zdCI6Imh0bWw1LmdhbWVkaXN0cmlidXRpb24uY29tIiwidmVyc2lvbiI6IjEuNS4xNyJ9" type="OpenInGL" gID="ovo" />
@@ -227,6 +238,12 @@ const App = () =>{
               <Game name="Drive Mad" url="https://mountain658.github.io/drivemad.html" type="OpenInGL" gID="drivem" />
               <Game name="Run 3" url="https://mountain658.glitch.me/run3.html" type="OpenInGL" gID="run3" />
               <Game name="Celeste" url="https://mountain658.glitch.me/celeste.html" type="OpenInGL" gID="celeste" />
+              <Game name="Jetpack Joyride" url="https://www.miniplay.com/embed/jetpack-joyride" type="OpenInGL" gID="jpjr" />
+              <Game name="Fruit Ninja" url="https://funhtml5games.com?embed=fruitninja" type="OpenInGL" gID="frnin" />
+              <Game name="Flappy Bird" url="https://playcanv.as/p/2OlkUaxF/" type="OpenInGL" gID="flappy" />
+              <Game name="Pokemon Red" url="https://static.arcadespot.com/retroemulator.php?system=gboy&game=2016/07/pokemon-red.zip" type="OpenInGL" gID="pokered" />
+              <Game name="Pokemon Blue" url="https://static.arcadespot.com/retroemulator.php?system=gboy&game=2016/07/pokemon-blue.zip" type="OpenInGL" gID="pokeblue" />
+              <Game name="Street Fighter" url="https://static.arcadespot.com/retroemulator.php?system=snes&game=2017/10/street-fighter-5.smc" type="OpenInGL" gID="streetftr" />
 
             </div>
           </div>

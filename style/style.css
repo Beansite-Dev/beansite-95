@@ -211,6 +211,7 @@ iframe {
     transform: translate(-50%, -50%);
     height: 50%;
     object-fit: contain;
+    z-index: 999272;
 }
 #taskbar {
     height: 45px;
@@ -965,7 +966,7 @@ loading {
     transform: translate(-50%,-50%);
     height: 100dvh;
     width: 100dvw;
-    z-index: 999272;
+    z-index: 999;
     background: #000;
     display: flex;
     justify-content: center;

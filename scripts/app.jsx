@@ -7,8 +7,8 @@ const LoaderUI = new ArchiveLoader(SDK);
 // const Store = new AppStore(SDK);
 
 const App = () =>{
-  const vnum = "2.9.7";
-  const vnum_rdate = "5/27/24";
+  const vnum = "2.10.2";
+  const vnum_rdate = "5/30/24";
   function download(data, filename, type) {
     var file = new Blob([data], {type: type});
     if (window.navigator.msSaveOrOpenBlob) // IE10+
@@ -112,37 +112,27 @@ const App = () =>{
 
       <SDK.Window winName="Changelog" winNum="-973" defaultStyle={{"height": "40vmin", "width": "65vmin", "top": "calc(10vmin + 40vmin)","right": "5vmin",}} includeNavButtons={{"del":true,"max":false,"min":false,}}>
         <h1>Changelog: {vnum} - {vnum_rdate}</h1>
-        <p>yall better appreciate this one cuz i had to write it on my mom's netflix ipad thats slow as s**t since im grounded</p>
+        {/* <p></p> */}
         <ul>
-          <li>Fixed Layering Isssue</li>
-          <li>Made BeanPowered Window Larger</li>
-          <li>Fixed Mislabel in Settings</li>
-          <li>Added Dark Mode (check settings)</li>
-          <li>GREATLY improved loading times (pro tip: don't use CDNs, they're slow)</li>
-          <li>Fixed Darkmode CMD Input Bug</li>
-          <li>Added close confirmation message</li>
+          <li>Improved Tips Shuffle System</li>
+          <li>Fixed font compatability issues</li>
           <li>Created/Updated Beansite local clients:</li>
           <ul>
-            <li>Pinto (NetV + BeanCloak v1.1)</li>
-            <li>Canela (NetV)</li>
+            <li>None</li>
           </ul>
           <li>Added Games: </li>
           <ul>
-            <li>Burrito Bison: Launcha Libre (fixed)</li>
-            <li>Tomb of the Mask</li>
-            <li>Drive Mad</li>
-            <li>Run 3</li>
-            <li>Celeste</li>
-            <li>Jetpack Joyride</li>
-            <li>Flappy Bird</li>
-            <li>Pokemon Red</li>
-            <li>Pokemon Blue</li>
-            <li>Street Fighter</li>
+            <li>Slope (fixed)</li>
+            <li>Slope 2 (fixed)</li>
+            <li>Drift Boss (fixed)</li>
+            <li>Final Fantasy VII (fixed)</li>
+            <li>X-Trench Run (fixed)</li>
+            <li>FNaF 1 (fixed)</li>
+            <li>Subway Surfers (fixed)</li>
           </ul>
           <li>Removed Games:</li>
           <ul>
-            <li>Password Game (broken embed)</li>
-            <li>Infinite Craft (broken embed)</li>
+            <li>None :)</li>
           </ul>
         </ul>
       </SDK.Window>
@@ -197,36 +187,36 @@ const App = () =>{
               <div id="bp_tg_rs">
                 <h2>Trending Now</h2>
                 <h1>Drift Boss</h1>
-                <button onClick={()=>{openGame("https://www.mathplayground.com/drift-boss-v3/index.html","OpenInGL")}}>Play Now</button>
+                <button onClick={()=>{openGame("https://www.hoodamath.com/mobile/games/drift-boss/game.html","OpenInGL")}}>Play Now</button>
               </div>
               <div id="bp_tg_preview"></div>
             </div>
             <div className="bp_gameWrapper">
 
-              <Game name="Slope" url="https://slopegame.io/" type="OpenInGL" gID="slope" />
-              <Game name="Slope 2" url="https://slope2.github.io/" type="OpenInGL" gID="slope2" />
+              <Game name="Slope" url="https://kdata1.com/2020/05/slope/" type="OpenInGL" gID="slope" />
+              <Game name="Slope 2" url="https://slope2.github.io/a6/slope-2/" type="OpenInGL" gID="slope2" />
               <Game name="1v1.lol" url="https://1v1.lol" type="OpenInGL" gID="1v1lol" />
               <Game name="Smash Karts" url="https://smashkarts.io" type="OpenInGL" gID="smashk" />
               <Game name="Shell Shockers" url="https://shellshock.io" type="OpenInGL" gID="shells" />
               <Game name="2048" url="https://play2048.co" type="OpenInGL" gID="2048" />
               <Game name="Doom" url="https://dos.zone/doom-dec-1993/" type="OpenInGL" gID="doom" />
               <Game name="Eaglercraft" url="/games/07ed39eb95c1ce7e451192d7c7517c6c3382a59cb40702d8bab86dc61e3b555d.html" type="NewTab" gID="eag" />
-              <Game name="Final Fanstasy VII" url="https://www.ps1fun.com/final-fantasy-vii" type="OpenInGL" gID="ffvii" />
+              <Game name="Final Fanstasy VII" url="https://www.retrogames.cc/embed/43658-final-fantasy-vii-usa-disc-1.html" type="OpenInGL" gID="ffvii" />
               <Game name="Bloxd.io" url="https://bloxd.io" type="OpenInGL" gID="bloxd" />
-              <Game name="X-Trench Run" url="https://www.mathplayground.com/x-trench-run/index.html" type="OpenInGL" gID="xtr" />
+              <Game name="X-Trench Run" url="https://html5.gamedistribution.com/24d6db9a49d94cc28cf6c5b0073adb28/" type="OpenInGL" gID="xtr" />
               <Game name="Armed Forces" url="https://armedforces.io" type="OpenInGL" gID="armedf" />
               <Game name="Ocarina of Time" url="https://www.retrogames.cc/embed/44169-ocarina-of-time-redux.html" type="OpenInGL" gID="ocarinaot" />
               <Game name="Super Mario" url="https://www.retrogames.cc/embed/43806-super-mario-bros-simplified.html" type="OpenInGL" gID="mario" />
               <Game name="Mini Golf Club" url="https://minigolfclub.io" type="OpenInGL" gID="mgclub" />
               {/* <Game name="Infinite Craft" url="https://neal.fun/infinite-craft/" type="OpenInGL" gID="infinitec" /> */}
               {/* <Game name="Password Game" url="https://neal.fun/password-game/" type="OpenInGL" gID="password" /> */}
-              <Game name="Fnaf 1" url="https://fnafgame.io/fnaf" type="OpenInGL" gID="fnaf1" />
+              <Game name="Fnaf 1" url="https://fnafgame.io/fnaf.embed?ez_iframe=1" type="OpenInGL" gID="fnaf1" />
               <Game name="Hole.io" url="https://hole-io.com" type="OpenInGL" gID="hole" />
               <Game name="OvO" url="https://html5.gamedistribution.com/rvvASMiM/1377b99c10284c229423118a941af3b1/index.html?gd_sdk_referrer_url=https%3A%2F%2Fdinosaur-game.io%2Fovo&gd_zone_config=eyJwYXJlbnRVUkwiOiJodHRwczovL2Rpbm9zYXVyLWdhbWUuaW8vb3ZvIiwicGFyZW50RG9tYWluIjoiZGlub3NhdXItZ2FtZS5pbyIsInRvcERvbWFpbiI6ImRpbm9zYXVyLWdhbWUuaW8iLCJoYXNJbXByZXNzaW9uIjpmYWxzZSwibG9hZGVyRW5hYmxlZCI6dHJ1ZSwiaG9zdCI6Imh0bWw1LmdhbWVkaXN0cmlidXRpb24uY29tIiwidmVyc2lvbiI6IjEuNS4xNyJ9" type="OpenInGL" gID="ovo" />
               <Game name="OvO 2" url="https://dedragames.com/games/ovo2/0.2alpha/" type="OpenInGL" gID="ovo2" />
               <Game name="Retro Bowl" url="https://game316009.konggames.com/gamez/0031/6009/live/index.html" type="OpenInGL" gID="retrob" />
               <Game name="Doom II" url="https://dos.zone/doom-ii-oct-10-1994/" type="OpenInGL" gID="doom2" />
-              <Game name="Subway Surfers" url="https://subwaysurfersgame.io" type="OpenInGL" gID="subways" />
+              <Game name="Subway Surfers" url="https://subwaysurfersgame.io/subway-surfers-game.embed?d=20240530" type="OpenInGL" gID="subways" />
               <Game name="Deathrun 3D" url="https://deathrun3d.io" type="OpenInGL" gID="dr3d" />
               <Game name="Helix Jump" url="https://helixjump2.com" type="OpenInGL" gID="helix" />
               <Game name="Fridy Night Funkin'" url="https://friday-nightfunkin.io/friday-night-funkin" type="OpenInGL" gID="funkin" />

@@ -7,8 +7,8 @@ const LoaderUI = new ArchiveLoader(SDK);
 // const Store = new AppStore(SDK);
 
 const App = () =>{
-  const vnum = "2.10.2";
-  const vnum_rdate = "5/30/24";
+  const vnum = "2.10.3";
+  const vnum_rdate = "5/31/24";
   function download(data, filename, type) {
     var file = new Blob([data], {type: type});
     if (window.navigator.msSaveOrOpenBlob) // IE10+
@@ -116,6 +116,7 @@ const App = () =>{
         <ul>
           <li>Improved Tips Shuffle System</li>
           <li>Fixed font compatability issues</li>
+          <li>Added Game Submition (<a style={{"textDecoration":"none"}} href="https://docs.google.com/forms/d/1Eb-gJCBDtla2tv04k7sdyefMoeVf0ENYy30x_UOFdBU/edit">quick url</a>)</li>
           <li>Created/Updated Beansite local clients:</li>
           <ul>
             <li>None</li>
@@ -234,7 +235,8 @@ const App = () =>{
               <Game name="Pokemon Red" url="https://static.arcadespot.com/retroemulator.php?system=gboy&game=2016/07/pokemon-red.zip" type="OpenInGL" gID="pokered" />
               <Game name="Pokemon Blue" url="https://static.arcadespot.com/retroemulator.php?system=gboy&game=2016/07/pokemon-blue.zip" type="OpenInGL" gID="pokeblue" />
               <Game name="Street Fighter" url="https://static.arcadespot.com/retroemulator.php?system=snes&game=2017/10/street-fighter-5.smc" type="OpenInGL" gID="streetftr" />
-
+              
+              <p className="bp_reqtxt">Don't see a game you like? You can request <a style={{"textDecoration":"none"}} href="https://docs.google.com/forms/d/1Eb-gJCBDtla2tv04k7sdyefMoeVf0ENYy30x_UOFdBU/edit">here</a></p>
             </div>
           </div>
         </div>

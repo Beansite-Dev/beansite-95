@@ -999,3 +999,7 @@ loading {
     cursor: pointer;
     /* transition: .35s; */
 }
+.bp_reqtxt {
+    text-align: center;
+    color: #b6b6b6;
+}

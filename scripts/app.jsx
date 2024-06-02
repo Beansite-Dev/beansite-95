@@ -7,8 +7,8 @@ const LoaderUI = new ArchiveLoader(SDK);
 // const Store = new AppStore(SDK);
 
 const App = () =>{
-  const vnum = "2.10.3";
-  const vnum_rdate = "5/31/24";
+  const vnum = "2.10.4";
+  const vnum_rdate = "6/2/24";
   function download(data, filename, type) {
     var file = new Blob([data], {type: type});
     if (window.navigator.msSaveOrOpenBlob) // IE10+
@@ -117,6 +117,7 @@ const App = () =>{
           <li>Improved Tips Shuffle System</li>
           <li>Fixed font compatability issues</li>
           <li>Added Game Submition (<a style={{"textDecoration":"none"}} href="https://docs.google.com/forms/d/1Eb-gJCBDtla2tv04k7sdyefMoeVf0ENYy30x_UOFdBU/edit">quick url</a>)</li>
+          <li>Fixed font bug in Beanpowered</li>
           <li>Created/Updated Beansite local clients:</li>
           <ul>
             <li>None</li>

@@ -118,6 +118,7 @@ const App = () =>{
           <li>Fixed font compatability issues</li>
           <li>Added Game Submition (<a style={{"textDecoration":"none"}} href="https://docs.google.com/forms/d/1Eb-gJCBDtla2tv04k7sdyefMoeVf0ENYy30x_UOFdBU/edit">quick url</a>)</li>
           <li>Fixed font bug in Beanpowered</li>
+          <li>Fixed Typo</li>
           <li>Created/Updated Beansite local clients:</li>
           <ul>
             <li>None</li>
@@ -165,7 +166,7 @@ const App = () =>{
         <p>All of these are just incase our primary URL got blocked</p>
         <ul>
           <Alt URL="https://mb95.vercel.app"/>
-          <Alt URL="https://dontblockbeansire.vercel.app"/>
+          <Alt URL="https://dontblockbeansite.vercel.app"/>
           <Alt URL="https://beanabc.vercel.app"/>
           <Alt URL="https://ilovebeans.vercel.app"/>
           <Alt URL="https://iluvbeans.vercel.app"/>

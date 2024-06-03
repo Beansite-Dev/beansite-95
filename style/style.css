@@ -960,6 +960,7 @@ loading {
 #g_pokered    {background-image: url("../assets/gbanner/pokered.jpg");}
 #g_pokeblue   {background-image: url("../assets/gbanner/pokeblue.jpg");}
 #g_streetftr  {background-image: url("../assets/gbanner/streetftr.jpg");}
+#g_fancade    {background-image: url("../assets/gbanner/fancade.webp");}
 
 .settingsDropdown {
     background: lightgray

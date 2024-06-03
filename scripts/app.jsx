@@ -7,8 +7,8 @@ const LoaderUI = new ArchiveLoader(SDK);
 // const Store = new AppStore(SDK);
 
 const App = () =>{
-  const vnum = "2.10.4";
-  const vnum_rdate = "6/2/24";
+  const vnum = "2.10.5";
+  const vnum_rdate = "6/3/24";
   function download(data, filename, type) {
     var file = new Blob([data], {type: type});
     if (window.navigator.msSaveOrOpenBlob) // IE10+
@@ -132,6 +132,7 @@ const App = () =>{
             <li>X-Trench Run (fixed)</li>
             <li>FNaF 1 (fixed)</li>
             <li>Subway Surfers (fixed)</li>
+            <li>Fancade (Requested by Bluebear)</li>
           </ul>
           <li>Removed Games:</li>
           <ul>
@@ -237,7 +238,8 @@ const App = () =>{
               <Game name="Pokemon Red" url="https://static.arcadespot.com/retroemulator.php?system=gboy&game=2016/07/pokemon-red.zip" type="OpenInGL" gID="pokered" />
               <Game name="Pokemon Blue" url="https://static.arcadespot.com/retroemulator.php?system=gboy&game=2016/07/pokemon-blue.zip" type="OpenInGL" gID="pokeblue" />
               <Game name="Street Fighter" url="https://static.arcadespot.com/retroemulator.php?system=snes&game=2017/10/street-fighter-5.smc" type="OpenInGL" gID="streetftr" />
-              
+              <Game name="Fancade" url="https://play.fancade.com" type="OpenInGL" gID="fancade" />
+
               <p className="bp_reqtxt">Don't see a game you like? You can request <a style={{"textDecoration":"none"}} href="https://docs.google.com/forms/d/1Eb-gJCBDtla2tv04k7sdyefMoeVf0ENYy30x_UOFdBU/edit">here</a></p>
             </div>
           </div>

@@ -7,7 +7,7 @@ const LoaderUI = new ArchiveLoader(SDK);
 // const Store = new AppStore(SDK);
 
 const App = () =>{
-  const vnum = "2.10.5";
+  const vnum = "2.10.7";
   const vnum_rdate = "6/3/24";
   function download(data, filename, type) {
     var file = new Blob([data], {type: type});
@@ -133,6 +133,10 @@ const App = () =>{
             <li>FNaF 1 (fixed)</li>
             <li>Subway Surfers (fixed)</li>
             <li>Fancade (Requested by Bluebear)</li>
+            <li>Doom 64</li>
+            <li>Baldi's Basics</li>
+            <li>Krunker.io</li>
+            <li>Snake.io</li>
           </ul>
           <li>Removed Games:</li>
           <ul>
@@ -203,7 +207,6 @@ const App = () =>{
               <Game name="Smash Karts" url="https://smashkarts.io" type="OpenInGL" gID="smashk" />
               <Game name="Shell Shockers" url="https://shellshock.io" type="OpenInGL" gID="shells" />
               <Game name="2048" url="https://play2048.co" type="OpenInGL" gID="2048" />
-              <Game name="Doom" url="https://dos.zone/doom-dec-1993/" type="OpenInGL" gID="doom" />
               <Game name="Eaglercraft" url="/games/07ed39eb95c1ce7e451192d7c7517c6c3382a59cb40702d8bab86dc61e3b555d.html" type="NewTab" gID="eag" />
               <Game name="Final Fanstasy VII" url="https://www.retrogames.cc/embed/43658-final-fantasy-vii-usa-disc-1.html" type="OpenInGL" gID="ffvii" />
               <Game name="Bloxd.io" url="https://bloxd.io" type="OpenInGL" gID="bloxd" />
@@ -219,7 +222,6 @@ const App = () =>{
               <Game name="OvO" url="https://html5.gamedistribution.com/rvvASMiM/1377b99c10284c229423118a941af3b1/index.html?gd_sdk_referrer_url=https%3A%2F%2Fdinosaur-game.io%2Fovo&gd_zone_config=eyJwYXJlbnRVUkwiOiJodHRwczovL2Rpbm9zYXVyLWdhbWUuaW8vb3ZvIiwicGFyZW50RG9tYWluIjoiZGlub3NhdXItZ2FtZS5pbyIsInRvcERvbWFpbiI6ImRpbm9zYXVyLWdhbWUuaW8iLCJoYXNJbXByZXNzaW9uIjpmYWxzZSwibG9hZGVyRW5hYmxlZCI6dHJ1ZSwiaG9zdCI6Imh0bWw1LmdhbWVkaXN0cmlidXRpb24uY29tIiwidmVyc2lvbiI6IjEuNS4xNyJ9" type="OpenInGL" gID="ovo" />
               <Game name="OvO 2" url="https://dedragames.com/games/ovo2/0.2alpha/" type="OpenInGL" gID="ovo2" />
               <Game name="Retro Bowl" url="https://game316009.konggames.com/gamez/0031/6009/live/index.html" type="OpenInGL" gID="retrob" />
-              <Game name="Doom II" url="https://dos.zone/doom-ii-oct-10-1994/" type="OpenInGL" gID="doom2" />
               <Game name="Subway Surfers" url="https://subwaysurfersgame.io/subway-surfers-game.embed?d=20240530" type="OpenInGL" gID="subways" />
               <Game name="Deathrun 3D" url="https://deathrun3d.io" type="OpenInGL" gID="dr3d" />
               <Game name="Helix Jump" url="https://helixjump2.com" type="OpenInGL" gID="helix" />
@@ -239,6 +241,12 @@ const App = () =>{
               <Game name="Pokemon Blue" url="https://static.arcadespot.com/retroemulator.php?system=gboy&game=2016/07/pokemon-blue.zip" type="OpenInGL" gID="pokeblue" />
               <Game name="Street Fighter" url="https://static.arcadespot.com/retroemulator.php?system=snes&game=2017/10/street-fighter-5.smc" type="OpenInGL" gID="streetftr" />
               <Game name="Fancade" url="https://play.fancade.com" type="OpenInGL" gID="fancade" />
+              <Game name="Doom" url="https://dos.zone/doom-dec-1993/" type="OpenInGL" gID="doom" />
+              <Game name="Doom II" url="https://dos.zone/doom-ii-oct-10-1994/" type="OpenInGL" gID="doom2" />
+              <Game name="Doom 64" url="https://static.arcadespot.com/retroemulator.php?system=n64&game=2017/06/doom-64.zip" type="OpenInGL" gID="doom64" />
+              <Game name="Baldi's Basics" url="https://igroutka.ru/loader/game/26471/" type="OpenInGL" gID="baldis" />
+              <Game name="Krunker.io" url="https://krunker.io" type="OpenInGL" gID="krunker" />
+              <Game name="Snake.io" url="https://snakeio.org/snake-io.embed" type="OpenInGL" gID="snakeio" />
 
               <p className="bp_reqtxt">Don't see a game you like? You can request <a style={{"textDecoration":"none"}} href="https://docs.google.com/forms/d/1Eb-gJCBDtla2tv04k7sdyefMoeVf0ENYy30x_UOFdBU/edit">here</a></p>
             </div>

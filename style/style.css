@@ -924,7 +924,6 @@ loading {
 #g_smashk     {background-image: url('../assets/gbanner/smashk.jpg');}
 #g_shells     {background-image: url('../assets/gbanner/shells.jpg');}
 #g_2048       {background-image: url('../assets/gbanner/2048.avif');}
-#g_doom       {background-image: url('../assets/gbanner/doom.webp');}
 #g_eag        {background-image: url('../assets/gbanner/eag.webp');}
 #g_ffvii      {background-image: url('../assets/gbanner/ffvii.jpg');}
 #g_bloxd      {background-image: url('../assets/gbanner/bloxd.avif');}
@@ -940,7 +939,6 @@ loading {
 #g_ovo        {background-image: url('../assets/gbanner/ovo.avif');background-size: contain !important;background-color:#fff;}
 #g_ovo2       {background-image: url('../assets/gbanner/ovo2.jpg');background-size: contain !important;background-color:#fff;}
 #g_retrob     {background-image: url('../assets/gbanner/retro.avif');}
-#g_doom2      {background-image: url('../assets/gbanner/doom2.jpg');}
 #g_subways    {background-image: url('../assets/gbanner/subways.png');}
 #g_dr3d       {background-image: url('../assets/gbanner/dr3d.jpg');}
 #g_helix      {background-image: url('../assets/gbanner/helix.avif');}
@@ -961,6 +959,12 @@ loading {
 #g_pokeblue   {background-image: url("../assets/gbanner/pokeblue.jpg");}
 #g_streetftr  {background-image: url("../assets/gbanner/streetftr.jpg");}
 #g_fancade    {background-image: url("../assets/gbanner/fancade.webp");}
+#g_doom       {background-image: url('../assets/gbanner/doom.webp');}
+#g_doom2      {background-image: url('../assets/gbanner/doom2.jpg');}
+#g_doom64     {background-image: url("../assets/gbanner/doom64.png");}
+#g_baldis     {background-image: url("../assets/gbanner/baldis.jpg");}
+#g_krunker    {background-image: url("../assets/gbanner/krunker.avif");}
+#g_snakeio    {background-image: url("../assets/gbanner/snakeio.avif");}
 
 .settingsDropdown {
     background: lightgray

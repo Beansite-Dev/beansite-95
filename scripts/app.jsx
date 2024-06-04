@@ -7,8 +7,8 @@ const LoaderUI = new ArchiveLoader(SDK);
 // const Store = new AppStore(SDK);
 
 const App = () =>{
-  const vnum = "2.10.7";
-  const vnum_rdate = "6/3/24";
+  const vnum = "2.11.2";
+  const vnum_rdate = "6/4/24";
   function download(data, filename, type) {
     var file = new Blob([data], {type: type});
     if (window.navigator.msSaveOrOpenBlob) // IE10+
@@ -114,11 +114,13 @@ const App = () =>{
         <h1>Changelog: {vnum} - {vnum_rdate}</h1>
         {/* <p></p> */}
         <ul>
+          <li>INSANE optimization (loads instantly now)</li>
           <li>Improved Tips Shuffle System</li>
           <li>Fixed font compatability issues</li>
           <li>Added Game Submition (<a style={{"textDecoration":"none"}} href="https://docs.google.com/forms/d/1Eb-gJCBDtla2tv04k7sdyefMoeVf0ENYy30x_UOFdBU/edit">quick url</a>)</li>
           <li>Fixed font bug in Beanpowered</li>
           <li>Fixed Typo</li>
+          <li>Fixed FireBean</li>
           <li>Created/Updated Beansite local clients:</li>
           <ul>
             <li>None</li>
@@ -137,6 +139,18 @@ const App = () =>{
             <li>Baldi's Basics</li>
             <li>Krunker.io</li>
             <li>Snake.io</li>
+            <li>Portal</li>
+            <li>Yohoho.io</li>
+            <li>Ships 3D</li>
+            <li>GunSpin</li>
+            <li>FNaF 2</li>
+            <li>FNaF 3</li>
+            <li>FNaF 4</li>
+            <li>FNaF World</li>
+            <li>Highway Traffic</li>
+            <li>Fractal Combat X</li>
+            <li>Snow Rider 3D</li>
+            <li>The Last Man</li>
           </ul>
           <li>Removed Games:</li>
           <ul>
@@ -217,7 +231,6 @@ const App = () =>{
               <Game name="Mini Golf Club" url="https://minigolfclub.io" type="OpenInGL" gID="mgclub" />
               {/* <Game name="Infinite Craft" url="https://neal.fun/infinite-craft/" type="OpenInGL" gID="infinitec" /> */}
               {/* <Game name="Password Game" url="https://neal.fun/password-game/" type="OpenInGL" gID="password" /> */}
-              <Game name="Fnaf 1" url="https://fnafgame.io/fnaf.embed?ez_iframe=1" type="OpenInGL" gID="fnaf1" />
               <Game name="Hole.io" url="https://hole-io.com" type="OpenInGL" gID="hole" />
               <Game name="OvO" url="https://html5.gamedistribution.com/rvvASMiM/1377b99c10284c229423118a941af3b1/index.html?gd_sdk_referrer_url=https%3A%2F%2Fdinosaur-game.io%2Fovo&gd_zone_config=eyJwYXJlbnRVUkwiOiJodHRwczovL2Rpbm9zYXVyLWdhbWUuaW8vb3ZvIiwicGFyZW50RG9tYWluIjoiZGlub3NhdXItZ2FtZS5pbyIsInRvcERvbWFpbiI6ImRpbm9zYXVyLWdhbWUuaW8iLCJoYXNJbXByZXNzaW9uIjpmYWxzZSwibG9hZGVyRW5hYmxlZCI6dHJ1ZSwiaG9zdCI6Imh0bWw1LmdhbWVkaXN0cmlidXRpb24uY29tIiwidmVyc2lvbiI6IjEuNS4xNyJ9" type="OpenInGL" gID="ovo" />
               <Game name="OvO 2" url="https://dedragames.com/games/ovo2/0.2alpha/" type="OpenInGL" gID="ovo2" />
@@ -247,6 +260,19 @@ const App = () =>{
               <Game name="Baldi's Basics" url="https://igroutka.ru/loader/game/26471/" type="OpenInGL" gID="baldis" />
               <Game name="Krunker.io" url="https://krunker.io" type="OpenInGL" gID="krunker" />
               <Game name="Snake.io" url="https://snakeio.org/snake-io.embed" type="OpenInGL" gID="snakeio" />
+              <Game name="Portal" url="https://w8.snokido.com/games/flash/ruffle.html?g=portal&v=140524" type="OpenInGL" gID="portal" />
+              <Game name="Yohoho.io" url="https://yohoho.io" type="OpenInGL" gID="yohohoio" />
+              <Game name="Ships 3D" url="https://games.crazygames.com/en_US/ships-3d/index.html?v=1.288" type="OpenInGL" gID="ships3d" />
+              <Game name="GunSpin" url="https://gun-spin.github.io/file/" type="OpenInGL" gID="gunspin" />
+              <Game name="Fnaf 1" url="https://fnafgame.io/fnaf.embed?ez_iframe=1" type="OpenInGL" gID="fnaf1" />
+              <Game name="FNaF 2" url="https://www.gameflare.com/embed/five-nights-at-freddys-2/" type="OpenInGL" gID="fnaf2" />
+              <Game name="FNaF 3" url="https://www.gameflare.com/embed/five-nights-at-freddys-3/" type="OpenInGL" gID="fnaf3" />
+              <Game name="FNaF 4" url="https://www.gameflare.com/embed/five-nights-at-freddys-4/" type="OpenInGL" gID="fnaf4" />
+              <Game name="FNaF World" url="https://turbowarp.org/96095372/embed?autoplay&addons=remove-curved-stage-border%2Cpause%2Cgamepad" type="OpenInGL" gID="fnafworld" />
+              <Game name="Highway Traffic" url="https://app-97317.games.s3.yandex.net/97317/zr27uqx4qauq31fg2ud41a7oye9c4dki/index.html?sdk=%2Fsdk%2F_%2Fv2.6cafcb80ad19287b13a2.js#origin=https%3A%2F%2Fplayhop.com&app-id=97317&device-type=desktop" type="OpenInGL" gID="hwtraffic" />
+              <Game name="Fractal Combat X" url="https://play.gamepix.com/fractal-combat-x/embed?sid=e4515" type="OpenInGL" gID="fcx" />
+              <Game name="Snow Rider 3D" url="https://html5.gamedistribution.com/3b79a8537ebc414fb4f9672a9b8c68c8/" type="OpenInGL" gID="sr3d" />
+              <Game name="The Last Man" url="https://html5.gamedistribution.com/63c7be58e25e4b37bef7e01d3fa20894/?gd_sdk_referrer_url=https://kevin.games/the-last-man" type="OpenInGL" gID="tlm" />
 
               <p className="bp_reqtxt">Don't see a game you like? You can request <a style={{"textDecoration":"none"}} href="https://docs.google.com/forms/d/1Eb-gJCBDtla2tv04k7sdyefMoeVf0ENYy30x_UOFdBU/edit">here</a></p>
             </div>

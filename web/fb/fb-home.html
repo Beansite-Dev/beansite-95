@@ -92,13 +92,16 @@ body {
     </div>
     <img id="fire" src="./fire.png">
     <script>
+        function search() {
+            window.location.href = `https://swisscows.com/en/web?query=${document.getElementById('search').value}`;
+        }
         document.getElementById('searchbtn').addEventListener('click', (e) => {
             e.preventDefault();
-            window.location.href = `https://bing.com/search?q=${document.getElementById('search').value}`;
+            search();
         })
         document.getElementById('search').addEventListener('keydown', (e) => {
             if (e.key == 'Enter') {
-                window.location.href = `https://bing.com/search?q=${document.getElementById('search').value}`;
+                search();
             }
         })
     </script>

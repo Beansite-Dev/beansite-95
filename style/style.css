@@ -934,7 +934,6 @@ loading {
 #g_mgclub     {background-image: url('../assets/gbanner/mgclub.avif');}
 #g_infinitec  {background-image: url('../assets/gbanner/infinitec.png');}
 #g_password   {background-image: url('../assets/gbanner/password.png');}
-#g_fnaf1      {background-image: url('../assets/gbanner/fnaf1.jpg');}
 #g_hole       {background-image: url('../assets/gbanner/hole.avif');}
 #g_ovo        {background-image: url('../assets/gbanner/ovo.avif');background-size: contain !important;background-color:#fff;}
 #g_ovo2       {background-image: url('../assets/gbanner/ovo2.jpg');background-size: contain !important;background-color:#fff;}
@@ -965,6 +964,20 @@ loading {
 #g_baldis     {background-image: url("../assets/gbanner/baldis.jpg");}
 #g_krunker    {background-image: url("../assets/gbanner/krunker.avif");}
 #g_snakeio    {background-image: url("../assets/gbanner/snakeio.avif");}
+#g_portal     {background-image: url("../assets/gbanner/portal.avif");}
+#g_yohohoio   {background-image: url("../assets/gbanner/yohoho.jpg");}
+#g_ships3d    {background-image: url("../assets/gbanner/ships3d.avif");}
+#g_gunspin    {background-image: url("../assets/gbanner/gunspin.webp");}
+#g_fnaf1      {background-image: url('../assets/gbanner/fnaf1.jpg');}
+#g_fnaf2      {background-image: url("../assets/gbanner/fnaf2.avif");}
+#g_fnaf3      {background-image: url("../assets/gbanner/fnaf3.png");}
+#g_fnaf4      {background-image: url("../assets/gbanner/fnaf4.png");}
+#g_fnafworld  {background-image: url("../assets/gbanner/fnafworld.jpg");}
+#g_hwtraffic  {background-image: url("../assets/gbanner/hwtraffic.webp");background-position:top;}
+#g_fnafworld  {background-image: url("../assets/gbanner/fnafworld.jpg");}
+#g_fcx        {background-image: url("../assets/gbanner/fcx.avif");}
+#g_sr3d       {background-image: url("../assets/gbanner/sr3d.jpg");}
+#g_tlm        {background-image: url("../assets/gbanner/tlm.jpg");}
 
 .settingsDropdown {
     background: lightgray
@@ -1003,6 +1016,9 @@ loading {
     background: lightgray;
     cursor: pointer;
     /* transition: .35s; */
+}
+#closeconfirm #cc_dsa {
+    margin-top: .5vmin !important;
 }
 .bp_reqtxt {
     text-align: center;

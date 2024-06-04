@@ -7,7 +7,7 @@ const LoaderUI = new ArchiveLoader(SDK);
 // const Store = new AppStore(SDK);
 
 const App = () =>{
-  const vnum = "2.11.2";
+  const vnum = "2.11.3";
   const vnum_rdate = "6/4/24";
   function download(data, filename, type) {
     var file = new Blob([data], {type: type});
@@ -120,6 +120,7 @@ const App = () =>{
           <li>Added Game Submition (<a style={{"textDecoration":"none"}} href="https://docs.google.com/forms/d/1Eb-gJCBDtla2tv04k7sdyefMoeVf0ENYy30x_UOFdBU/edit">quick url</a>)</li>
           <li>Fixed font bug in Beanpowered</li>
           <li>Fixed Typo</li>
+          <li>Optimized ALL Images</li>
           <li>Fixed FireBean</li>
           <li>Created/Updated Beansite local clients:</li>
           <ul>

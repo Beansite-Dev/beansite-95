@@ -981,6 +981,9 @@ loading {
 #g_tlm        {background-image: url("../assets/gbanner/tlm.jpg");}
 #g_hl         {background-image: url("../assets/gbanner/hl.jpg");}
 #g_m64        {background-image: url("../assets/gbanner/m64.jpg");}
+#g_amongus    {background-image: url("../assets/gbanner/amongus.jpg");}
+#g_happyroom  {background-image: url("../assets/gbanner/happyroom.jpg");}
+#g_pizzatower {background-image: url("../assets/gbanner/pizzatower.webp");}
 
 .settingsDropdown {
     background: lightgray

@@ -155,10 +155,12 @@ const App = () =>{
             <li>Doom 3</li>
             <li>Half Life</li>
             <li>Mario 64</li>
+            <li>Among Us</li>
+            <li>Pizza Tower</li>
           </ul>
           <li>Removed Games:</li>
           <ul>
-            <li>None :)</li>
+            <li>Helix Jump (Shitty Embed)</li>
           </ul>
         </ul>
       </SDK.Window>
@@ -241,7 +243,7 @@ const App = () =>{
               <Game name="Retro Bowl" url="https://game316009.konggames.com/gamez/0031/6009/live/index.html" type="OpenInGL" gID="retrob" />
               <Game name="Subway Surfers" url="https://subwaysurfersgame.io/subway-surfers-game.embed?d=20240530" type="OpenInGL" gID="subways" />
               <Game name="Deathrun 3D" url="https://deathrun3d.io" type="OpenInGL" gID="dr3d" />
-              <Game name="Helix Jump" url="https://helixjump2.com" type="OpenInGL" gID="helix" />
+              {/* <Game name="Helix Jump" url="https://helixjump2.com" type="OpenInGL" gID="helix" /> */}
               <Game name="Fridy Night Funkin'" url="https://friday-nightfunkin.io/friday-night-funkin" type="OpenInGL" gID="funkin" />
               <Game name="Dumb Ways to Die" url="https://dumbwaystodie.io" type="OpenInGL" gID="dwtd" />
               <Game name="Tomb Runner" url="https://lagged.com/en/g/tomb-runner" type="OpenInGL" gID="tombr" />
@@ -270,16 +272,19 @@ const App = () =>{
               <Game name="Ships 3D" url="https://games.crazygames.com/en_US/ships-3d/index.html?v=1.288" type="OpenInGL" gID="ships3d" />
               <Game name="GunSpin" url="https://gun-spin.github.io/file/" type="OpenInGL" gID="gunspin" />
               <Game name="Fnaf 1" url="https://fnafgame.io/fnaf.embed?ez_iframe=1" type="OpenInGL" gID="fnaf1" />
-              <Game name="FNaF 2" url="https://www.gameflare.com/embed/five-nights-at-freddys-2/" type="OpenInGL" gID="fnaf2" />
-              <Game name="FNaF 3" url="https://www.gameflare.com/embed/five-nights-at-freddys-3/" type="OpenInGL" gID="fnaf3" />
-              <Game name="FNaF 4" url="https://www.gameflare.com/embed/five-nights-at-freddys-4/" type="OpenInGL" gID="fnaf4" />
+              <Game name="FNaF 2" url="https://fnafgame.io/fnaf-2.embed?ez_iframe=1" type="OpenInGL" gID="fnaf2" />
+              <Game name="FNaF 3" url="https://fnafgame.io/fnaf-3.embed?ez_iframe=1" type="OpenInGL" gID="fnaf3" />
+              <Game name="FNaF 4" url="https://fnafgame.io/fnaf-4.embed?ez_iframe=1" type="OpenInGL" gID="fnaf4" />
               <Game name="FNaF World" url="https://turbowarp.org/96095372/embed?autoplay&addons=remove-curved-stage-border%2Cpause%2Cgamepad" type="OpenInGL" gID="fnafworld" />
               <Game name="Highway Traffic" url="https://app-97317.games.s3.yandex.net/97317/zr27uqx4qauq31fg2ud41a7oye9c4dki/index.html?sdk=%2Fsdk%2F_%2Fv2.6cafcb80ad19287b13a2.js#origin=https%3A%2F%2Fplayhop.com&app-id=97317&device-type=desktop" type="OpenInGL" gID="hwtraffic" />
               <Game name="Fractal Combat X" url="https://play.gamepix.com/fractal-combat-x/embed?sid=e4515" type="OpenInGL" gID="fcx" />
-              <Game name="Snow Rider 3D" url="https://html5.gamedistribution.com/3b79a8537ebc414fb4f9672a9b8c68c8/" type="OpenInGL" gID="sr3d" />
+              <Game name="Snow Rider 3D" url="https://html5.gamedistribution.com/3b79a8537ebc414fb4f9672a9b8c68c8/?gd_sdk_referrer_url=https://gamedistribution.com/games/snow-rider-3d/" type="OpenInGL" gID="sr3d" />
               <Game name="The Last Man" url="https://html5.gamedistribution.com/63c7be58e25e4b37bef7e01d3fa20894/?gd_sdk_referrer_url=https://kevin.games/the-last-man" type="OpenInGL" gID="tlm" />
-              <Game name="Half Life" url="https://kirill-zakharov.itch.io/xash" type="OpenInGL" gID="hl" />
-              <Game name="Mario 64" url="https://probablykam.github.io/Mario64webgl/" type="OpenInGL" gID="m64" />
+              <Game name="Half Life" url="https://pixelsuft.github.io/hl/xash.html#150" type="OpenInGL" gID="hl" />
+              <Game name="Mario 64" url="https://static.arcadespot.com/retroemulator.php?system=n64&game=2017/06/super-mario-64.zip" type="OpenInGL" gID="m64" />
+              <Game name="Among Us" url="https://amongusio.io/among-us.embed" type="OpenInGL" gID="amongus" />
+              {/* <Game name="Happy Room" url="https://kdata1.com/2017/02/happy-room/" type="OpenInGL" gID="happyroom" /> */}
+              <Game name="Pizza Tower" url="https://kdata1.com/2021/03/3527391/2.1/" type="OpenInGL" gID="pizzatower" />
 
               <p className="bp_reqtxt">Don't see a game you like? You can request <a style={{"textDecoration":"none"}} href="https://docs.google.com/forms/d/1Eb-gJCBDtla2tv04k7sdyefMoeVf0ENYy30x_UOFdBU/edit">here</a></p>
             </div>
@@ -290,7 +295,12 @@ const App = () =>{
 
       <SDK.Window winName="c:/bean_os/bean32/gameloader.exe" winNum="3" defaultStyle={{"height": "75dvh", "width": "75dvw", "top": "calc(50% - (75dvh / 2))", "left": "calc(50% - (75dvw / 2))",}} includeNavButtons={{"del":true,"max":true,"min":false,}} beforeClose={() => document.getElementById('gameloader').src=""} >
         <img id="loading" src="./assets/loading.gif" />
-        <iframe id="gameloader" src="" frameBorder="0">games will load here</iframe>
+        <iframe 
+          id="gameloader" 
+          src="" 
+          frameBorder="0"
+          sandbox = "allow-forms allow-pointer-lock allow-same-origin allow-scripts allow-top-navigation">
+            games will load here</iframe>
       </SDK.Window>
 
       <CMD />

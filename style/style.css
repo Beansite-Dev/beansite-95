@@ -960,6 +960,7 @@ loading {
 #g_fancade    {background-image: url("../assets/gbanner/fancade.webp");}
 #g_doom       {background-image: url('../assets/gbanner/doom.webp');}
 #g_doom2      {background-image: url('../assets/gbanner/doom2.jpg');}
+#g_doom3      {background-image: url('../assets/gbanner/doom3.jpg');}
 #g_doom64     {background-image: url("../assets/gbanner/doom64.png");}
 #g_baldis     {background-image: url("../assets/gbanner/baldis.jpg");}
 #g_krunker    {background-image: url("../assets/gbanner/krunker.avif");}
@@ -978,6 +979,7 @@ loading {
 #g_fcx        {background-image: url("../assets/gbanner/fcx.avif");}
 #g_sr3d       {background-image: url("../assets/gbanner/sr3d.jpg");}
 #g_tlm        {background-image: url("../assets/gbanner/tlm.jpg");}
+#g_hl         {background-image: url("../assets/gbanner/hl.jpg");}
 
 .settingsDropdown {
     background: lightgray

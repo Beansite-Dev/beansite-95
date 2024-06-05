@@ -7,8 +7,8 @@ const LoaderUI = new ArchiveLoader(SDK);
 // const Store = new AppStore(SDK);
 
 const App = () =>{
-  const vnum = "2.11.3";
-  const vnum_rdate = "6/4/24";
+  const vnum = "2.11.4";
+  const vnum_rdate = "6/5/24";
   function download(data, filename, type) {
     var file = new Blob([data], {type: type});
     if (window.navigator.msSaveOrOpenBlob) // IE10+
@@ -152,6 +152,8 @@ const App = () =>{
             <li>Fractal Combat X</li>
             <li>Snow Rider 3D</li>
             <li>The Last Man</li>
+            <li>Doom 3</li>
+            <li>Half Life</li>
           </ul>
           <li>Removed Games:</li>
           <ul>
@@ -257,6 +259,7 @@ const App = () =>{
               <Game name="Fancade" url="https://play.fancade.com" type="OpenInGL" gID="fancade" />
               <Game name="Doom" url="https://dos.zone/doom-dec-1993/" type="OpenInGL" gID="doom" />
               <Game name="Doom II" url="https://dos.zone/doom-ii-oct-10-1994/" type="OpenInGL" gID="doom2" />
+              <Game name="Doom 3" url="https://wasm.continuation-labs.com/d3demo/" type="OpenInGL" gID="doom3" />
               <Game name="Doom 64" url="https://static.arcadespot.com/retroemulator.php?system=n64&game=2017/06/doom-64.zip" type="OpenInGL" gID="doom64" />
               <Game name="Baldi's Basics" url="https://igroutka.ru/loader/game/26471/" type="OpenInGL" gID="baldis" />
               <Game name="Krunker.io" url="https://krunker.io" type="OpenInGL" gID="krunker" />
@@ -274,6 +277,7 @@ const App = () =>{
               <Game name="Fractal Combat X" url="https://play.gamepix.com/fractal-combat-x/embed?sid=e4515" type="OpenInGL" gID="fcx" />
               <Game name="Snow Rider 3D" url="https://html5.gamedistribution.com/3b79a8537ebc414fb4f9672a9b8c68c8/" type="OpenInGL" gID="sr3d" />
               <Game name="The Last Man" url="https://html5.gamedistribution.com/63c7be58e25e4b37bef7e01d3fa20894/?gd_sdk_referrer_url=https://kevin.games/the-last-man" type="OpenInGL" gID="tlm" />
+              <Game name="Half Life" url="https://kirill-zakharov.itch.io/xash" type="OpenInGL" gID="hl" />
 
               <p className="bp_reqtxt">Don't see a game you like? You can request <a style={{"textDecoration":"none"}} href="https://docs.google.com/forms/d/1Eb-gJCBDtla2tv04k7sdyefMoeVf0ENYy30x_UOFdBU/edit">here</a></p>
             </div>

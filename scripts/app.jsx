@@ -279,7 +279,7 @@ const App = () =>{
               <Game name="Snow Rider 3D" url="https://html5.gamedistribution.com/3b79a8537ebc414fb4f9672a9b8c68c8/" type="OpenInGL" gID="sr3d" />
               <Game name="The Last Man" url="https://html5.gamedistribution.com/63c7be58e25e4b37bef7e01d3fa20894/?gd_sdk_referrer_url=https://kevin.games/the-last-man" type="OpenInGL" gID="tlm" />
               <Game name="Half Life" url="https://kirill-zakharov.itch.io/xash" type="OpenInGL" gID="hl" />
-              <Game name="Mario 64" url="https://augustberchelmann.com/mario/" type="OpenInGL" gID="m64" />
+              <Game name="Mario 64" url="https://probablykam.github.io/Mario64webgl/" type="OpenInGL" gID="m64" />
 
               <p className="bp_reqtxt">Don't see a game you like? You can request <a style={{"textDecoration":"none"}} href="https://docs.google.com/forms/d/1Eb-gJCBDtla2tv04k7sdyefMoeVf0ENYy30x_UOFdBU/edit">here</a></p>
             </div>

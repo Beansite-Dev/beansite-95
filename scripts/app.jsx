@@ -7,7 +7,7 @@ const LoaderUI = new ArchiveLoader(SDK);
 // const Store = new AppStore(SDK);
 
 const App = () =>{
-  const vnum = "2.11.5";
+  const vnum = "2.11.7";
   const vnum_rdate = "6/5/24";
   function download(data, filename, type) {
     var file = new Blob([data], {type: type});
@@ -123,6 +123,7 @@ const App = () =>{
           <li>Optimized ALL Images</li>
           <li>Fixed FireBean</li>
           <li>Added Reset Button to Settings</li>
+          <li>Added a bunch of splash text cuz why not</li>
           <li>Created/Updated Beansite local clients:</li>
           <ul>
             <li>None</li>

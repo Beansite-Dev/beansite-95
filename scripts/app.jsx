@@ -122,6 +122,7 @@ const App = () =>{
           <li>Fixed Typo</li>
           <li>Optimized ALL Images</li>
           <li>Fixed FireBean</li>
+          <li>Added Reset Button to Settings</li>
           <li>Created/Updated Beansite local clients:</li>
           <ul>
             <li>None</li>

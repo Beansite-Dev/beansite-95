@@ -78,6 +78,14 @@ const SettingsMenu = (prop) => {
             <input name="tbClr" type="color" id="tbClr" defaultValue="#00008b" onInput={() => changeTitlebarColor(event)} /><br/>
             <label for="tbClr">Dark Mode (EXPERIMENTAL!!!!!!)</label>
             <input name="darkMode" type="checkbox" id="darkMode" onInput={() => setDarkmode(event)} /><br/>
+            <h2 style={{"color":"red"}}>Danger Zone</h2>
+            <button onClick={(e)=>{
+                e.preventDefault();
+                if(confirm("THIS WILL RESET ALL SAVED DATA SITEWIDE. Do you wish to continue?")){
+                    localStorage.removeItem("dontShowCloseConfirmation");
+                    location.reload();
+                }
+            }}>Reset Data</button>
         </SDK.Window>
     )
 }

@@ -7,8 +7,8 @@ const LoaderUI = new ArchiveLoader(SDK);
 // const Store = new AppStore(SDK);
 
 const App = () =>{
-  const vnum = "2.11.7";
-  const vnum_rdate = "6/5/24";
+  const vnum = "2.11.8";
+  const vnum_rdate = "6/7/24";
   function download(data, filename, type) {
     var file = new Blob([data], {type: type});
     if (window.navigator.msSaveOrOpenBlob) // IE10+
@@ -163,6 +163,7 @@ const App = () =>{
           <li>Removed Games:</li>
           <ul>
             <li>Helix Jump (Shitty Embed)</li>
+            <li>Dumb Ways to Die (Shitty Embed)</li>
           </ul>
         </ul>
       </SDK.Window>
@@ -247,7 +248,7 @@ const App = () =>{
               <Game name="Deathrun 3D" url="https://deathrun3d.io" type="OpenInGL" gID="dr3d" />
               {/* <Game name="Helix Jump" url="https://helixjump2.com" type="OpenInGL" gID="helix" /> */}
               <Game name="Fridy Night Funkin'" url="https://friday-nightfunkin.io/friday-night-funkin" type="OpenInGL" gID="funkin" />
-              <Game name="Dumb Ways to Die" url="https://dumbwaystodie.io" type="OpenInGL" gID="dwtd" />
+              {/* <Game name="Dumb Ways to Die" url="" type="OpenInGL" gID="dwtd" /> */}
               <Game name="Tomb Runner" url="https://lagged.com/en/g/tomb-runner" type="OpenInGL" gID="tombr" />
               <Game name="Fallout 1" url="https://playclassic.games/games/role-playing-dos-games-online/play-fallout-online/play/" type="OpenInGL" gID="fallout1" />
               <Game name="Burrito Bison: Launcha Libre" url="https://tybsi.com/games/burrito-bison-launcha-libre/" type="OpenInGL" gID="burritobll" />

@@ -7,8 +7,8 @@ const LoaderUI = new ArchiveLoader(SDK);
 // const Store = new AppStore(SDK);
 
 const App = () =>{
-  const vnum = "2.11.8";
-  const vnum_rdate = "6/7/24";
+  const vnum = "2.12.2";
+  const vnum_rdate = "6/8/24";
   function download(data, filename, type) {
     var file = new Blob([data], {type: type});
     if (window.navigator.msSaveOrOpenBlob) // IE10+
@@ -60,6 +60,109 @@ const App = () =>{
       sel.addRange(range);
     }
   }
+  const games={
+    "Slope": {
+      "url": "https://kdata1.com/2020/05/slope/",
+      "id": "slope",
+      "type": "OpenInGL",
+    }, 
+    "Slope 2": {
+      "url": "https://slope2.github.io/a6/slope-2/",
+      "id": "slope2",
+      "type": "OpenInGL",
+    }, 
+    "1v1.lol": {
+      "url": "https://1v1.lol",
+      "id": "1v1lol",
+      "type": "OpenInGL",
+    },
+    "Smash Karts": {
+      "url": "https://smashkarts.io",
+      "id": "smashk",
+      "type": "OpenInGL",
+    },
+    "Shell Shocker": {
+      "url": "https://shellshock.io",
+      "id": "shells",
+      "type": "OpenInGL",
+    },
+    "2048 ": {
+      "url": "https://play2048.co",
+      "id": "2048",
+      "type": "OpenInGL",
+    },
+    "Eaglercraft 1.5.2": {
+      "url": "/games/07ed39eb95c1ce7e451192d7c7517c6c3382a59cb40702d8bab86dc61e3b555d.html",
+      "id": "eag",
+      "type": "NewTab",
+    },
+    "Final Fantasy VII": {
+      "url": "https://www.retrogames.cc/embed/43658-final-fantasy-vii-usa-disc-1.html",
+      "id": "ffvii",
+      "type": "OpenInGL",
+    },
+    "Bloxd.io": {
+      "url": "https://bloxd.io",
+      "id": "bloxd",
+      "type": "OpenInGL",
+    },
+    "X-Trench Run": {
+      "url": "https://html5.gamedistribution.com/24d6db9a49d94cc28cf6c5b0073adb28/",
+      "id": "xtr",
+      "type": "OpenInGL",
+    },
+    "Armed Forces": {
+      "url": "https://armedforces.io",
+      "id": "armedf",
+      "type": "OpenInGL",
+    },
+    "Ocarina of Time": {
+      "url": "https://www.retrogames.cc/embed/44169-ocarina-of-time-redux.html",
+      "id": "ocarinaot",
+      "type": "OpenInGL",
+    },
+    "Super Mario": {
+      "url": "https://www.retrogames.cc/embed/43806-super-mario-bros-simplified.html",
+      "id": "mario",
+      "type": "OpenInGL",
+    },
+    "Mini Golf Club": {
+      "url": "https://minigolfclub.io",
+      "id": "mgclub",
+      "type": "OpenInGL",
+    },
+    "Hole.io": {
+      "url": "https://hole-io.com",
+      "id": "hole",
+      "type": "OpenInGL",
+    },
+    "OvO": {
+      "url": "https://html5.gamedistribution.com/rvvASMiM/1377b99c10284c229423118a941af3b1/index.html?gd_sdk_referrer_url=https%3A%2F%2Fdinosaur-game.io%2Fovo&gd_zone_config=eyJwYXJlbnRVUkwiOiJodHRwczovL2Rpbm9zYXVyLWdhbWUuaW8vb3ZvIiwicGFyZW50RG9tYWluIjoiZGlub3NhdXItZ2FtZS5pbyIsInRvcERvbWFpbiI6ImRpbm9zYXVyLWdhbWUuaW8iLCJoYXNJbXByZXNzaW9uIjpmYWxzZSwibG9hZGVyRW5hYmxlZCI6dHJ1ZSwiaG9zdCI6Imh0bWw1LmdhbWVkaXN0cmlidXRpb24uY29tIiwidmVyc2lvbiI6IjEuNS4xNyJ9",
+      "id": "ovo",
+      "type": "OpenInGL",
+    },
+    "OvO 2": {
+      "url": "https://dedragames.com/games/ovo2/0.2alpha/",
+      "id": "ovo2",
+      "type": "OpenInGL",
+    },
+    "Retro Bowl": {
+      "url": "https://game316009.konggames.com/gamez/0031/6009/live/index.html",
+      "id": "retrob",
+      "type": "OpenInGL",
+    },
+    "Subway Surfers": {
+      "url": "https://subwaysurfersgame.io/subway-surfers-game.embed?d=20240530",
+      "id": "subways",
+      "type": "OpenInGL",
+    },
+    "Deathrun 3D": {
+      "url": "https://deathrun3d.io",
+      "id": "dr3d",
+      "type": "OpenInGL",
+    },
+  };
+
   const Alt=(prop)=>{return(<li><a href={prop.URL}>{prop.URL}</a></li>)};
   return (
     <SDK.TemplateUI 
@@ -114,56 +217,18 @@ const App = () =>{
         <h1>Changelog: {vnum} - {vnum_rdate}</h1>
         {/* <p></p> */}
         <ul>
-          <li>INSANE optimization (loads instantly now)</li>
-          <li>Improved Tips Shuffle System</li>
-          <li>Fixed font compatability issues</li>
-          <li>Added Game Submition (<a style={{"textDecoration":"none"}} href="https://docs.google.com/forms/d/1Eb-gJCBDtla2tv04k7sdyefMoeVf0ENYy30x_UOFdBU/edit">quick url</a>)</li>
-          <li>Fixed font bug in Beanpowered</li>
-          <li>Fixed Typo</li>
-          <li>Optimized ALL Images</li>
-          <li>Fixed FireBean</li>
-          <li>Added Reset Button to Settings</li>
-          <li>Added a bunch of splash text cuz why not</li>
+          <li>INSANELY Optimised Script</li>
           <li>Created/Updated Beansite local clients:</li>
           <ul>
             <li>None</li>
           </ul>
           <li>Added Games: </li>
           <ul>
-            <li>Slope (fixed)</li>
-            <li>Slope 2 (fixed)</li>
-            <li>Drift Boss (fixed)</li>
-            <li>Final Fantasy VII (fixed)</li>
-            <li>X-Trench Run (fixed)</li>
-            <li>FNaF 1 (fixed)</li>
-            <li>Subway Surfers (fixed)</li>
-            <li>Fancade (Requested by Bluebear)</li>
-            <li>Doom 64</li>
-            <li>Baldi's Basics</li>
-            <li>Krunker.io</li>
-            <li>Snake.io</li>
-            <li>Portal</li>
-            <li>Yohoho.io</li>
-            <li>Ships 3D</li>
-            <li>GunSpin</li>
-            <li>FNaF 2</li>
-            <li>FNaF 3</li>
-            <li>FNaF 4</li>
-            <li>FNaF World</li>
-            <li>Highway Traffic</li>
-            <li>Fractal Combat X</li>
-            <li>Snow Rider 3D</li>
-            <li>The Last Man</li>
-            <li>Doom 3</li>
-            <li>Half Life</li>
-            <li>Mario 64</li>
-            <li>Among Us</li>
-            <li>Pizza Tower</li>
+            <li>None :(</li>
           </ul>
           <li>Removed Games:</li>
           <ul>
-            <li>Helix Jump (Shitty Embed)</li>
-            <li>Dumb Ways to Die (Shitty Embed)</li>
+            <li>None :)</li>
           </ul>
         </ul>
       </SDK.Window>
@@ -224,31 +289,11 @@ const App = () =>{
             </div>
             <div className="bp_gameWrapper">
 
-              <Game name="Slope" url="https://kdata1.com/2020/05/slope/" type="OpenInGL" gID="slope" />
-              <Game name="Slope 2" url="https://slope2.github.io/a6/slope-2/" type="OpenInGL" gID="slope2" />
-              <Game name="1v1.lol" url="https://1v1.lol" type="OpenInGL" gID="1v1lol" />
-              <Game name="Smash Karts" url="https://smashkarts.io" type="OpenInGL" gID="smashk" />
-              <Game name="Shell Shockers" url="https://shellshock.io" type="OpenInGL" gID="shells" />
-              <Game name="2048" url="https://play2048.co" type="OpenInGL" gID="2048" />
-              <Game name="Eaglercraft" url="/games/07ed39eb95c1ce7e451192d7c7517c6c3382a59cb40702d8bab86dc61e3b555d.html" type="NewTab" gID="eag" />
-              <Game name="Final Fanstasy VII" url="https://www.retrogames.cc/embed/43658-final-fantasy-vii-usa-disc-1.html" type="OpenInGL" gID="ffvii" />
-              <Game name="Bloxd.io" url="https://bloxd.io" type="OpenInGL" gID="bloxd" />
-              <Game name="X-Trench Run" url="https://html5.gamedistribution.com/24d6db9a49d94cc28cf6c5b0073adb28/" type="OpenInGL" gID="xtr" />
-              <Game name="Armed Forces" url="https://armedforces.io" type="OpenInGL" gID="armedf" />
-              <Game name="Ocarina of Time" url="https://www.retrogames.cc/embed/44169-ocarina-of-time-redux.html" type="OpenInGL" gID="ocarinaot" />
-              <Game name="Super Mario" url="https://www.retrogames.cc/embed/43806-super-mario-bros-simplified.html" type="OpenInGL" gID="mario" />
-              <Game name="Mini Golf Club" url="https://minigolfclub.io" type="OpenInGL" gID="mgclub" />
-              {/* <Game name="Infinite Craft" url="https://neal.fun/infinite-craft/" type="OpenInGL" gID="infinitec" /> */}
-              {/* <Game name="Password Game" url="https://neal.fun/password-game/" type="OpenInGL" gID="password" /> */}
-              <Game name="Hole.io" url="https://hole-io.com" type="OpenInGL" gID="hole" />
-              <Game name="OvO" url="https://html5.gamedistribution.com/rvvASMiM/1377b99c10284c229423118a941af3b1/index.html?gd_sdk_referrer_url=https%3A%2F%2Fdinosaur-game.io%2Fovo&gd_zone_config=eyJwYXJlbnRVUkwiOiJodHRwczovL2Rpbm9zYXVyLWdhbWUuaW8vb3ZvIiwicGFyZW50RG9tYWluIjoiZGlub3NhdXItZ2FtZS5pbyIsInRvcERvbWFpbiI6ImRpbm9zYXVyLWdhbWUuaW8iLCJoYXNJbXByZXNzaW9uIjpmYWxzZSwibG9hZGVyRW5hYmxlZCI6dHJ1ZSwiaG9zdCI6Imh0bWw1LmdhbWVkaXN0cmlidXRpb24uY29tIiwidmVyc2lvbiI6IjEuNS4xNyJ9" type="OpenInGL" gID="ovo" />
-              <Game name="OvO 2" url="https://dedragames.com/games/ovo2/0.2alpha/" type="OpenInGL" gID="ovo2" />
-              <Game name="Retro Bowl" url="https://game316009.konggames.com/gamez/0031/6009/live/index.html" type="OpenInGL" gID="retrob" />
-              <Game name="Subway Surfers" url="https://subwaysurfersgame.io/subway-surfers-game.embed?d=20240530" type="OpenInGL" gID="subways" />
-              <Game name="Deathrun 3D" url="https://deathrun3d.io" type="OpenInGL" gID="dr3d" />
-              {/* <Game name="Helix Jump" url="https://helixjump2.com" type="OpenInGL" gID="helix" /> */}
+              {Object.keys(games).map((name)=>
+                <Game name={name} url={games[name].url} gID={games[name].id} type={games[name].type} />
+              )}
+
               <Game name="Fridy Night Funkin'" url="https://friday-nightfunkin.io/friday-night-funkin" type="OpenInGL" gID="funkin" />
-              {/* <Game name="Dumb Ways to Die" url="" type="OpenInGL" gID="dwtd" /> */}
               <Game name="Tomb Runner" url="https://lagged.com/en/g/tomb-runner" type="OpenInGL" gID="tombr" />
               <Game name="Fallout 1" url="https://playclassic.games/games/role-playing-dos-games-online/play-fallout-online/play/" type="OpenInGL" gID="fallout1" />
               <Game name="Burrito Bison: Launcha Libre" url="https://tybsi.com/games/burrito-bison-launcha-libre/" type="OpenInGL" gID="burritobll" />

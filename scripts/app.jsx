@@ -204,10 +204,10 @@ const App = () =>{
 
       {/* Special ------------------------------------------------------ */}
       <SDK.Window winName="Shameless Advertisment" winNum="-99" defaultStyle={{"height": "40vmin", "width": "65vmin", "top": "5vmin","right": "5vmin",}} includeNavButtons={{"del":true,"max":true,"min":true,}}>
-        <h1>Check out the Kandy Krew!</h1>
+        {/* <h1>Check out the Kandy Krew!</h1>
         <p>Gum can be expensive and hard to get as a middle schooler. We fix that, with deals 25%-50% cheaper than walgreens.</p>
         <a href="https://snackcentral.vercel.app">Official Website</a>
-        <hr/>
+        <hr/> */}
         <h1>Webcache has Returned!</h1>
         <p>Mackin and Webcache has been blocked, but recently I found a way to bring it back.</p>
         <a href="https://mwcnd.vercel.app">Official Website</a>
@@ -218,6 +218,7 @@ const App = () =>{
         {/* <p></p> */}
         <ul>
           <li>INSANELY Optimised Script</li>
+          <li>Made Website Reload on BSoD</li>
           <li>Created/Updated Beansite local clients:</li>
           <ul>
             <li>None</li>
@@ -395,7 +396,10 @@ const App = () =>{
 
       {/* <Store.Homepage /> */}
 
-      <img src="./assets/error.jpg" id="bsod" draggable="false"/>
+      <img src="./assets/error.jpg" id="bsod" draggable="false" onClick={(e)=>{
+        e.preventDefault();
+        location.reload();
+      }}/>
       <img src="./assets/icons/clippy.png" id="clippy" draggable="false"/>
       {/* <div id="blackScreen"></div> */}
 

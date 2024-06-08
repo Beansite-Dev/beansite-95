@@ -761,13 +761,13 @@ loading {
     background: var(--bp-bg2);
     --bp-pad: 3.5vmin;
     padding: var(--bp-pad);
-    padding-top: calc(50px + var(--bp-pad));
+    padding-top: calc(65px + var(--bp-pad));
 }
 .BeanpoweredMWindow .bp_nav {
     position: absolute;
     top: 0;
     left: 0;
-    height: 50px;
+    height: 65px;
     width: 100%;
     background: var(--bp-bg3);
 }
@@ -1035,4 +1035,50 @@ loading {
     text-align: center;
     color: #00a2ff;
     font-family: 'Motiva Sans';
+}
+#bp_search {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    height: 50%;
+    width: 30vmin;
+    background: #384d73;
+    border: 1px solid #4e6399;
+    color: rgb(255, 255, 255);
+    border-radius: 5vmin;
+    padding: 1.5vmin;
+    box-sizing: border-box;
+    font-size: 1.75vmin;
+    font-family: 'Motiva Sans';
+    outline: none;
+    transition: .35s;
+}
+#bp_search:focus {
+    background: #fff;
+    color: #161616;
+}
+#bp_s_results {
+    position: absolute;
+    top: calc(75% + 1vmin);
+    z-index: 99;
+    right: 10px;
+    background: #384d73;
+    color: rgb(255, 255, 255);
+    border: 1px solid #4e6399;
+    border-radius: 2vmin;
+    height: 20vmin;
+    width: 30vmin;
+    overflow-y: auto;
+    text-overflow: ellipsis;
+    white-space: wrap;
+    overflow-x: hidden;
+}
+#bp_s_results::-webkit-scrollbar {
+    display: none;
+}
+.bp_s_qres {
+    list-style-type: none;
+    font-family: 'Motiva Sans';
+    font-size: 2vmin;
 }

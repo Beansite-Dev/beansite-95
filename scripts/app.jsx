@@ -7,7 +7,7 @@ const LoaderUI = new ArchiveLoader(SDK);
 // const Store = new AppStore(SDK);
 
 const App = () =>{
-  const vnum = "2.12.2";
+  const vnum = "2.12.4";
   const vnum_rdate = "6/8/24";
   function download(data, filename, type) {
     var file = new Blob([data], {type: type});
@@ -160,7 +160,248 @@ const App = () =>{
       "id": "dr3d",
       "type": "OpenInGL",
     },
-  };
+    "Fridy Night Funkin'": {
+      "url": "https://friday-nightfunkin.io/friday-night-funkin",
+      "id": "funkin",
+      "type": "OpenInGL",
+    },
+    "Tomb Runner": {
+      "url": "https://lagged.com/en/g/tomb-runner",
+      "id": "tombr",
+      "type": "OpenInGL",
+    },
+    "Fallout 1": {
+      "url": "https://playclassic.games/games/role-playing-dos-games-online/play-fallout-online/play/",
+      "id": "fallout1",
+      "type": "OpenInGL",
+    },
+    "Burrito Bison: Launcha Libre": {
+      "url": "https://tybsi.com/games/burrito-bison-launcha-libre/",
+      "id": "burritobll",
+      "type": "OpenInGL",
+    },
+    "Tomb of the Mask": {
+      "url": "https://mountain658.github.io/tombofthemask.html",
+      "id": "totm",
+      "type": "OpenInGL",
+    },
+    "Drive Mad": {
+      "url": "https://mountain658.github.io/drivemad.html",
+      "id": "drivem",
+      "type": "OpenInGL",
+    },
+    "Run 3": {
+      "url": "https://mountain658.glitch.me/run3.html",
+      "id": "run3",
+      "type": "OpenInGL",
+    },
+    "Celeste": {
+      "url": "https://mountain658.glitch.me/celeste.html",
+      "id": "celeste",
+      "type": "OpenInGL",
+    },
+    "Jetpack Joyride": {
+      "url": "https://www.miniplay.com/embed/jetpack-joyride",
+      "id": "jpjr",
+      "type": "OpenInGL",
+    },
+    "Fruit Ninja": {
+      "url": "https://funhtml5games.com?embed=fruitninja",
+      "id": "frnin",
+      "type": "OpenInGL",
+    },
+    "Flappy Bird": {
+      "url": "https://playcanv.as/p/2OlkUaxF/",
+      "id": "flappy",
+      "type": "OpenInGL",
+    },
+    "Pokemon Red": {
+      "url": "https://static.arcadespot.com/retroemulator.php?system=gboy&game=2016/07/pokemon-red.zip",
+      "id": "pokered",
+      "type": "OpenInGL",
+    },
+    "Pokemon Blue": {
+      "url": "https://static.arcadespot.com/retroemulator.php?system=gboy&game=2016/07/pokemon-blue.zip",
+      "id": "pokeblue",
+      "type": "OpenInGL",
+    },
+    "Street Fighter": {
+      "url": "https://static.arcadespot.com/retroemulator.php?system=snes&game=2017/10/street-fighter-5.smc",
+      "id": "streetftr",
+      "type": "OpenInGL",
+    },
+    "Fancade": {
+      "url": "https://play.fancade.com",
+      "id": "fancade",
+      "type": "OpenInGL",
+    },
+    "Doom": {
+      "url": "https://dos.zone/doom-dec-1993/",
+      "id": "doom",
+      "type": "OpenInGL",
+    },
+    "Doom II": {
+      "url": "https://dos.zone/doom-ii-oct-10-1994/",
+      "id": "doom2",
+      "type": "OpenInGL",
+    },
+    "Doom 64": {
+      "url": "https://static.arcadespot.com/retroemulator.php?system=n64&game=2017/06/doom-64.zip",
+      "id": "doom64",
+      "type": "OpenInGL",
+    },
+    "Doom 3": {
+      "url": "https://wasm.continuation-labs.com/d3demo/",
+      "id": "doom3",
+      "type": "OpenInGL",
+    },
+    "Baldi's Basics": {
+      "url": "https://igroutka.ru/loader/game/26471/",
+      "id": "baldis",
+      "type": "OpenInGL",
+    },
+    "Krunker.io": {
+      "url": "https://krunker.io",
+      "id": "krunker",
+      "type": "OpenInGL",
+    },
+    "Snake.io": {
+      "url": "https://snakeio.org/snake-io.embed",
+      "id": "snakeio",
+      "type": "OpenInGL",
+    },
+    "Portal": {
+      "url": "https://w8.snokido.com/games/flash/ruffle.html?g=portal&v=140524",
+      "id": "portal",
+      "type": "OpenInGL",
+    },
+    "Yohoho.io": {
+      "url": "https://yohoho.io",
+      "id": "yohohoio",
+      "type": "OpenInGL",
+    },
+    "Ships 3D": {
+      "url": "https://games.crazygames.com/en_US/ships-3d/index.html?v=1.288",
+      "id": "ships3d",
+      "type": "OpenInGL",
+    },
+    "GunSpin": {
+      "url": "https://gun-spin.github.io/file/",
+      "id": "gunspin",
+      "type": "OpenInGL",
+    },
+    "FNaF 1": {
+      "url": "https://fnafgame.io/fnaf.embed?ez_iframe=1",
+      "id": "fnaf1",
+      "type": "OpenInGL",
+    },
+    "FNaF 2": {
+      "url": "https://fnafgame.io/fnaf-2.embed?ez_iframe=1",
+      "id": "fnaf2",
+      "type": "OpenInGL",
+    },
+    "FNaF 3": {
+      "url": "https://fnafgame.io/fnaf-3.embed?ez_iframe=1",
+      "id": "fnaf3",
+      "type": "OpenInGL",
+    },
+    "FNaF 4": {
+      "url": "https://fnafgame.io/fnaf-4.embed?ez_iframe=1",
+      "id": "fnaf4",
+      "type": "OpenInGL",
+    },
+    "FNaF World": {
+      "url": "https://turbowarp.org/96095372/embed?autoplay&addons=remove-curved-stage-border%2Cpause%2Cgamepad",
+      "id": "fnafworld",
+      "type": "OpenInGL",
+    },
+    "Highway Traffic": {
+      "url": "https://app-97317.games.s3.yandex.net/97317/zr27uqx4qauq31fg2ud41a7oye9c4dki/index.html?sdk=%2Fsdk%2F_%2Fv2.6cafcb80ad19287b13a2.js#origin=https%3A%2F%2Fplayhop.com&app-id=97317&device-type=desktop",
+      "id": "hwtraffic",
+      "type": "OpenInGL",
+    },
+    "Fractal Combat X": {
+      "url": "https://play.gamepix.com/fractal-combat-x/embed?sid=e4515",
+      "id": "fcx",
+      "type": "OpenInGL",
+    },
+    "Snow Rider 3D": {
+      "url": "https://html5.gamedistribution.com/3b79a8537ebc414fb4f9672a9b8c68c8/?gd_sdk_referrer_url=https://gamedistribution.com/games/snow-rider-3d/",
+      "id": "sr3d",
+      "type": "OpenInGL",
+    },
+    "The Last Man": {
+      "url": "https://html5.gamedistribution.com/63c7be58e25e4b37bef7e01d3fa20894/?gd_sdk_referrer_url=https://kevin.games/the-last-man",
+      "id": "tlm",
+      "type": "OpenInGL",
+    },
+    "Half Life": {
+      "url": "https://pixelsuft.github.io/hl/xash.html#150",
+      "id": "hl",
+      "type": "OpenInGL",
+    },
+    "Mario 64": {
+      "url": "https://static.arcadespot.com/retroemulator.php?system=n64&game=2017/06/super-mario-64.zip",
+      "id": "m64",
+      "type": "OpenInGL",
+    },
+    "Among Us": {
+      "url": "https://amongusio.io/among-us.embed",
+      "id": "amongus",
+      "type": "OpenInGL",
+    },
+    "Pizza Tower": {
+      "url": "https://kdata1.com/2021/03/3527391/2.1/",
+      "id": "pizzatower",
+      "type": "OpenInGL",
+    },
+    // template
+    // "": {
+    //   "url": "",
+    //   "id": "",
+    //   "type": "OpenInGL",
+    // },
+  }; 
+
+  var results=[];
+  const bp_searchgame=(q)=>{
+    function trimString(s) {
+      var l=0, r=s.length -1;
+      while(l < s.length && s[l] == ' ') l++;
+      while(r > l && s[r] == ' ') r-=1;
+      return s.substring(l, r+1);
+    }
+    function compareObjects(o1, o2) {
+      var k = '';
+      for(k in o1) if(o1[k] != o2[k]) return false;
+      for(k in o2) if(o1[k] != o2[k]) return false;
+      return true;
+    }
+    function itemExists(haystack, needle) {
+      for(var i=0; i<haystack.length; i++) if(compareObjects(haystack[i], needle)) return true;
+      return false;
+    }
+    // console.log(q);
+    const resultselm=document.getElementById("bp_s_results");
+    const resultselmul=document.getElementById("bg_s_res_ul");
+    // resultselm.style.display="block";
+    var toSearch=(trimString(q)).toLowerCase();
+    results=[];
+    for(var key in games) {
+      var keyf=key.toLowerCase();
+      if(keyf.indexOf(toSearch)!=-1) {
+        if(!itemExists(results, games)) results.push(key);
+      }
+    }
+    // console.log(results);
+    // var s="";
+    // for(var i=0;i<results.length;i++){
+    //   s=`${s}<li class="bp_s_qres" onclick="document.getElementById("g_${results[i]}").scrollIntoView()">${results[i]}</li>`;
+    // }
+    // console.log(s);
+    // resultselmul.innerHTML=s;
+    // console.log(results);
+  }
 
   const Alt=(prop)=>{return(<li><a href={prop.URL}>{prop.URL}</a></li>)};
   return (
@@ -218,6 +459,7 @@ const App = () =>{
         <ul>
           <li>INSANELY Optimised Script</li>
           <li>Made Website Reload on BSoD</li>
+          <li>Started work on search function for BeanPowered (it's gonna take some time)</li>
           <li>Created/Updated Beansite local clients:</li>
           <ul>
             <li>None</li>
@@ -277,6 +519,24 @@ const App = () =>{
         <div className="BeanpoweredMWindow">
           <div className="bp_nav">
             <div id="bp_logo"></div>
+            {/* <div
+            onFocus={(e)=>{document.getElementById("bp_s_results").style.display="block";}}
+            onBlur={(e)=>{
+              if (!event.currentTarget.contains(event.relatedTarget)) {
+                document.getElementById("bp_s_results").style.display="none";}}}>
+            <input 
+              type="text" 
+              id="bp_search" 
+              name="bp_search"
+              autocomplete="off"
+              onInput={(e)=>bp_searchgame(e.target.value)}
+              ></input>
+            <div id="bp_s_results" style={{"display":"none"}}>
+              <ul id="bg_s_res_ul">
+                {results.map((name,i) => <li key={`res_${name}`}>{name}</li>)}
+              </ul>
+            </div>
+            </div> */}
           </div>
           <div id="bp_cwrap">
             <div className="card_trendinggame">
@@ -288,52 +548,8 @@ const App = () =>{
               <div id="bp_tg_preview"></div>
             </div>
             <div className="bp_gameWrapper">
-
               {Object.keys(games).map((name)=>
-                <Game name={name} url={games[name].url} gID={games[name].id} type={games[name].type} />
-              )}
-
-              <Game name="Fridy Night Funkin'" url="https://friday-nightfunkin.io/friday-night-funkin" type="OpenInGL" gID="funkin" />
-              <Game name="Tomb Runner" url="https://lagged.com/en/g/tomb-runner" type="OpenInGL" gID="tombr" />
-              <Game name="Fallout 1" url="https://playclassic.games/games/role-playing-dos-games-online/play-fallout-online/play/" type="OpenInGL" gID="fallout1" />
-              <Game name="Burrito Bison: Launcha Libre" url="https://tybsi.com/games/burrito-bison-launcha-libre/" type="OpenInGL" gID="burritobll" />
-              <Game name="Tomb of the Mask" url="https://mountain658.github.io/tombofthemask.html" type="OpenInGL" gID="totm"/>
-              <Game name="Drive Mad" url="https://mountain658.github.io/drivemad.html" type="OpenInGL" gID="drivem" />
-              <Game name="Run 3" url="https://mountain658.glitch.me/run3.html" type="OpenInGL" gID="run3" />
-              <Game name="Celeste" url="https://mountain658.glitch.me/celeste.html" type="OpenInGL" gID="celeste" />
-              <Game name="Jetpack Joyride" url="https://www.miniplay.com/embed/jetpack-joyride" type="OpenInGL" gID="jpjr" />
-              <Game name="Fruit Ninja" url="https://funhtml5games.com?embed=fruitninja" type="OpenInGL" gID="frnin" />
-              <Game name="Flappy Bird" url="https://playcanv.as/p/2OlkUaxF/" type="OpenInGL" gID="flappy" />
-              <Game name="Pokemon Red" url="https://static.arcadespot.com/retroemulator.php?system=gboy&game=2016/07/pokemon-red.zip" type="OpenInGL" gID="pokered" />
-              <Game name="Pokemon Blue" url="https://static.arcadespot.com/retroemulator.php?system=gboy&game=2016/07/pokemon-blue.zip" type="OpenInGL" gID="pokeblue" />
-              <Game name="Street Fighter" url="https://static.arcadespot.com/retroemulator.php?system=snes&game=2017/10/street-fighter-5.smc" type="OpenInGL" gID="streetftr" />
-              <Game name="Fancade" url="https://play.fancade.com" type="OpenInGL" gID="fancade" />
-              <Game name="Doom" url="https://dos.zone/doom-dec-1993/" type="OpenInGL" gID="doom" />
-              <Game name="Doom II" url="https://dos.zone/doom-ii-oct-10-1994/" type="OpenInGL" gID="doom2" />
-              <Game name="Doom 3" url="https://wasm.continuation-labs.com/d3demo/" type="OpenInGL" gID="doom3" />
-              <Game name="Doom 64" url="https://static.arcadespot.com/retroemulator.php?system=n64&game=2017/06/doom-64.zip" type="OpenInGL" gID="doom64" />
-              <Game name="Baldi's Basics" url="https://igroutka.ru/loader/game/26471/" type="OpenInGL" gID="baldis" />
-              <Game name="Krunker.io" url="https://krunker.io" type="OpenInGL" gID="krunker" />
-              <Game name="Snake.io" url="https://snakeio.org/snake-io.embed" type="OpenInGL" gID="snakeio" />
-              <Game name="Portal" url="https://w8.snokido.com/games/flash/ruffle.html?g=portal&v=140524" type="OpenInGL" gID="portal" />
-              <Game name="Yohoho.io" url="https://yohoho.io" type="OpenInGL" gID="yohohoio" />
-              <Game name="Ships 3D" url="https://games.crazygames.com/en_US/ships-3d/index.html?v=1.288" type="OpenInGL" gID="ships3d" />
-              <Game name="GunSpin" url="https://gun-spin.github.io/file/" type="OpenInGL" gID="gunspin" />
-              <Game name="Fnaf 1" url="https://fnafgame.io/fnaf.embed?ez_iframe=1" type="OpenInGL" gID="fnaf1" />
-              <Game name="FNaF 2" url="https://fnafgame.io/fnaf-2.embed?ez_iframe=1" type="OpenInGL" gID="fnaf2" />
-              <Game name="FNaF 3" url="https://fnafgame.io/fnaf-3.embed?ez_iframe=1" type="OpenInGL" gID="fnaf3" />
-              <Game name="FNaF 4" url="https://fnafgame.io/fnaf-4.embed?ez_iframe=1" type="OpenInGL" gID="fnaf4" />
-              <Game name="FNaF World" url="https://turbowarp.org/96095372/embed?autoplay&addons=remove-curved-stage-border%2Cpause%2Cgamepad" type="OpenInGL" gID="fnafworld" />
-              <Game name="Highway Traffic" url="https://app-97317.games.s3.yandex.net/97317/zr27uqx4qauq31fg2ud41a7oye9c4dki/index.html?sdk=%2Fsdk%2F_%2Fv2.6cafcb80ad19287b13a2.js#origin=https%3A%2F%2Fplayhop.com&app-id=97317&device-type=desktop" type="OpenInGL" gID="hwtraffic" />
-              <Game name="Fractal Combat X" url="https://play.gamepix.com/fractal-combat-x/embed?sid=e4515" type="OpenInGL" gID="fcx" />
-              <Game name="Snow Rider 3D" url="https://html5.gamedistribution.com/3b79a8537ebc414fb4f9672a9b8c68c8/?gd_sdk_referrer_url=https://gamedistribution.com/games/snow-rider-3d/" type="OpenInGL" gID="sr3d" />
-              <Game name="The Last Man" url="https://html5.gamedistribution.com/63c7be58e25e4b37bef7e01d3fa20894/?gd_sdk_referrer_url=https://kevin.games/the-last-man" type="OpenInGL" gID="tlm" />
-              <Game name="Half Life" url="https://pixelsuft.github.io/hl/xash.html#150" type="OpenInGL" gID="hl" />
-              <Game name="Mario 64" url="https://static.arcadespot.com/retroemulator.php?system=n64&game=2017/06/super-mario-64.zip" type="OpenInGL" gID="m64" />
-              <Game name="Among Us" url="https://amongusio.io/among-us.embed" type="OpenInGL" gID="amongus" />
-              {/* <Game name="Happy Room" url="https://kdata1.com/2017/02/happy-room/" type="OpenInGL" gID="happyroom" /> */}
-              <Game name="Pizza Tower" url="https://kdata1.com/2021/03/3527391/2.1/" type="OpenInGL" gID="pizzatower" />
-
+                <Game name={name} url={games[name].url} gID={games[name].id} type={games[name].type} />)}
               <p className="bp_reqtxt">Don't see a game you like? You can request <a style={{"textDecoration":"none"}} href="https://docs.google.com/forms/d/1Eb-gJCBDtla2tv04k7sdyefMoeVf0ENYy30x_UOFdBU/edit">here</a></p>
             </div>
           </div>

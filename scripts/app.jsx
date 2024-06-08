@@ -31,8 +31,7 @@ const App = () =>{
       document.getElementById("win3").style.display = "block";
       document.getElementById('win3icon').style.display = "flex";
       document.getElementById("gameloader").src = game;
-    } else if (type=="NewTab"){
-      window.open(game,'_blank')
+    } else if (type=="NewTab"){ window.open(game,'_blank');
     } else { console.error('Invalid Open Type'); }
   }
   const Game = (prop) => {
@@ -43,7 +42,7 @@ const App = () =>{
         Play</button>
         <div className="bp_gcard_preview" id={`g_${prop.gID}`}></div>
       </div>
-    )
+    );
   }
   const notepadKeyDown = (e) => {
     if(e.key=="Tab"){

@@ -296,11 +296,12 @@ const games={
     },
     "Riddle School": {
       "url": "https://riddle-school.github.io/file/",
+      "id": "riddleschool1",
       "type": "OpenInGL"
     },
     "Riddle School 2": {
-    "url": "https://games.crazygames.com/en_US/riddle-school-2/index.html",
-    "id": "riddleschool2",
+      "url": "https://games.crazygames.com/en_US/riddle-school-2/index.html",
+      "id": "riddleschool2",
       "type": "OpenInGL"
     },
     "Riddle School 3": {

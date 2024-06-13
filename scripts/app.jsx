@@ -7,8 +7,8 @@ const LoaderUI = new ArchiveLoader(SDK);
 // const Store = new AppStore(SDK);
 
 const App = () =>{
-  const vnum = "2.12.5";
-  const vnum_rdate = "6/11/24";
+  const vnum = "2.12.6";
+  const vnum_rdate = "6/13/24";
   function download(data, filename, type) {
     var file = new Blob([data], {type: type});
     if (window.navigator.msSaveOrOpenBlob) // IE10+
@@ -158,6 +158,7 @@ const App = () =>{
           <li>Added All Games to Seperate File</li>
           <li>Improved Developer Experience</li>
           <li>Added ES6 Array Mapping as Game List Format</li>
+          <li>Fixed Riddle School Banner</li>
           <li>Started work on search function for BeanPowered (it's gonna take some time)</li>
           <li>Created/Updated Beansite local clients:</li>
           <ul>

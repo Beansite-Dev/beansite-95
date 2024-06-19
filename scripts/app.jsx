@@ -7,8 +7,8 @@ const LoaderUI = new ArchiveLoader(SDK);
 // const Store = new AppStore(SDK);
 
 const App = () =>{
-  const vnum = "2.12.6";
-  const vnum_rdate = "6/13/24";
+  const vnum = "2.13.1";
+  const vnum_rdate = "6/19/24";
   function download(data, filename, type) {
     var file = new Blob([data], {type: type});
     if (window.navigator.msSaveOrOpenBlob) // IE10+
@@ -40,7 +40,10 @@ const App = () =>{
         <h1>{prop.name}</h1>
         <button onClick={()=>openGame(prop.url,prop.type)}>
         Play</button>
-        <div className="bp_gcard_preview" id={`g_${prop.gID}`}></div>
+        <div 
+          className="bp_gcard_preview" 
+          id={`g_${prop.gID}`}
+          style={{"backgroundImage":`url('../assets/gbanner/${prop.gID}.png')`}}></div>
       </div>
     );
   }
@@ -159,6 +162,8 @@ const App = () =>{
           <li>Improved Developer Experience</li>
           <li>Added ES6 Array Mapping as Game List Format</li>
           <li>Fixed Riddle School Banner</li>
+          <li>Seperated Styling into Multiple Files</li>
+          <li>Simplified Beanpowered Banner Styling</li>
           <li>Started work on search function for BeanPowered (it's gonna take some time)</li>
           <li>Created/Updated Beansite local clients:</li>
           <ul>

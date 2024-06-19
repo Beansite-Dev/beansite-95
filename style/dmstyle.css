@@ -1,3 +1,8 @@
+/*---
+Beansite style.css
+M1dnight (c) 2024
+Last modified: 4/23/24
+---*/
 .window { background-image: url("../assets/grid_dm.png") !important; background-color: #222222 !important; }
 .window h1, .window p, .window li *, :not(strong,#commandInput,#runCmd) { color: #FFF !important; }
 .window nav button { background-color: #2f2f2f !important; border-color: #171717 !important; }

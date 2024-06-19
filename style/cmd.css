@@ -1,0 +1,81 @@
+/*---
+Beansite cmd.css
+M1dnight (c) 2024
+Last modified: 6/19/24
+---*/
+#cmd {
+    font-family: 'Courier New', Courier, monospace;
+    height: calc(100% - 25px);
+    width: 100%;
+    box-sizing: border-box;
+    background: black;
+    padding: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: lightgray;
+    overflow-y: scroll;
+    line-height: 1rem;
+    font-size: 1rem;
+    word-wrap: break-word;
+    text-wrap: wrap;
+}
+#runCmd {
+    width: 10%;
+    height: 25px;
+    background: black;
+    border: 2px double lightgray;
+    color: lightgray;
+    font-family: 'Courier New', Courier, monospace;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: .5s;
+}
+#runCmd:hover {
+    color: black;
+    background: white;
+}
+#commandInput {
+    width: 90%;
+    box-sizing: border-box;
+    height: 25px;
+    background: black;
+    border: 2px double lightgray;
+    color: lightgray;
+    font-family: 'Courier New', Courier, monospace;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    outline: none;
+    transition: .5s;
+}
+#commandInput:hover, #commandInput:focus {
+    color: black;
+    background: white;
+}
+error {
+    display: inline;
+    color: #ff0000;
+    font-family: 'Courier New', Courier, monospace;
+}
+success {
+    display: inline;
+    color: #00ff00;
+    font-family: 'Courier New', Courier, monospace;
+}
+warn {
+    display: inline;
+    color: #ff9500;
+    font-family: 'Courier New', Courier, monospace;
+}
+rainbow {
+    display: inline;
+    background: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet, red);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Courier New', Courier, monospace;
+}

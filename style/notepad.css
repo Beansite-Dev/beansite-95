@@ -1,0 +1,51 @@
+/*---
+Beansite notepad.css
+M1dnight (c) 2024
+Last modified: 6/19/24
+---*/
+#topbar {
+    height: 20px;
+    width: 100%;
+    background: rgb(222, 222, 222);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+}
+#editor {
+    height: calc(100% - 20px);
+    width: 100%;
+    background: white;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    box-sizing: border-box;
+    padding: 15px;
+    font-size: 1rem;
+    outline: none;
+    overflow-y: auto;
+    overflow-x: hidden;
+    word-wrap: break-word;
+    text-wrap: wrap;
+}
+#editor * {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+}
+#topbar a {
+    box-sizing: border-box;
+    display: block;
+    background: #cecece;
+    padding: 5px;
+    cursor: pointer;
+    transition: .5s;
+}
+#topbar a:hover {
+    background: dimgray;
+    color: lightgray;
+}

@@ -1,0 +1,26 @@
+/*---
+Beansite firebean.css
+M1dnight (c) 2024
+Last modified: 6/19/24
+---*/
+#browser-#topbar {
+    height: 25px;
+    width: 100%;
+    background: lightgray;
+    border: 3px outset gray;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+}
+#url {
+    height: 25px;
+    width: 75%;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: gray;
+    border: 3px outset dimgray;
+    box-sizing: border-box;
+}

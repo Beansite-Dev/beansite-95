@@ -1,0 +1,486 @@
+/*---
+Beansite func.css
+M1dnight (c) 2024
+Last modified: 6/19/24
+---*/
+
+@import url("./window.css");
+
+:root {
+    --bg-clr: #008080;
+    --tb-clr: #00008b;
+    
+    --bp-bg1: #0e1218;
+    --bp-bg2: #161f34;
+    --bp-bg3: #24354d;
+    --bg-accent-border: rgb(70, 80, 85);
+    --bp-pos: #68911b;
+    --bp-cardbg: #071019;
+}
+@font-face {
+    font-family: 'logo';
+    src: url('../assets/fonts/logo.woff') format('woff');
+}
+@font-face {
+    font-family: "goofy";
+    src: url("../assets/fonts/goofy.ttf") format('truetype');
+}
+/* @font-face {
+    font-family: "Comic Sans MS";
+    src: url("../assets/fonts/comic.ttf")format("truetype");
+} */
+html * {
+    /* font-family: "Comic Sans MS"; */
+    /* font-family: "Brush Script MT", cursive; */
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    image-rendering: pixelated;
+    user-select: none;
+}
+body {
+    height: 100dvh;
+    width: 100dvw;
+    margin: 0;
+    padding: 0;
+    background: var(--bg-clr);
+    background-size: cover;
+    background-position: center;
+    transition: .5s;
+    overflow: hidden;
+}
+::-webkit-scrollbar {
+    width: .5rem;
+}
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    outline: 1px outset rgb(167, 167, 167);
+    box-sizing: border-box;
+    background: #cecece;
+}
+::-webkit-scrollbar-thumb {
+    background-color: rgb(155, 155, 155);
+    outline: 1px outset rgb(167, 167, 167);
+    box-sizing: border-box;
+}
+strong {
+    font-weight: bold;
+    font-family: "goofy";
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+    color: red !important;
+    text-shadow:
+        -1px 1px orange,
+        -2px 2px yellow,
+        -3px 3px green,
+        -4px 4px blue,
+        -5px 5px purple;
+}
+h1 {
+    font-size: x-large;
+    margin: 0;
+    padding: 0;
+}
+sup {
+    font-size: 1rem;
+    font-family: "logo";
+    font-weight: 600;
+}
+.ph1 {
+    display: inline-block;
+    height: auto;
+    width: auto;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+li {
+    font-size: 1.15rem;
+    height: auto;
+    width: auto;
+}
+.link {
+    color: darkblue;
+    cursor: pointer;
+}
+.link:hover {
+    font-weight: 800;
+}
+.link:active {
+    color: purple;
+}
+iframe {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    outline: none;
+    border: none;
+}
+#loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 50%;
+    object-fit: contain;
+}
+#taskbar {
+    height: 45px;
+    width: 100dvw;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: gray;
+    border: 2px outset darkgray;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+#taskbar .icon {
+    height: 100%;
+    width: auto;
+    background: darkgray;
+    border: 3px outset dimgray;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5px;
+    padding: 5px;
+    cursor: pointer;
+    transition: .5s;
+}
+#taskbar .icon h1 {
+    font-size: 1.05rem;
+    font-weight: 400;
+    user-select: none;
+}
+#taskbar .icon img {
+    height: 80%;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+    margin: 0;
+    padding: 0;
+    margin-right: 5px;
+}
+#taskbar .icon:hover {
+    border-color: darkblue;
+    background: dimgrey;
+    color: lightgray;
+}
+#taskbar #start {
+    height: 100%;
+    width: 100px;
+    margin: 0;
+    margin-right: 5px;
+    box-sizing: border-box;
+    font-size: 1.05rem;
+    line-height: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: darkgray;
+    border: 3px outset dimgray;
+    cursor: pointer;
+    transition: .5s;
+}
+#taskbar #start:hover {
+    border-color: darkblue;
+    background: dimgrey;
+    color: lightgray;
+}
+#taskbar #start #startBtnBean {
+    height: 100%;
+    box-sizing: border-box;
+    padding: 2px;
+    object-fit: cover;
+    aspect-ratio: .5 / 1;
+    display: inline;
+    margin-right: .65rem;
+}
+#startmenu {
+    height: 500px;
+    width: 350px;
+    background: darkgray;
+    border: 3px outset dimgray;
+    box-sizing: border-box;
+    padding: 5px;
+    padding-left: 45px;
+    position: fixed;
+    bottom: 45px;
+    /* left: -22dvw; */
+    z-index: 295;
+    transition: .35s;
+}
+#startmenu h1 {
+    font-size: x-large;
+    line-height: 5px;
+}
+#startmenu p {
+    font-size: medium;
+    line-height: 1rem;
+}
+.application {
+    height: 3rem;
+    width: 100%;
+    background: darkgray;
+    border: 3px outset dimgray;
+    box-sizing: border-box;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+}
+.application h1 {
+    font-size: 1.05rem;
+    font-weight: 400;
+    user-select: none;
+}
+.application img {
+    height: 80%;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+    margin: 0;
+    padding: 0;
+    margin-right: 5px;
+}
+.application:hover {
+    border-color: darkblue;
+    background: dimgrey;
+    color: lightgray;
+}
+#startmenu .sidebar {
+    width: 40px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(0deg, rgba(7,0,47,1) 0%, rgba(199,207,255,1) 100%);
+}
+#startmenu .sidebar h1 {
+    font-family: "logo";
+    font-weight: 800;
+    color: #fff;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    transform: rotate(180deg);
+    font-size: 2rem;
+    line-height: 0;
+}
+#bsod {
+    height: 100dvh;
+    width: 100dvw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: 9999;
+    display: none;
+    user-select: none;
+}
+.logo {
+    display: inline;
+    font-size: xx-large;
+    font-family: "logo";
+}
+#root {
+    height: 100%; 
+    width: 100%; 
+    position: fixed; 
+    top: 0; left: 0;
+}
+.desktopshortcut {
+    height: 125px;
+    width: 85px;
+    background: none;
+    position: relative;
+    border: none;
+    /* background: #b0b0b0; */
+    /* margin: 5px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.desktopshortcut:active {
+    border: 1px dotted #c4c4c4;
+}
+.desktopshortcut * {
+    margin: 0;
+    padding: 0;
+    /* user-select: none; */
+}
+.desktopshortcut img {
+    object-fit: contain;
+    width: 100%;
+}
+.desktopshortcut h1 {
+    font-size: .7rem;
+    height: auto;
+    width: 100%;
+    text-align: center;
+    width: 100%;
+    word-wrap: break-word;
+    font-weight: 400;
+}
+#desktopwrapper {
+    height: calc(100vh - 45px);
+    width: 100dvw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* display: grid; */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 5px;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    min-height: calc(100vh - 45px);
+    max-height: calc(100vh - 45px);
+    max-width: 100vw;
+}
+loading {
+    position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 999;
+	/* background-image: url('../assets/loading_img.png'); */
+    /* background-size: cover; */
+    /* background-repeat: repeat; */
+    /* background-position: center; */
+    background: #000000;
+}
+@keyframes moving-gradient {
+    0% { background-position: left bottom; }
+    100% { background-position: right bottom; }
+}
+.loadingbar {
+    position: fixed;
+    bottom: 22.5dvh;
+    border: 2px outset #a4a4a4;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 25px;
+    width: 50dvw;
+    text-align: center;
+    vertical-align: middle;
+    background: -webkit-linear-gradient(
+        left,
+        #0193CD 30%,
+        #66D4E5 80%,
+        #0193CD 100%
+    ) repeat;
+    background-size: 50% 100%;
+    animation-name: moving-gradient;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.loadingbar p {
+    padding: 0 !important;
+    margin: 0 !important;
+    display: inline;
+    animation: flash 1s linear infinite;
+    text-shadow: 0 0 2.5px #000;
+}
+@keyframes flash {
+    0% {color:red;}
+    50% {color:yellow;}
+    100% {color:red;}
+}
+.loadinglogo {
+    height: 50dvh;
+    width: 65dvw;
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /* background: #fff; */
+    background-image: url("../assets/beansite_logo_tiny.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    filter: drop-shadow(0 0 5px hsla(0, 0%, 100%, 0.75));
+}
+#lsTips {
+    position: fixed;
+    bottom: 5dvh;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 25dvw;
+    height: 6vmin;
+    /* background: #fff; */
+    color: #5f5f5f;
+    text-align: center;
+    vertical-align: middle;
+}
+.loading_fadeout{
+    animation: fadeout 1s forwards;
+}
+.bootimg_loadingicon {
+    position: absolute;
+    bottom: -50px;
+    height: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+@keyframes fadeout {
+    from {opacity: 1;}
+    to {opacity: 0;display:none;}
+}
+.settingsDropdown {
+    background: lightgray
+}
+#closeconfirm {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 100dvh;
+    width: 100dvw;
+    z-index: 993;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: .5vmin;
+    color: #fff;
+}
+#closeconfirm p {
+    width: 100vmin;
+    color: #9e9e9e;
+}
+#closeconfirm h1 {
+    width: 100vmin;
+    color: #e8e8e8;
+    font-size: 2.35rem;
+}
+#closeconfirm button {
+    width: 25vmin;
+    padding: .5vmin 0;
+    margin-top: 3vmin;
+    margin-right: 75vmin;
+    border: 2px outset gray;
+    background: lightgray;
+    cursor: pointer;
+    /* transition: .35s; */
+}
+#closeconfirm #cc_dsa {
+    margin-top: .5vmin !important;
+}

@@ -1,0 +1,11 @@
+{
+  "name": "beansite-95",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/M1dnight-ofcl/beansite.git",
+  "author": "M1dnight <108243683+M1dnight-ofcl@users.noreply.github.com>",
+  "license": "MIT",
+  "dependencies": {
+    "vercel": "^34.3.0"
+  }
+}
